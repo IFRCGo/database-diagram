@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>api_district - GO Database</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>GO</b> Database</a>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>api_district</h1><p><span id="recordNumber">3538</span> rows</p><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Columns</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table id="standard_table" class="table table-bordered table-striped dataTable" role="grid">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Column</th>
+                                    <th>Type</th>
+                                    <th>Size</th>
+                                    <th title='Are nulls allowed?'>Nulls</th>
+                                    <th title='Is column automatically updated?'>Auto</th>
+                                    <th title='Default value'>Default</th>
+                                    <th title='Columns in tables that reference this column'>Children</th>
+                                    <th title='Columns in tables that are referenced by this column'>Parents</th>
+                                    <th title='Comments' class="toggle"><span>Comments</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="id">id</span></td>
+                                    <td>serial</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title='Automatically updated by the database'>√</td>
+                                    <td>nextval(&#39;api_district_id_seq&#39;::regclass)</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="api_admin2.admin1_id references api_district.id via api_admin2_admin1_id_2e3b14f4_fk_api_district_id"><a href='api_admin2.html'>api_admin2</a><span class='relatedKey'>.admin1_id</span></td>
+                                                <td class="constraint detail">api_admin2_admin1_id_2e3b14f4_fk_api_district_id<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="api_districtgeoms.district_id references api_district.id via api_districtgeoms_district_id_b9141060_fk_api_district_id"><a href='api_districtgeoms.html'>api_districtgeoms</a><span class='relatedKey'>.district_id</span></td>
+                                                <td class="constraint detail">api_districtgeoms_district_id_b9141060_fk_api_district_id<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="api_event_districts.district_id references api_district.id via api_event_districts_district_id_00ec8524_fk_api_district_id"><a href='api_event_districts.html'>api_event_districts</a><span class='relatedKey'>.district_id</span></td>
+                                                <td class="constraint detail">api_event_districts_district_id_00ec8524_fk_api_district_id<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="api_fieldreport_districts.district_id references api_district.id via api_fieldreport_dist_district_id_6775a365_fk_api_distr"><a href='api_fieldreport_districts.html'>api_fieldreport_districts</a><span class='relatedKey'>.district_id</span></td>
+                                                <td class="constraint detail">api_fieldreport_dist_district_id_6775a365_fk_api_distr<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="deployments_emergencyproject_districts.district_id references api_district.id via deployments_emergenc_district_id_03c6870e_fk_api_distr"><a href='deployments_emergencyproject_districts.html'>deployments_emergencyproject_districts</a><span class='relatedKey'>.district_id</span></td>
+                                                <td class="constraint detail">deployments_emergenc_district_id_03c6870e_fk_api_distr<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="deployments_partnersocietydeployment_district_deployed_to.district_id references api_district.id via deployments_partners_district_id_55bb8774_fk_api_distr"><a href='deployments_partnersocietydeployment_district_deployed_to.html'>deployments_partnersocietydeployment_district_deployed_to</a><span class='relatedKey'>.district_id</span></td>
+                                                <td class="constraint detail">deployments_partners_district_id_55bb8774_fk_api_distr<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="deployments_project_project_districts.district_id references api_district.id via deployments_project__district_id_f72451b2_fk_api_distr"><a href='deployments_project_project_districts.html'>deployments_project_project_districts</a><span class='relatedKey'>.district_id</span></td>
+                                                <td class="constraint detail">deployments_project__district_id_f72451b2_fk_api_distr<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="dref_dref_district.district_id references api_district.id via dref_dref_district_district_id_bb59686d_fk_api_district_id"><a href='dref_dref_district.html'>dref_dref_district</a><span class='relatedKey'>.district_id</span></td>
+                                                <td class="constraint detail">dref_dref_district_district_id_bb59686d_fk_api_district_id<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="dref_dreffinalreport_district.district_id references api_district.id via dref_dreffinalreport_district_id_e1c0f2bc_fk_api_distr"><a href='dref_dreffinalreport_district.html'>dref_dreffinalreport_district</a><span class='relatedKey'>.district_id</span></td>
+                                                <td class="constraint detail">dref_dreffinalreport_district_id_e1c0f2bc_fk_api_distr<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="dref_drefoperationalupdate_district.district_id references api_district.id via dref_drefoperational_district_id_70d52c42_fk_api_distr"><a href='dref_drefoperationalupdate_district.html'>dref_drefoperationalupdate_district</a><span class='relatedKey'>.district_id</span></td>
+                                                <td class="constraint detail">dref_drefoperational_district_id_70d52c42_fk_api_distr<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="eap_eap.district_id references api_district.id via eap_eap_district_id_aeb90180_fk_api_district_id"><a href='eap_eap.html'>eap_eap</a><span class='relatedKey'>.district_id</span></td>
+                                                <td class="constraint detail">eap_eap_district_id_aeb90180_fk_api_district_id<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="flash_update_flashcountrydistrict_district.district_id references api_district.id via flash_update_flashco_district_id_b49594a0_fk_api_distr"><a href='flash_update_flashcountrydistrict_district.html'>flash_update_flashcountrydistrict_district</a><span class='relatedKey'>.district_id</span></td>
+                                                <td class="constraint detail">flash_update_flashco_district_id_b49594a0_fk_api_distr<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="name">name</span></td>
+                                    <td>varchar</td>
+                                    <td>100</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="code">code</span></td>
+                                    <td>varchar</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="country_id">country_id</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="api_district.country_id references api_country.id via api_district_country_id_b4999656_fk_api_country_id"><a href='api_country.html'>api_country</a><span class='relatedKey'>.id</span></td>
+                                                <td class="constraint detail">api_district_country_id_b4999656_fk_api_country_id<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="is_enclave">is_enclave</span></td>
+                                    <td>bool</td>
+                                    <td>1</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="wb_population">wb_population</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="wb_year">wb_year</span></td>
+                                    <td>varchar</td>
+                                    <td>4</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i><span id="bbox">bbox</span></td>
+                                    <td>geometry</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i><span id="centroid">centroid</span></td>
+                                    <td>geometry</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="is_deprecated">is_deprecated</span></td>
+                                    <td>bool</td>
+                                    <td>1</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-sitemap"></i>
+                            <h3 id="Indexes" class="box-title">Indexes</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table id="indexes_table" class="table table-bordered table-striped dataTable" role="grid">
+                                <thead>
+                                <tr>
+                                    <th>Constraint Name</th>
+                                    <th>Type</th>
+                                    <th>Sort</th>
+                                    <th>Column(s)</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey'></i> api_district_pkey</td>
+                                    <td>Primary key</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>id</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>api_district_bbox_id</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>bbox</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>api_district_centroid_id</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>centroid</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>api_district_country_id_b4999656</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>country_id</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /.box-body -->
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-sitemap"></i>
+                            <h3 class="box-title">Check Constraints</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table id="check_table" class="table table-bordered table-striped dataTable" role="grid">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Constraint Name</th>
+                                    <th>Constraint</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>api_district_wb_population_check</td>
+                                    <td>((wb_population &gt;= 0))</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-code-fork"></i>
+                            <h3 id="Relationships" class="box-title">Relationships</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div class="nav-tabs-custom"><!-- Tabs within a box -->
+                                <h5>Close relationships within degrees of separation</h5>
+                                <ul class="nav nav-tabs pull-left ui-sortable-handle">
+                                    <li class="active"><a href="#oneDegreeImg-chart" data-toggle="tab" aria-expanded="true">One</a></li>
+                                    <li class=""><a href="#twodegreesDegreeImg-chart" data-toggle="tab" aria-expanded="true">Two degrees</a></li>
+                                </ul>
+                                <div class="tab-content no-padding">
+                                    <div class="chart tab-pane active" id="oneDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
+<area shape="rect" id="node1" href="api_admin2.html" target="_top" title="api_admin2" alt="" coords="1041,287,1281,521">
+<area shape="rect" id="node2" href="api_district.html" target="_top" title="api_district" alt="" coords="473,1073,816,1436">
+<area shape="rect" id="node3" href="api_country.html" target="_top" title="api_country" alt="" coords="5,840,429,1133">
+<area shape="rect" id="node4" href="api_districtgeoms.html" target="_top" title="api_districtgeoms" alt="" coords="1057,539,1265,661">
+<area shape="rect" id="node5" href="api_event_districts.html" target="_top" title="api_event_districts" alt="" coords="1053,679,1270,831">
+<area shape="rect" id="node6" href="api_fieldreport_districts.html" target="_top" title="api_fieldreport_districts" alt="" coords="1029,848,1293,1000">
+<area shape="rect" id="node7" href="deployments_emergencyproject_districts.html" target="_top" title="deployments_emergencyproject_districts" alt="" coords="952,1017,1371,1169">
+<area shape="rect" id="node8" href="deployments_partnersocietydeployment_district_deployed_to.html" target="_top" title="deployments_partnersocietydeployment_district_deployed_to" alt="" coords="860,1187,1463,1339">
+<area shape="rect" id="node9" href="deployments_project_project_districts.html" target="_top" title="deployments_project_project_districts" alt="" coords="966,1356,1357,1508">
+<area shape="rect" id="node10" href="dref_dref_district.html" target="_top" title="dref_dref_district" alt="" coords="1059,1525,1263,1677">
+<area shape="rect" id="node11" href="dref_dreffinalreport_district.html" target="_top" title="dref_dreffinalreport_district" alt="" coords="1011,1695,1311,1847">
+<area shape="rect" id="node12" href="dref_drefoperationalupdate_district.html" target="_top" title="dref_drefoperationalupdate_district" alt="" coords="976,1864,1347,2016">
+<area shape="rect" id="node13" href="eap_eap.html" target="_top" title="eap_eap" alt="" coords="1031,5,1291,269">
+<area shape="rect" id="node14" href="flash_update_flashcountrydistrict_district.html" target="_top" title="flash_update_flashcountrydistrict_district" alt="" coords="950,2033,1373,2185">
+</map>
+                                        <a name='diagram'><img id="oneDegreeImg" src="../diagrams/tables/api_district.1degree.png" usemap="#oneDegreeRelationshipsDiagram" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="twodegreesDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="twoDegreesRelationshipsDiagram" name="twoDegreesRelationshipsDiagram">
+<area shape="rect" id="node1" href="api_admin2.html" target="_top" title="api_admin2" alt="" coords="1300,1737,1540,1972">
+<area shape="rect" id="node2" href="api_district.html" target="_top" title="api_district" alt="" coords="723,2235,1065,2597">
+<area shape="rect" id="node5" href="api_country.html" target="_top" title="api_country" alt="" coords="245,2123,669,2416">
+<area shape="rect" id="node3" href="api_admin2geoms.html" target="_top" title="api_admin2geoms" alt="" coords="1833,1813,2041,1901">
+<area shape="rect" id="node4" href="api_appeal.html" target="_top" title="api_appeal" alt="" coords="814,2739,974,2827">
+<area shape="rect" id="node6" href="api_disastertype.html" target="_top" title="api_disastertype" alt="" coords="5,4379,201,4467">
+<area shape="rect" id="node7" href="api_event.html" target="_top" title="api_event" alt="" coords="373,3671,541,3759">
+<area shape="rect" id="node8" href="api_region.html" target="_top" title="api_region" alt="" coords="26,2969,181,3057">
+<area shape="rect" id="node9" href="api_appealdocument.html" target="_top" title="api_appealdocument" alt="" coords="1307,2339,1533,2427">
+<area shape="rect" id="node10" href="api_appealhistory.html" target="_top" title="api_appealhistory" alt="" coords="1317,3084,1523,3172">
+<area shape="rect" id="node11" href="api_countrycontact.html" target="_top" title="api_countrycontact" alt="" coords="786,216,1002,304">
+<area shape="rect" id="node12" href="api_countrygeoms.html" target="_top" title="api_countrygeoms" alt="" coords="789,321,999,409">
+<area shape="rect" id="node13" href="api_countrykeyfigure.html" target="_top" title="api_countrykeyfigure" alt="" coords="779,427,1009,515">
+<area shape="rect" id="node14" href="api_countrylink.html" target="_top" title="api_countrylink" alt="" coords="799,532,989,620">
+<area shape="rect" id="node15" href="api_countryoffieldreporttoreview.html" target="_top" title="api_countryoffieldreporttoreview" alt="" coords="739,637,1049,725">
+<area shape="rect" id="node16" href="api_countrysnippet.html" target="_top" title="api_countrysnippet" alt="" coords="786,743,1002,831">
+<area shape="rect" id="node17" href="api_districtgeoms.html" target="_top" title="api_districtgeoms" alt="" coords="1316,2199,1524,2321">
+<area shape="rect" id="node18" href="api_event_countries.html" target="_top" title="api_event_countries" alt="" coords="783,3603,1005,3691">
+<area shape="rect" id="node19" href="api_event_countries_for_preview.html" target="_top" title="api_event_countries_for_preview" alt="" coords="738,3076,1050,3164">
+<area shape="rect" id="node20" href="api_event_districts.html" target="_top" title="api_event_districts" alt="" coords="1311,2588,1529,2740">
+<area shape="rect" id="node21" href="api_fieldreport.html" target="_top" title="api_fieldreport" alt="" coords="803,4520,985,4608">
+<area shape="rect" id="node22" href="auth_user.html" target="_top" title="auth_user" alt="" coords="379,4664,535,4752">
+<area shape="rect" id="node23" href="api_fieldreport_countries.html" target="_top" title="api_fieldreport_countries" alt="" coords="1291,3595,1549,3683">
+<area shape="rect" id="node24" href="api_fieldreport_districts.html" target="_top" title="api_fieldreport_districts" alt="" coords="1288,3277,1552,3429">
+<area shape="rect" id="node25" href="api_gdacsevent_countries.html" target="_top" title="api_gdacsevent_countries" alt="" coords="762,848,1026,936">
+<area shape="rect" id="node26" href="api_geccode.html" target="_top" title="api_geccode" alt="" coords="809,953,979,1041">
+<area shape="rect" id="node27" href="api_profile.html" target="_top" title="api_profile" alt="" coords="817,3955,971,4043">
+<area shape="rect" id="node28" href="api_usercountry.html" target="_top" title="api_usercountry" alt="" coords="797,3744,991,3832">
+<area shape="rect" id="node29" href="country_plan_countryplan.html" target="_top" title="country_plan_countryplan" alt="" coords="761,4625,1027,4713">
+<area shape="rect" id="node30" href="country_plan_membershipcoordination.html" target="_top" title="country_plan_membershipcoordination" alt="" coords="1241,3968,1599,4056">
+<area shape="rect" id="node31" href="databank_countryoverview.html" target="_top" title="databank_countryoverview" alt="" coords="759,1059,1029,1147">
+<area shape="rect" id="node32" href="deployments_emergencyproject.html" target="_top" title="deployments_emergencyproject" alt="" coords="1785,2241,2090,2329">
+<area shape="rect" id="node33" href="deployments_eru.html" target="_top" title="deployments_eru" alt="" coords="1319,2041,1521,2129">
+<area shape="rect" id="node36" href="deployments_eruowner.html" target="_top" title="deployments_eruowner" alt="" coords="771,2005,1017,2093">
+<area shape="rect" id="node34" href="deployments_emergencyproject_admin2.html" target="_top" title="deployments_emergencyproject_admin2" alt="" coords="2181,2160,2545,2248">
+<area shape="rect" id="node35" href="deployments_emergencyproject_districts.html" target="_top" title="deployments_emergencyproject_districts" alt="" coords="2153,2292,2572,2444">
+<area shape="rect" id="node37" href="deployments_erureadiness.html" target="_top" title="deployments_erureadiness" alt="" coords="759,1164,1029,1252">
+<area shape="rect" id="node38" href="deployments_fact.html" target="_top" title="deployments_fact" alt="" coords="791,3181,997,3269">
+<area shape="rect" id="node39" href="deployments_heop.html" target="_top" title="deployments_heop" alt="" coords="787,3392,1001,3480">
+<area shape="rect" id="node40" href="deployments_partnersocietydeployment.html" target="_top" title="deployments_partnersocietydeployment" alt="" coords="713,111,1075,199">
+<area shape="rect" id="node41" href="deployments_partnersocietydeployment_district_deployed_to.html" target="_top" title="deployments_partnersocietydeployment_district_deployed_to" alt="" coords="1119,829,1721,981">
+<area shape="rect" id="node42" href="deployments_personnel.html" target="_top" title="deployments_personnel" alt="" coords="1813,1664,2062,1752">
+<area shape="rect" id="node43" href="deployments_personneldeployment.html" target="_top" title="deployments_personneldeployment" alt="" coords="1255,2979,1585,3067">
+<area shape="rect" id="node44" href="notifications_surgealert.html" target="_top" title="notifications_surgealert" alt="" coords="771,3497,1017,3585">
+<area shape="rect" id="node45" href="deployments_project.html" target="_top" title="deployments_project" alt="" coords="780,4237,1008,4325">
+<area shape="rect" id="node46" href="deployments_project_project_admin2.html" target="_top" title="deployments_project_project_admin2" alt="" coords="1765,2028,2109,2116">
+<area shape="rect" id="node47" href="deployments_project_project_districts.html" target="_top" title="deployments_project_project_districts" alt="" coords="1225,2809,1615,2961">
+<area shape="rect" id="node48" href="deployments_rdrt.html" target="_top" title="deployments_rdrt" alt="" coords="791,3287,997,3375">
+<area shape="rect" id="node49" href="dref_dref.html" target="_top" title="dref_dref" alt="" coords="1342,4925,1498,5013">
+<area shape="rect" id="node50" href="dref_dref_district.html" target="_top" title="dref_dref_district" alt="" coords="1835,4405,2039,4557">
+<area shape="rect" id="node51" href="dref_dreffinalreport.html" target="_top" title="dref_dreffinalreport" alt="" coords="1829,4925,2046,5013">
+<area shape="rect" id="node52" href="dref_dreffinalreport_district.html" target="_top" title="dref_dreffinalreport_district" alt="" coords="2213,4287,2513,4439">
+<area shape="rect" id="node53" href="dref_drefoperationalupdate.html" target="_top" title="dref_drefoperationalupdate" alt="" coords="1801,4300,2073,4388">
+<area shape="rect" id="node54" href="dref_drefoperationalupdate_district.html" target="_top" title="dref_drefoperationalupdate_district" alt="" coords="2177,3013,2548,3165">
+<area shape="rect" id="node55" href="eap_eap.html" target="_top" title="eap_eap" alt="" coords="1290,4644,1550,4908">
+<area shape="rect" id="node56" href="eap_eap_early_actions.html" target="_top" title="eap_eap_early_actions" alt="" coords="1817,4575,2057,4663">
+<area shape="rect" id="node57" href="eap_eappartner.html" target="_top" title="eap_eappartner" alt="" coords="1843,4680,2032,4768">
+<area shape="rect" id="node58" href="eap_eapreference.html" target="_top" title="eap_eapreference" alt="" coords="1835,4785,2040,4873">
+<area shape="rect" id="node59" href="flash_update_flashcountrydistrict.html" target="_top" title="flash_update_flashcountrydistrict" alt="" coords="736,5,1052,93">
+<area shape="rect" id="node60" href="flash_update_flashcountrydistrict_district.html" target="_top" title="flash_update_flashcountrydistrict_district" alt="" coords="1209,317,1631,469">
+<area shape="rect" id="node61" href="local_units_delegationoffice.html" target="_top" title="local_units_delegationoffice" alt="" coords="755,1269,1033,1357">
+<area shape="rect" id="node62" href="local_units_localunit.html" target="_top" title="local_units_localunit" alt="" coords="781,1375,1007,1463">
+<area shape="rect" id="node63" href="notifications_subscription.html" target="_top" title="notifications_subscription" alt="" coords="762,4379,1026,4467">
+<area shape="rect" id="node64" href="per_customperworkplancomponent.html" target="_top" title="per_customperworkplancomponent" alt="" coords="729,1480,1059,1568">
+<area shape="rect" id="node65" href="per_nicedocument.html" target="_top" title="per_nicedocument" alt="" coords="789,1585,999,1673">
+<area shape="rect" id="node66" href="per_nsphase.html" target="_top" title="per_nsphase" alt="" coords="809,1691,979,1779">
+<area shape="rect" id="node67" href="per_overview.html" target="_top" title="per_overview" alt="" coords="807,4132,981,4220">
+<area shape="rect" id="node68" href="per_perworkplancomponent.html" target="_top" title="per_perworkplancomponent" alt="" coords="755,1796,1033,1884">
+<area shape="rect" id="node69" href="per_workplan.html" target="_top" title="per_workplan" alt="" coords="806,3849,982,3937">
+</map>
+                                        <a name='diagram'><img id="twodegreesDegreeImg" src="../diagrams/tables/api_district.2degrees.png" usemap="#twoDegreesRelationshipsDiagram" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.box-body -->
+                    </div>
+                </section>
+                <script>
+                    var config = {
+                        pagination: true
+                    }
+                </script>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.1.0</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="table.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>

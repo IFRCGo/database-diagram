@@ -15,7 +15,13 @@
       <sequence increment="1" name="api_appealhistory_id_seq" startValue="1"/>
       <sequence increment="1" name="api_authlog_id_seq" startValue="1"/>
       <sequence increment="1" name="api_country_id_seq" startValue="1"/>
+      <sequence increment="1" name="api_countrycapacitystrengthening_id_seq" startValue="1"/>
+      <sequence increment="1" name="api_countrydirectory_id_seq" startValue="1"/>
+      <sequence increment="1" name="api_countryicrcpresence_id_seq" startValue="1"/>
+      <sequence increment="1" name="api_countrykeydocument_id_seq" startValue="1"/>
+      <sequence increment="1" name="api_countryorganizationalcapacity_id_seq" startValue="1"/>
       <sequence increment="1" name="api_countrysnippet_id_seq" startValue="1"/>
+      <sequence increment="1" name="api_countrysupportingpartner_id_seq" startValue="1"/>
       <sequence increment="1" name="api_cronjob_id_seq" startValue="1"/>
       <sequence increment="1" name="api_disastertype_id_seq" startValue="1"/>
       <sequence increment="1" name="api_district_id_seq" startValue="1"/>
@@ -47,6 +53,7 @@
       <sequence increment="1" name="api_generaldocument_id_seq" startValue="1"/>
       <sequence increment="1" name="api_keyfigure_id_seq" startValue="1"/>
       <sequence increment="1" name="api_maincontact_id_seq" startValue="1"/>
+      <sequence increment="1" name="api_nsdinitiatives_id_seq" startValue="1"/>
       <sequence increment="1" name="api_region_id_seq" startValue="1"/>
       <sequence increment="1" name="api_regionemergencysnippet_id_seq" startValue="1"/>
       <sequence increment="1" name="api_regionpreparednesssnippet_id_seq" startValue="1"/>
@@ -70,7 +77,12 @@
       <sequence increment="1" name="country_plan_dataimport_id_seq" startValue="1"/>
       <sequence increment="1" name="country_plan_membershipcoordination_id_seq" startValue="1"/>
       <sequence increment="1" name="country_plan_strategicpriority_id_seq" startValue="1"/>
+      <sequence increment="1" name="databank_acapsseasonalcalender_id_seq" startValue="1"/>
+      <sequence increment="1" name="databank_countrykeyclimate_id_seq" startValue="1"/>
       <sequence increment="1" name="databank_externalsource_id_seq" startValue="1"/>
+      <sequence increment="1" name="databank_fdrsannualincome_id_seq" startValue="1"/>
+      <sequence increment="1" name="databank_fdrsincome_id_seq" startValue="1"/>
+      <sequence increment="1" name="databank_fdrsindicator_id_seq" startValue="1"/>
       <sequence increment="1" name="databank_keyclimateevent_id_seq" startValue="1"/>
       <sequence increment="1" name="databank_keydocument_id_seq" startValue="1"/>
       <sequence increment="1" name="databank_keydocumentgroup_id_seq" startValue="1"/>
@@ -135,6 +147,7 @@
       <sequence increment="1" name="dref_dreffinalreport_photos_id_seq" startValue="1"/>
       <sequence increment="1" name="dref_dreffinalreport_planned_interventions_id_seq" startValue="1"/>
       <sequence increment="1" name="dref_dreffinalreport_risk_security_id_seq" startValue="1"/>
+      <sequence increment="1" name="dref_dreffinalreport_source_information_id_seq" startValue="1"/>
       <sequence increment="1" name="dref_dreffinalreport_users_id_seq" startValue="1"/>
       <sequence increment="1" name="dref_drefoperationalupdate_district_id_seq" startValue="1"/>
       <sequence increment="1" name="dref_drefoperationalupdate_id_seq" startValue="1"/>
@@ -144,6 +157,7 @@
       <sequence increment="1" name="dref_drefoperationalupdate_photos_id_seq" startValue="1"/>
       <sequence increment="1" name="dref_drefoperationalupdate_planned_interventions_id_seq" startValue="1"/>
       <sequence increment="1" name="dref_drefoperationalupdate_risk_security_id_seq" startValue="1"/>
+      <sequence increment="1" name="dref_drefoperationalupdate_source_information_id_seq" startValue="1"/>
       <sequence increment="1" name="dref_drefoperationalupdate_users_id_seq" startValue="1"/>
       <sequence increment="1" name="dref_identifiedneed_id_seq" startValue="1"/>
       <sequence increment="1" name="dref_nationalsocietyaction_id_seq" startValue="1"/>
@@ -181,11 +195,25 @@
       <sequence increment="1" name="guardian_groupobjectpermission_id_seq" startValue="1"/>
       <sequence increment="1" name="guardian_userobjectpermission_id_seq" startValue="1"/>
       <sequence increment="1" name="lang_string_id_seq" startValue="1"/>
+      <sequence increment="1" name="local_units_affiliation_id_seq" startValue="1"/>
+      <sequence increment="1" name="local_units_bloodservice_id_seq" startValue="1"/>
       <sequence increment="1" name="local_units_delegationoffice_id_seq" startValue="1"/>
       <sequence increment="1" name="local_units_delegationofficetype_id_seq" startValue="1"/>
+      <sequence increment="1" name="local_units_facilitytype_id_seq" startValue="1"/>
+      <sequence increment="1" name="local_units_functionality_id_seq" startValue="1"/>
+      <sequence increment="1" name="local_units_generalmedicalservice_id_seq" startValue="1"/>
+      <sequence increment="1" name="local_units_healthdata_blood_services_id_seq" startValue="1"/>
+      <sequence increment="1" name="local_units_healthdata_general_medical_services_id_seq" startValue="1"/>
+      <sequence increment="1" name="local_units_healthdata_id_seq" startValue="1"/>
+      <sequence increment="1" name="local_units_healthdata_professional_training_facilities_id_seq" startValue="1"/>
+      <sequence increment="1" name="local_units_healthdata_specialized_medical_beyond_primar_id_seq" startValue="1"/>
+      <sequence increment="1" name="local_units_hospitaltype_id_seq" startValue="1"/>
       <sequence increment="1" name="local_units_localunit_id_seq" startValue="1"/>
       <sequence increment="1" name="local_units_localunitlevel_id_seq" startValue="1"/>
       <sequence increment="1" name="local_units_localunittype_id_seq" startValue="1"/>
+      <sequence increment="1" name="local_units_primaryhcc_id_seq" startValue="1"/>
+      <sequence increment="1" name="local_units_professionaltrnfacility_id_seq" startValue="1"/>
+      <sequence increment="1" name="local_units_specializedmedicalservice_id_seq" startValue="1"/>
       <sequence increment="1" name="notifications_notificationguid_id_seq" startValue="1"/>
       <sequence increment="1" name="notifications_subscription_id_seq" startValue="1"/>
       <sequence increment="1" name="notifications_surgealert_id_seq" startValue="1"/>
@@ -208,6 +236,7 @@
       <sequence increment="1" name="per_formprioritizationcomponent_id_seq" startValue="1"/>
       <sequence increment="1" name="per_formquestion_answers_id_seq" startValue="1"/>
       <sequence increment="1" name="per_formquestion_id_seq" startValue="1"/>
+      <sequence increment="1" name="per_formquestiongroup_id_seq" startValue="1"/>
       <sequence increment="1" name="per_nicedocument_id_seq" startValue="1"/>
       <sequence increment="1" name="per_nsphase_id_seq" startValue="1"/>
       <sequence increment="1" name="per_opslearning_id_seq" startValue="1"/>
@@ -223,6 +252,7 @@
       <sequence increment="1" name="per_perassessment_area_response_id_seq" startValue="1"/>
       <sequence increment="1" name="per_perassessment_id_seq" startValue="1"/>
       <sequence increment="1" name="per_percomponentrating_id_seq" startValue="1"/>
+      <sequence increment="1" name="per_perdocumentupload_id_seq" startValue="1"/>
       <sequence increment="1" name="per_perfile_id_seq" startValue="1"/>
       <sequence increment="1" name="per_perworkplan_custom_component_responses_id_seq" startValue="1"/>
       <sequence increment="1" name="per_perworkplan_id_seq" startValue="1"/>
@@ -386,6 +416,12 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="deck" nullable="false" remarks="" size="50" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="source" nullable="false" remarks="" size="256" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="visibility" nullable="false" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="deck_ar" nullable="true" remarks="" size="50" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="deck_en" nullable="true" remarks="" size="50" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="deck_es" nullable="true" remarks="" size="50" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="deck_fr" nullable="true" remarks="" size="50" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="translation_module_original_language" nullable="false" remarks="" size="2" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="translation_module_skip_auto_translation" nullable="false" remarks="" size="1" type="bool" typeCode="-7"/>
          <primaryKey column="id" sequenceNumberInPK="1"/>
          <index name="api_adminkeyfigure_pkey" unique="true">
             <column ascending="true" name="id"/>
@@ -414,7 +450,9 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="name" nullable="false" remarks="" size="100" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="atype" nullable="false" remarks="" size="10" type="int4" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="status" nullable="false" remarks="" size="10" type="int4" typeCode="4"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="code" nullable="true" remarks="" size="20" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="code" nullable="true" remarks="" size="20" type="varchar" typeCode="12">
+            <child column="appeal_code" foreignKey="per_opslearning_appeal_code_9a170029_fk_api_appeal_code" implied="false" onDeleteCascade="false" schema="public" table="per_opslearning"/>
+         </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="sector" nullable="false" remarks="" size="100" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="num_beneficiaries" nullable="false" remarks="" size="10" type="int4" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="17" id="8" name="amount_requested" nullable="false" remarks="" size="17" type="float8" typeCode="8"/>
@@ -468,7 +506,7 @@
             <column ascending="true" name="region_id"/>
          </index>
       </table>
-      <table name="api_appealdocument" numRows="7861" remarks="" schema="public" type="TABLE">
+      <table name="api_appealdocument" numRows="7882" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('api_appealdocument_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="6" id="1" name="created_at" nullable="false" remarks="" size="35" type="timestamptz" typeCode="93"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="name" nullable="false" remarks="" size="100" type="varchar" typeCode="12"/>
@@ -572,7 +610,7 @@
             <column ascending="true" name="region_id"/>
          </index>
       </table>
-      <table name="api_authlog" numRows="27" remarks="" schema="public" type="TABLE">
+      <table name="api_authlog" numRows="39" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('api_authlog_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="action" nullable="false" remarks="" size="64" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="username" nullable="true" remarks="" size="256" type="varchar" typeCode="12"/>
@@ -587,18 +625,25 @@
             <child column="country_id" foreignKey="api_appeal_country_id_914a0751_fk_api_country_id" implied="false" onDeleteCascade="false" schema="public" table="api_appeal"/>
             <child column="country_id" foreignKey="api_appealhistory_country_id_a6e61f17_fk_api_country_id" implied="false" onDeleteCascade="false" schema="public" table="api_appealhistory"/>
             <child column="sovereign_state_id" foreignKey="api_country_sovereign_state_id_720e1e48_fk_api_country_id" implied="false" onDeleteCascade="false" schema="public" table="api_country"/>
+            <child column="country_id" foreignKey="api_countrycapacitys_country_id_b8ee87ba_fk_api_count" implied="false" onDeleteCascade="false" schema="public" table="api_countrycapacitystrengthening"/>
             <child column="country_id" foreignKey="api_countrycontact_country_id_140aebd7_fk_api_country_id" implied="false" onDeleteCascade="false" schema="public" table="api_countrycontact"/>
+            <child column="country_id" foreignKey="api_countrydirectory_country_id_72951541_fk_api_country_id" implied="false" onDeleteCascade="false" schema="public" table="api_countrydirectory"/>
             <child column="country_id" foreignKey="api_countrygeoms_country_id_5168d01e_fk_api_country_id" implied="false" onDeleteCascade="false" schema="public" table="api_countrygeoms"/>
+            <child column="country_id" foreignKey="api_countryicrcpresence_country_id_894a1a06_fk_api_country_id" implied="false" onDeleteCascade="false" schema="public" table="api_countryicrcpresence"/>
+            <child column="country_id" foreignKey="api_countrykeydocument_country_id_def8e8ea_fk_api_country_id" implied="false" onDeleteCascade="false" schema="public" table="api_countrykeydocument"/>
             <child column="country_id" foreignKey="api_countrykeyfigure_country_id_ac7743e9_fk_api_country_id" implied="false" onDeleteCascade="false" schema="public" table="api_countrykeyfigure"/>
             <child column="country_id" foreignKey="api_countrylink_country_id_be58427b_fk_api_country_id" implied="false" onDeleteCascade="false" schema="public" table="api_countrylink"/>
             <child column="country_id" foreignKey="api_countryoffieldre_country_id_1a628672_fk_api_count" implied="false" onDeleteCascade="false" schema="public" table="api_countryoffieldreporttoreview"/>
+            <child column="country_id" foreignKey="api_countryorganizat_country_id_7ff9ee01_fk_api_count" implied="false" onDeleteCascade="false" schema="public" table="api_countryorganizationalcapacity"/>
             <child column="country_id" foreignKey="api_countrysnippet_country_id_17235975_fk_api_country_id" implied="false" onDeleteCascade="false" schema="public" table="api_countrysnippet"/>
+            <child column="country_id" foreignKey="api_countrysupportin_country_id_df5647f9_fk_api_count" implied="false" onDeleteCascade="false" schema="public" table="api_countrysupportingpartner"/>
             <child column="country_id" foreignKey="api_district_country_id_b4999656_fk_api_country_id" implied="false" onDeleteCascade="false" schema="public" table="api_district"/>
             <child column="country_id" foreignKey="api_event_countries_country_id_97e53123_fk_api_country_id" implied="false" onDeleteCascade="false" schema="public" table="api_event_countries"/>
             <child column="country_id" foreignKey="api_event_countries__country_id_03fca10d_fk_api_count" implied="false" onDeleteCascade="false" schema="public" table="api_event_countries_for_preview"/>
             <child column="country_id" foreignKey="api_fieldreport_countries_country_id_fbaec807_fk_api_country_id" implied="false" onDeleteCascade="false" schema="public" table="api_fieldreport_countries"/>
             <child column="country_id" foreignKey="api_gdacsevent_countries_country_id_f07c652e_fk_api_country_id" implied="false" onDeleteCascade="false" schema="public" table="api_gdacsevent_countries"/>
             <child column="country_id" foreignKey="api_geccode_country_id_6fa6f288_fk_api_country_id" implied="false" onDeleteCascade="false" schema="public" table="api_geccode"/>
+            <child column="country_id" foreignKey="api_nsdinitiatives_country_id_72ebcf72_fk_api_country_id" implied="false" onDeleteCascade="false" schema="public" table="api_nsdinitiatives"/>
             <child column="country_id" foreignKey="api_profile_country_id_d438e32c_fk_api_country_id" implied="false" onDeleteCascade="false" schema="public" table="api_profile"/>
             <child column="country_id" foreignKey="api_usercountry_country_id_2bc77ab6_fk_api_country_id" implied="false" onDeleteCascade="false" schema="public" table="api_usercountry"/>
             <child column="country_id" foreignKey="country_plan_countryplan_country_id_cefd962c_fk_api_country_id" implied="false" onDeleteCascade="false" schema="public" table="country_plan_countryplan"/>
@@ -635,6 +680,7 @@
             <child column="country_id" foreignKey="per_nicedocument_country_id_d9f3317e_fk_api_country_id" implied="false" onDeleteCascade="false" schema="public" table="per_nicedocument"/>
             <child column="country_id" foreignKey="per_nsphase_country_id_73bdb58a_fk_api_country_id" implied="false" onDeleteCascade="false" schema="public" table="per_nsphase"/>
             <child column="country_id" foreignKey="per_overview_country_id_23a4f3d1_fk_api_country_id" implied="false" onDeleteCascade="false" schema="public" table="per_overview"/>
+            <child column="country_id" foreignKey="per_perdocumentupload_country_id_202c225b_fk_api_country_id" implied="false" onDeleteCascade="false" schema="public" table="per_perdocumentupload"/>
             <child column="supported_by_id" foreignKey="per_perworkplancompo_supported_by_id_604b7b64_fk_api_count" implied="false" onDeleteCascade="false" schema="public" table="per_perworkplancomponent"/>
             <child column="country_id" foreignKey="per_workplan_country_id_00f2b749_fk_api_country_id" implied="false" onDeleteCascade="false" schema="public" table="per_workplan"/>
          </column>
@@ -707,6 +753,14 @@
          <column autoUpdated="false" defaultValue="null" digits="2" id="61" name="average_household_size" nullable="true" remarks="" size="5" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="62" name="translation_module_original_language" nullable="false" remarks="" size="2" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="63" name="translation_module_skip_auto_translation" nullable="false" remarks="" size="1" type="bool" typeCode="-7"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="64" name="address_1" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="65" name="address_2" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="66" name="city_code" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="67" name="phone" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="68" name="website" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="69" name="founded_date" nullable="true" remarks="" size="13" type="date" typeCode="91"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="70" name="disaster_law_url" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="71" name="emails" nullable="true" remarks="" size="255" type="_varchar" typeCode="2003"/>
          <primaryKey column="id" sequenceNumberInPK="1"/>
          <index name="api_country_pkey" unique="true">
             <column ascending="true" name="id"/>
@@ -737,6 +791,25 @@
          </index>
          <checkConstraint constraint="((wb_population &gt;= 0))" name="api_country_wb_population_check"/>
       </table>
+      <table name="api_countrycapacitystrengthening" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('api_countrycapacitystrengthening_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="assessment_code" nullable="false" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="year" nullable="false" remarks="" size="25" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="3" name="submission_date" nullable="false" remarks="" size="35" type="timestamptz" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="url" nullable="false" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="assessment_type" nullable="false" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="branch_name" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="country_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
+            <parent column="id" foreignKey="api_countrycapacitys_country_id_b8ee87ba_fk_api_count" implied="false" onDeleteCascade="false" schema="public" table="api_country"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="api_countrycapacitystrengthening_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+         <index name="api_countrycapacitystrengthening_country_id_b8ee87ba" unique="false">
+            <column ascending="true" name="country_id"/>
+         </index>
+      </table>
       <table name="api_countrycontact" numRows="24" remarks="" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="admincontact_ptr_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
             <parent column="id" foreignKey="api_countrycontact_admincontact_ptr_id_06dbee71_fk_api_admin" implied="false" onDeleteCascade="false" schema="public" table="api_admincontact"/>
@@ -752,6 +825,22 @@
             <column ascending="true" name="country_id"/>
          </index>
       </table>
+      <table name="api_countrydirectory" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('api_countrydirectory_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="first_name" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="last_name" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="position" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="country_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
+            <parent column="id" foreignKey="api_countrydirectory_country_id_72951541_fk_api_country_id" implied="false" onDeleteCascade="false" schema="public" table="api_country"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="api_countrydirectory_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+         <index name="api_countrydirectory_country_id_72951541" unique="false">
+            <column ascending="true" name="country_id"/>
+         </index>
+      </table>
       <table name="api_countrygeoms" numRows="247" remarks="" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="country_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
@@ -763,6 +852,43 @@
          </index>
          <index name="api_countrygeoms_geom_id" unique="false">
             <column ascending="true" name="geom"/>
+         </index>
+      </table>
+      <table name="api_countryicrcpresence" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('api_countryicrcpresence_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="icrc_presence" nullable="true" remarks="" size="1" type="bool" typeCode="-7"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="url" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="key_operation" nullable="true" remarks="" size="1" type="bool" typeCode="-7"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="country_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
+            <parent column="id" foreignKey="api_countryicrcpresence_country_id_894a1a06_fk_api_country_id" implied="false" onDeleteCascade="false" schema="public" table="api_country"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="api_countryicrcpresence_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+         <index name="api_countryicrcpresence_country_id_894a1a06_uniq" unique="true">
+            <column ascending="true" name="country_id"/>
+         </index>
+      </table>
+      <table name="api_countrykeydocument" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('api_countrykeydocument_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="name" nullable="false" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="url" nullable="false" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="thumbnail" nullable="false" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="document_type" nullable="false" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="year" nullable="false" remarks="" size="13" type="date" typeCode="91"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="country_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
+            <parent column="id" foreignKey="api_countrykeydocument_country_id_def8e8ea_fk_api_country_id" implied="false" onDeleteCascade="false" schema="public" table="api_country"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="end_year" nullable="true" remarks="" size="13" type="date" typeCode="91"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="year_text" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="api_countrykeydocument_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+         <index name="api_countrykeydocument_country_id_def8e8ea" unique="false">
+            <column ascending="true" name="country_id"/>
          </index>
       </table>
       <table name="api_countrykeyfigure" numRows="10" remarks="" schema="public" type="TABLE">
@@ -804,7 +930,24 @@
             <column ascending="true" name="country_id"/>
          </index>
       </table>
-      <table name="api_countrysnippet" numRows="34" remarks="" schema="public" type="TABLE">
+      <table name="api_countryorganizationalcapacity" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('api_countryorganizationalcapacity_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="leadership_capacity" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="youth_capacity" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="volunteer_capacity" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="financial_capacity" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="country_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
+            <parent column="id" foreignKey="api_countryorganizat_country_id_7ff9ee01_fk_api_count" implied="false" onDeleteCascade="false" schema="public" table="api_country"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="api_countryorganizationalcapacity_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+         <index name="api_countryorganizationalcapacity_country_id_7ff9ee01_uniq" unique="true">
+            <column ascending="true" name="country_id"/>
+         </index>
+      </table>
+      <table name="api_countrysnippet" numRows="38" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('api_countrysnippet_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="snippet" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="image" nullable="true" remarks="" size="100" type="varchar" typeCode="12"/>
@@ -827,7 +970,25 @@
             <column ascending="true" name="country_id"/>
          </index>
       </table>
-      <table name="api_cronjob" numRows="235" remarks="" schema="public" type="TABLE">
+      <table name="api_countrysupportingpartner" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('api_countrysupportingpartner_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="first_name" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="last_name" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="position" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="email" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="country_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
+            <parent column="id" foreignKey="api_countrysupportin_country_id_df5647f9_fk_api_count" implied="false" onDeleteCascade="false" schema="public" table="api_country"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="supporting_type" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="api_countrysupportingpartner_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+         <index name="api_countrysupportingpartner_country_id_df5647f9" unique="false">
+            <column ascending="true" name="country_id"/>
+         </index>
+      </table>
+      <table name="api_cronjob" numRows="239" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('api_cronjob_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="name" nullable="false" remarks="" size="100" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="status" nullable="false" remarks="" size="10" type="int4" typeCode="4"/>
@@ -847,6 +1008,7 @@
             <child column="dtype_id" foreignKey="api_appealhistory_dtype_id_a0d98a60_fk_api_disastertype_id" implied="false" onDeleteCascade="false" schema="public" table="api_appealhistory"/>
             <child column="dtype_id" foreignKey="api_event_dtype_id_af630553_fk_api_disastertype_id" implied="false" onDeleteCascade="false" schema="public" table="api_event"/>
             <child column="dtype_id" foreignKey="api_fieldreport_dtype_id_7a02da73_fk_api_disastertype_id" implied="false" onDeleteCascade="false" schema="public" table="api_fieldreport"/>
+            <child column="disaster_type_id" foreignKey="api_gdacsevent_disaster_type_id_49171dd9_fk_api_disastertype_id" implied="false" onDeleteCascade="false" schema="public" table="api_gdacsevent"/>
             <child column="dtype_id" foreignKey="deployments_fact_dtype_id_f940324a_fk_api_disastertype_id" implied="false" onDeleteCascade="false" schema="public" table="deployments_fact"/>
             <child column="dtype_id" foreignKey="deployments_heop_dtype_id_0a894a02_fk_api_disastertype_id" implied="false" onDeleteCascade="false" schema="public" table="deployments_heop"/>
             <child column="dtype_id" foreignKey="deployments_project_dtype_id_732debea_fk_api_disastertype_id" implied="false" onDeleteCascade="false" schema="public" table="deployments_project"/>
@@ -1525,22 +1687,12 @@
       <table name="api_eventfeatureddocument" numRows="46" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('api_eventfeatureddocument_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="title" nullable="false" remarks="" size="200" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="title_en" nullable="true" remarks="" size="200" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="title_es" nullable="true" remarks="" size="200" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="title_fr" nullable="true" remarks="" size="200" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="title_ar" nullable="true" remarks="" size="200" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="description" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="description_en" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="description_es" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="description_fr" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="description_ar" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="thumbnail" nullable="false" remarks="" size="100" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="file" nullable="false" remarks="" size="100" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="event_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="thumbnail" nullable="false" remarks="" size="100" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="file" nullable="false" remarks="" size="100" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="event_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
             <parent column="id" foreignKey="api_eventfeatureddocument_event_id_b14cb0e8_fk_api_event_id" implied="false" onDeleteCascade="false" schema="public" table="api_event"/>
          </column>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="translation_module_original_language" nullable="false" remarks="" size="2" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="translation_module_skip_auto_translation" nullable="false" remarks="" size="1" type="bool" typeCode="-7"/>
          <primaryKey column="id" sequenceNumberInPK="1"/>
          <index name="api_eventfeatureddocument_pkey" unique="true">
             <column ascending="true" name="id"/>
@@ -1583,12 +1735,12 @@
          <column autoUpdated="false" defaultValue="null" digits="6" id="4" name="completed_at" nullable="true" remarks="" size="35" type="timestamptz" typeCode="93"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="status" nullable="false" remarks="" size="10" type="int4" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="pdf_file" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="selector" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="export_id" nullable="false" remarks="" size="10" type="int4" typeCode="4"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="export_type" nullable="false" remarks="" size="255" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="requested_by_id" nullable="true" remarks="" size="10" type="int4" typeCode="4">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="export_id" nullable="false" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="export_type" nullable="false" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="requested_by_id" nullable="true" remarks="" size="10" type="int4" typeCode="4">
             <parent column="id" foreignKey="api_export_requested_by_id_4735e3d9_fk_auth_user_id" implied="false" onDeleteCascade="false" schema="public" table="auth_user"/>
          </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="per_country" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
          <primaryKey column="id" sequenceNumberInPK="1"/>
          <index name="api_export_pkey" unique="true">
             <column ascending="true" name="id"/>
@@ -1915,7 +2067,7 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="event_type" nullable="false" remarks="" size="16" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="alert_level" nullable="false" remarks="" size="10" type="int4" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="alert_score" nullable="true" remarks="" size="16" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="severity" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="severity" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="severity_unit" nullable="false" remarks="" size="16" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="severity_value" nullable="false" remarks="" size="16" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="population_unit" nullable="false" remarks="" size="16" type="varchar" typeCode="12"/>
@@ -1936,9 +2088,15 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="title_fr" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="translation_module_original_language" nullable="false" remarks="" size="2" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="translation_module_skip_auto_translation" nullable="false" remarks="" size="1" type="bool" typeCode="-7"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="disaster_type_id" nullable="true" remarks="" size="10" type="int4" typeCode="4">
+            <parent column="id" foreignKey="api_gdacsevent_disaster_type_id_49171dd9_fk_api_disastertype_id" implied="false" onDeleteCascade="false" schema="public" table="api_disastertype"/>
+         </column>
          <primaryKey column="id" sequenceNumberInPK="1"/>
          <index name="api_gdacsevent_pkey" unique="true">
             <column ascending="true" name="id"/>
+         </index>
+         <index name="api_gdacsevent_disaster_type_id_49171dd9" unique="false">
+            <column ascending="true" name="disaster_type_id"/>
          </index>
       </table>
       <table name="api_gdacsevent_countries" numRows="415" remarks="" schema="public" type="TABLE">
@@ -1978,7 +2136,7 @@
             <column ascending="true" name="country_id"/>
          </index>
       </table>
-      <table name="api_generaldocument" numRows="108" remarks="" schema="public" type="TABLE">
+      <table name="api_generaldocument" numRows="109" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('api_generaldocument_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4">
             <child column="document_id" foreignKey="deployments_project_document_id_c68ec71b_fk_api_gener" implied="false" onDeleteCascade="false" schema="public" table="deployments_project"/>
          </column>
@@ -2005,6 +2163,12 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="event_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
             <parent column="id" foreignKey="api_keyfigure_event_id_7804cc0d_fk_api_event_id" implied="false" onDeleteCascade="false" schema="public" table="api_event"/>
          </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="deck_ar" nullable="true" remarks="" size="50" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="deck_en" nullable="true" remarks="" size="50" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="deck_es" nullable="true" remarks="" size="50" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="deck_fr" nullable="true" remarks="" size="50" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="translation_module_original_language" nullable="false" remarks="" size="2" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="translation_module_skip_auto_translation" nullable="false" remarks="" size="1" type="bool" typeCode="-7"/>
          <primaryKey column="id" sequenceNumberInPK="1"/>
          <index name="api_keyfigure_pkey" unique="true">
             <column ascending="true" name="id"/>
@@ -2027,6 +2191,25 @@
          <primaryKey column="id" sequenceNumberInPK="1"/>
          <index name="api_maincontact_pkey" unique="true">
             <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="api_nsdinitiatives" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('api_nsdinitiatives_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="title" nullable="false" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="fund_type" nullable="false" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="allocation" nullable="false" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="year" nullable="false" remarks="" size="20" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="funding_period" nullable="false" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="categories" nullable="true" remarks="" size="255" type="_varchar" typeCode="2003"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="country_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
+            <parent column="id" foreignKey="api_nsdinitiatives_country_id_72ebcf72_fk_api_country_id" implied="false" onDeleteCascade="false" schema="public" table="api_country"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="api_nsdinitiatives_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+         <index name="api_nsdinitiatives_country_id_72ebcf72" unique="false">
+            <column ascending="true" name="country_id"/>
          </index>
       </table>
       <table name="api_profile" numRows="8332" remarks="" schema="public" type="TABLE">
@@ -2241,7 +2424,7 @@
             <column ascending="true" name="region_id"/>
          </index>
       </table>
-      <table name="api_reversiondifferencelog" numRows="427526" remarks="" schema="public" type="TABLE">
+      <table name="api_reversiondifferencelog" numRows="439384" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('api_reversiondifferencelog_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="6" id="1" name="created_at" nullable="false" remarks="" size="35" type="timestamptz" typeCode="93"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="action" nullable="false" remarks="" size="64" type="varchar" typeCode="12"/>
@@ -2270,12 +2453,6 @@
             <parent column="id" foreignKey="api_situationreport_type_id_48b37aa5_fk_api_situa" implied="false" onDeleteCascade="false" schema="public" table="api_situationreporttype"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="is_pinned" nullable="false" remarks="" size="1" type="bool" typeCode="-7"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="name_ar" nullable="true" remarks="" size="100" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="name_en" nullable="true" remarks="" size="100" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="name_es" nullable="true" remarks="" size="100" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="name_fr" nullable="true" remarks="" size="100" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="translation_module_original_language" nullable="false" remarks="" size="2" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="translation_module_skip_auto_translation" nullable="false" remarks="" size="1" type="bool" typeCode="-7"/>
          <primaryKey column="id" sequenceNumberInPK="1"/>
          <index name="api_situationreport_pkey" unique="true">
             <column ascending="true" name="id"/>
@@ -2460,7 +2637,7 @@
             <column ascending="true" name="permission_id"/>
          </index>
       </table>
-      <table name="auth_permission" numRows="1327" remarks="" schema="public" type="TABLE">
+      <table name="auth_permission" numRows="1427" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('auth_permission_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4">
             <child column="permission_id" foreignKey="auth_group_permissio_permission_id_84c5c92e_fk_auth_perm" implied="false" onDeleteCascade="false" schema="public" table="auth_group_permissions"/>
             <child column="permission_id" foreignKey="auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm" implied="false" onDeleteCascade="false" schema="public" table="auth_user_user_permissions"/>
@@ -2524,6 +2701,7 @@
             <child column="user_id" foreignKey="per_form_user_id_81aca424_fk_auth_user_id" implied="false" onDeleteCascade="false" schema="public" table="per_form"/>
             <child column="user_id" foreignKey="per_overview_user_id_f1dd0170_fk_auth_user_id" implied="false" onDeleteCascade="false" schema="public" table="per_overview"/>
             <child column="user_id" foreignKey="per_perassessment_user_id_e9a4f42b_fk_auth_user_id" implied="false" onDeleteCascade="false" schema="public" table="per_perassessment"/>
+            <child column="created_by_id" foreignKey="per_perdocumentupload_created_by_id_42ac3303_fk_auth_user_id" implied="false" onDeleteCascade="false" schema="public" table="per_perdocumentupload"/>
             <child column="created_by_id" foreignKey="per_perfile_created_by_id_da9cced7_fk_auth_user_id" implied="false" onDeleteCascade="false" schema="public" table="per_perfile"/>
             <child column="user_id" foreignKey="per_workplan_user_id_898ac591_fk_auth_user_id" implied="false" onDeleteCascade="false" schema="public" table="per_workplan"/>
             <child column="user_id" foreignKey="registrations_pending_user_id_f93eca39_fk_auth_user_id" implied="false" onDeleteCascade="false" schema="public" table="registrations_pending"/>
@@ -2728,9 +2906,59 @@
             <column ascending="true" name="country_plan_id"/>
          </index>
       </table>
+      <table name="databank_acapsseasonalcalender" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('databank_acapsseasonalcalender_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="1" name="modified_at" nullable="false" remarks="" size="35" type="timestamptz" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="month" nullable="false" remarks="" size="100" type="_varchar" typeCode="2003"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="event" nullable="false" remarks="" size="100" type="_varchar" typeCode="2003"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="event_type" nullable="false" remarks="" size="100" type="_varchar" typeCode="2003"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="label" nullable="false" remarks="" size="100" type="_varchar" typeCode="2003"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="source" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="source_date" nullable="true" remarks="" size="13" type="date" typeCode="91"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="overview_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
+            <parent column="country_id" foreignKey="databank_acapsseason_overview_id_55405399_fk_databank_" implied="false" onDeleteCascade="false" schema="public" table="databank_countryoverview"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="databank_acapsseasonalcalender_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+         <index name="databank_acapsseasonalcalender_overview_id_55405399" unique="false">
+            <column ascending="true" name="overview_id"/>
+         </index>
+      </table>
+      <table name="databank_countrykeyclimate" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('databank_countrykeyclimate_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="year" nullable="false" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="month" nullable="false" remarks="" size="5" type="int2" typeCode="5"/>
+         <column autoUpdated="false" defaultValue="null" digits="17" id="3" name="min_temp" nullable="false" remarks="" size="17" type="float8" typeCode="8"/>
+         <column autoUpdated="false" defaultValue="null" digits="17" id="4" name="max_temp" nullable="false" remarks="" size="17" type="float8" typeCode="8"/>
+         <column autoUpdated="false" defaultValue="null" digits="17" id="5" name="avg_temp" nullable="false" remarks="" size="17" type="float8" typeCode="8"/>
+         <column autoUpdated="false" defaultValue="null" digits="17" id="6" name="precipitation" nullable="false" remarks="" size="17" type="float8" typeCode="8"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="overview_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
+            <parent column="country_id" foreignKey="databank_countrykeyc_overview_id_94430037_fk_databank_" implied="false" onDeleteCascade="false" schema="public" table="databank_countryoverview"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="databank_countrykeyclimate_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+         <index name="databank_countrykeyclimate_overview_id_94430037" unique="false">
+            <column ascending="true" name="overview_id"/>
+         </index>
+         <index name="databank_countrykeyclimate_overview_id_month_year_8f03e23c_uniq" unique="true">
+            <column ascending="true" name="overview_id"/>
+            <column ascending="true" name="month"/>
+            <column ascending="true" name="year"/>
+         </index>
+         <checkConstraint constraint="((month &gt;= 0))" name="databank_countrykeyclimate_month_check"/>
+         <checkConstraint constraint="((year &gt;= 0))" name="databank_countrykeyclimate_year_check"/>
+      </table>
       <table name="databank_countryoverview" numRows="285" remarks="" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="country_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
+            <child column="overview_id" foreignKey="databank_acapsseason_overview_id_55405399_fk_databank_" implied="false" onDeleteCascade="false" schema="public" table="databank_acapsseasonalcalender"/>
+            <child column="overview_id" foreignKey="databank_countrykeyc_overview_id_94430037_fk_databank_" implied="false" onDeleteCascade="false" schema="public" table="databank_countrykeyclimate"/>
             <child column="overview_id" foreignKey="databank_externalsou_overview_id_19d51747_fk_databank_" implied="false" onDeleteCascade="false" schema="public" table="databank_externalsource"/>
+            <child column="overview_id" foreignKey="databank_fdrsannuali_overview_id_a9c97dac_fk_databank_" implied="false" onDeleteCascade="false" schema="public" table="databank_fdrsannualincome"/>
+            <child column="overview_id" foreignKey="databank_fdrsincome_overview_id_01d85a00_fk_databank_" implied="false" onDeleteCascade="false" schema="public" table="databank_fdrsincome"/>
             <child column="overview_id" foreignKey="databank_keyclimatee_overview_id_5d4e3b73_fk_databank_" implied="false" onDeleteCascade="false" schema="public" table="databank_keyclimateevent"/>
             <child column="overview_id" foreignKey="databank_keydocument_overview_id_1d3c899f_fk_databank_" implied="false" onDeleteCascade="false" schema="public" table="databank_keydocument"/>
             <child column="overview_id" foreignKey="databank_seasonalcal_overview_id_1c8836af_fk_databank_" implied="false" onDeleteCascade="false" schema="public" table="databank_seasonalcalender"/>
@@ -2757,6 +2985,69 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="past_crises_events" nullable="false" remarks="" size="2147483647" type="jsonb" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="past_epidemics" nullable="false" remarks="" size="2147483647" type="jsonb" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="inform_indicators" nullable="false" remarks="" size="2147483647" type="jsonb" typeCode="1111"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="branches" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="female_staff_age_18_29" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="female_staff_age_18_49" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="female_staff_age_30_39" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="female_staff_age_40_49" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="female_staff_age_50_59" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="female_staff_age_60_69" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="female_staff_age_70_79" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="female_staff_age_80" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="female_volunteer_age_13_17" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="female_volunteer_age_18_29" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="female_volunteer_age_18_49" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="female_volunteer_age_30_39" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="female_volunteer_age_40_49" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="female_volunteer_age_50_59" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="female_volunteer_age_60_69" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="female_volunteer_age_6_12" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="female_volunteer_age_70_79" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="female_volunteer_age_80" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="40" name="male_staff_age_18_29" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="41" name="male_staff_age_18_49" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="42" name="male_staff_age_30_39" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="43" name="male_staff_age_40_49" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="44" name="male_staff_age_50_59" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="45" name="male_staff_age_60_69" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="46" name="male_staff_age_70_79" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="47" name="male_staff_age_80" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="48" name="male_volunteer_age_13_17" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="49" name="male_volunteer_age_18_29" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="50" name="male_volunteer_age_18_49" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="51" name="male_volunteer_age_30_39" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="52" name="male_volunteer_age_40_49" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="53" name="male_volunteer_age_50_59" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="54" name="male_volunteer_age_60_69" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="55" name="male_volunteer_age_6_12" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="56" name="male_volunteer_age_70_79" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="57" name="male_volunteer_age_80" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="58" name="female_staff_age_other" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="59" name="female_staff_total" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="60" name="female_volunteer_age_other" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="61" name="female_volunteer_total" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="62" name="male_staff_age_other" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="63" name="male_staff_total" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="64" name="male_volunteer_age_other" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="65" name="male_volunteer_total" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="66" name="staff_total" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="67" name="volunteer_total" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="68" name="staff_age_18_29" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="69" name="volunteer_age_13_17" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="70" name="volunteer_age_18_29" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="71" name="volunteer_age_6_12" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="17" id="72" name="world_bank_gdp" nullable="true" remarks="" size="17" type="float8" typeCode="8"/>
+         <column autoUpdated="false" defaultValue="null" digits="17" id="73" name="world_bank_gender_inequality_index" nullable="true" remarks="" size="17" type="float8" typeCode="8"/>
+         <column autoUpdated="false" defaultValue="null" digits="17" id="74" name="world_bank_gni" nullable="true" remarks="" size="17" type="float8" typeCode="8"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="75" name="world_bank_life_expectancy" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="17" id="76" name="world_bank_literacy_rate" nullable="true" remarks="" size="17" type="float8" typeCode="8"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="77" name="world_bank_population" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="78" name="world_bank_population_above_age_65" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="79" name="world_bank_population_age_14" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="17" id="80" name="world_bank_urban_population_percentage" nullable="true" remarks="" size="17" type="float8" typeCode="8"/>
+         <column autoUpdated="false" defaultValue="null" digits="17" id="81" name="world_bank_poverty_rate" nullable="true" remarks="" size="17" type="float8" typeCode="8"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="82" name="unicef_population_under_18" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="17" id="83" name="hdr_gii" nullable="true" remarks="" size="17" type="float8" typeCode="8"/>
          <primaryKey column="country_id" sequenceNumberInPK="1"/>
          <index name="databank_countryoverview_pkey" unique="true">
             <column ascending="true" name="country_id"/>
@@ -2775,6 +3066,53 @@
          </index>
          <index name="databank_externalsource_overview_id_19d51747" unique="false">
             <column ascending="true" name="overview_id"/>
+         </index>
+      </table>
+      <table name="databank_fdrsannualincome" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('databank_fdrsannualincome_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="date" nullable="false" remarks="" size="13" type="date" typeCode="91"/>
+         <column autoUpdated="false" defaultValue="null" digits="17" id="2" name="value" nullable="true" remarks="" size="17" type="float8" typeCode="8"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="overview_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
+            <parent column="country_id" foreignKey="databank_fdrsannuali_overview_id_a9c97dac_fk_databank_" implied="false" onDeleteCascade="false" schema="public" table="databank_countryoverview"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="databank_fdrsannualincome_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+         <index name="databank_fdrsannualincome_overview_id_a9c97dac" unique="false">
+            <column ascending="true" name="overview_id"/>
+         </index>
+      </table>
+      <table name="databank_fdrsincome" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('databank_fdrsincome_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="date" nullable="false" remarks="" size="13" type="date" typeCode="91"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="indicator_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
+            <parent column="id" foreignKey="databank_fdrsincome_indicator_id_ac6a33a7_fk_databank_" implied="false" onDeleteCascade="false" schema="public" table="databank_fdrsindicator"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="17" id="3" name="value" nullable="true" remarks="" size="17" type="float8" typeCode="8"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="overview_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
+            <parent column="country_id" foreignKey="databank_fdrsincome_overview_id_01d85a00_fk_databank_" implied="false" onDeleteCascade="false" schema="public" table="databank_countryoverview"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="databank_fdrsincome_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+         <index name="databank_fdrsincome_indicator_id_ac6a33a7" unique="false">
+            <column ascending="true" name="indicator_id"/>
+         </index>
+         <index name="databank_fdrsincome_overview_id_01d85a00" unique="false">
+            <column ascending="true" name="overview_id"/>
+         </index>
+      </table>
+      <table name="databank_fdrsindicator" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('databank_fdrsindicator_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4">
+            <child column="indicator_id" foreignKey="databank_fdrsincome_indicator_id_ac6a33a7_fk_databank_" implied="false" onDeleteCascade="false" schema="public" table="databank_fdrsincome"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="title" nullable="false" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="databank_fdrsindicator_pkey" unique="true">
+            <column ascending="true" name="id"/>
          </index>
       </table>
       <table name="databank_keyclimateevent" numRows="0" remarks="" schema="public" type="TABLE">
@@ -2897,7 +3235,7 @@
             <column ascending="true" name="project_id"/>
          </index>
       </table>
-      <table name="deployments_deployedperson" numRows="2913" remarks="" schema="public" type="TABLE">
+      <table name="deployments_deployedperson" numRows="2918" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('deployments_deployedperson_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4">
             <child column="deployedperson_ptr_id" foreignKey="deployments_factpers_deployedperson_ptr_i_32381a11_fk_deploymen" implied="false" onDeleteCascade="false" schema="public" table="deployments_factperson"/>
             <child column="deployedperson_ptr_id" foreignKey="deployments_partners_deployedperson_ptr_i_616d4b99_fk_deploymen" implied="false" onDeleteCascade="false" schema="public" table="deployments_partnersocietydeployment"/>
@@ -3357,7 +3695,7 @@
             <column ascending="true" name="region_id"/>
          </index>
       </table>
-      <table name="deployments_molnixtag" numRows="519" remarks="" schema="public" type="TABLE">
+      <table name="deployments_molnixtag" numRows="535" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('deployments_molnixtag_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4">
             <child column="molnixtag_id" foreignKey="deployments_molnixta_molnixtag_id_3cca5a83_fk_deploymen" implied="false" onDeleteCascade="false" schema="public" table="deployments_molnixtag_groups"/>
             <child column="molnixtag_id" foreignKey="deployments_personne_molnixtag_id_334d22da_fk_deploymen" implied="false" onDeleteCascade="false" schema="public" table="deployments_personnel_molnix_tags"/>
@@ -3374,7 +3712,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="deployments_molnixtag_groups" numRows="698" remarks="" schema="public" type="TABLE">
+      <table name="deployments_molnixtag_groups" numRows="729" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('deployments_molnixtag_groups_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="molnixtag_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
             <parent column="id" foreignKey="deployments_molnixta_molnixtag_id_3cca5a83_fk_deploymen" implied="false" onDeleteCascade="false" schema="public" table="deployments_molnixtag"/>
@@ -3397,7 +3735,7 @@
             <column ascending="true" name="molnixtaggroup_id"/>
          </index>
       </table>
-      <table name="deployments_molnixtaggroup" numRows="64" remarks="" schema="public" type="TABLE">
+      <table name="deployments_molnixtaggroup" numRows="65" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('deployments_molnixtaggroup_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4">
             <child column="molnixtaggroup_id" foreignKey="deployments_molnixta_molnixtaggroup_id_5ed18f7f_fk_deploymen" implied="false" onDeleteCascade="false" schema="public" table="deployments_molnixtag_groups"/>
          </column>
@@ -3478,7 +3816,7 @@
             <column ascending="true" name="partnersocietydeployment_id"/>
          </index>
       </table>
-      <table name="deployments_personnel" numRows="2908" remarks="" schema="public" type="TABLE">
+      <table name="deployments_personnel" numRows="2913" remarks="" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="deployedperson_ptr_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
             <child column="personnel_id" foreignKey="deployments_personne_personnel_id_e20d91a0_fk_deploymen" implied="false" onDeleteCascade="false" schema="public" table="deployments_personnel_molnix_tags"/>
             <parent column="id" foreignKey="deployments_personne_deployedperson_ptr_i_9f01699d_fk_deploymen" implied="false" onDeleteCascade="false" schema="public" table="deployments_deployedperson"/>
@@ -3519,7 +3857,7 @@
             <column ascending="true" name="surge_alert_id"/>
          </index>
       </table>
-      <table name="deployments_personnel_molnix_tags" numRows="11904" remarks="" schema="public" type="TABLE">
+      <table name="deployments_personnel_molnix_tags" numRows="11930" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('deployments_personnel_molnix_tags_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="personnel_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
             <parent column="deployedperson_ptr_id" foreignKey="deployments_personne_personnel_id_e20d91a0_fk_deploymen" implied="false" onDeleteCascade="false" schema="public" table="deployments_personnel"/>
@@ -3898,7 +4236,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="django_admin_log" numRows="833" remarks="" schema="public" type="TABLE">
+      <table name="django_admin_log" numRows="884" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('django_admin_log_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="6" id="1" name="action_time" nullable="false" remarks="" size="35" type="timestamptz" typeCode="93"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="object_id" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -4043,7 +4381,7 @@
             <column ascending="true" name="longitude"/>
          </index>
       </table>
-      <table name="django_content_type" numRows="185" remarks="" schema="public" type="TABLE">
+      <table name="django_content_type" numRows="209" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('django_content_type_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4">
             <child column="content_type_id" foreignKey="auth_permission_content_type_id_2f476e4b_fk_django_co" implied="false" onDeleteCascade="false" schema="public" table="auth_permission"/>
             <child column="content_type_id" foreignKey="django_admin_log_content_type_id_c4bce8eb_fk_django_co" implied="false" onDeleteCascade="false" schema="public" table="django_admin_log"/>
@@ -4062,7 +4400,7 @@
             <column ascending="true" name="model"/>
          </index>
       </table>
-      <table name="django_migrations" numRows="605" remarks="" schema="public" type="TABLE">
+      <table name="django_migrations" numRows="681" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('django_migrations_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="app" nullable="false" remarks="" size="255" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="name" nullable="false" remarks="" size="255" type="varchar" typeCode="12"/>
@@ -4072,7 +4410,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="django_session" numRows="21" remarks="" schema="public" type="TABLE">
+      <table name="django_session" numRows="33" remarks="" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="session_key" nullable="false" remarks="" size="40" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="session_data" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="6" id="2" name="expire_date" nullable="false" remarks="" size="35" type="timestamptz" typeCode="93"/>
@@ -4629,6 +4967,7 @@
             <child column="dreffinalreport_id" foreignKey="dref_dreffinalreport_dreffinalreport_id_db06b69a_fk_dref_dref" implied="false" onDeleteCascade="false" schema="public" table="dref_dreffinalreport_photos"/>
             <child column="dreffinalreport_id" foreignKey="dref_dreffinalreport_dreffinalreport_id_1928ae2e_fk_dref_dref" implied="false" onDeleteCascade="false" schema="public" table="dref_dreffinalreport_planned_interventions"/>
             <child column="dreffinalreport_id" foreignKey="dref_dreffinalreport_dreffinalreport_id_f6e7f0ab_fk_dref_dref" implied="false" onDeleteCascade="false" schema="public" table="dref_dreffinalreport_risk_security"/>
+            <child column="dreffinalreport_id" foreignKey="dref_dreffinalreport_dreffinalreport_id_0bc0dc21_fk_dref_dref" implied="false" onDeleteCascade="false" schema="public" table="dref_dreffinalreport_source_information"/>
             <child column="dreffinalreport_id" foreignKey="dref_dreffinalreport_dreffinalreport_id_6f882fc9_fk_dref_dref" implied="false" onDeleteCascade="false" schema="public" table="dref_dreffinalreport_users"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="6" id="1" name="created_at" nullable="false" remarks="" size="35" type="timestamptz" typeCode="93"/>
@@ -5018,6 +5357,29 @@
             <column ascending="true" name="risksecurity_id"/>
          </index>
       </table>
+      <table name="dref_dreffinalreport_source_information" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('dref_dreffinalreport_source_information_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="dreffinalreport_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
+            <parent column="id" foreignKey="dref_dreffinalreport_dreffinalreport_id_0bc0dc21_fk_dref_dref" implied="false" onDeleteCascade="false" schema="public" table="dref_dreffinalreport"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="sourceinformation_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
+            <parent column="id" foreignKey="dref_dreffinalreport_sourceinformation_id_829f31bc_fk_dref_sour" implied="false" onDeleteCascade="false" schema="public" table="dref_sourceinformation"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="dref_dreffinalreport_source_information_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+         <index name="dref_dreffinalreport_sou_dreffinalreport_id_sourc_dd066b27_uniq" unique="true">
+            <column ascending="true" name="dreffinalreport_id"/>
+            <column ascending="true" name="sourceinformation_id"/>
+         </index>
+         <index name="dref_dreffinalreport_sourc_dreffinalreport_id_0bc0dc21" unique="false">
+            <column ascending="true" name="dreffinalreport_id"/>
+         </index>
+         <index name="dref_dreffinalreport_sourc_sourceinformation_id_829f31bc" unique="false">
+            <column ascending="true" name="sourceinformation_id"/>
+         </index>
+      </table>
       <table name="dref_dreffinalreport_users" numRows="0" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('dref_dreffinalreport_users_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="dreffinalreport_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
@@ -5050,6 +5412,7 @@
             <child column="drefoperationalupdate_id" foreignKey="dref_drefoperational_drefoperationalupdat_d00c258b_fk_dref_dref" implied="false" onDeleteCascade="false" schema="public" table="dref_drefoperationalupdate_photos"/>
             <child column="drefoperationalupdate_id" foreignKey="dref_drefoperational_drefoperationalupdat_8451e74b_fk_dref_dref" implied="false" onDeleteCascade="false" schema="public" table="dref_drefoperationalupdate_planned_interventions"/>
             <child column="drefoperationalupdate_id" foreignKey="dref_drefoperational_drefoperationalupdat_4e95b260_fk_dref_dref" implied="false" onDeleteCascade="false" schema="public" table="dref_drefoperationalupdate_risk_security"/>
+            <child column="drefoperationalupdate_id" foreignKey="dref_drefoperational_drefoperationalupdat_6f2a38d8_fk_dref_dref" implied="false" onDeleteCascade="false" schema="public" table="dref_drefoperationalupdate_source_information"/>
             <child column="drefoperationalupdate_id" foreignKey="dref_drefoperational_drefoperationalupdat_4f682dd2_fk_dref_dref" implied="false" onDeleteCascade="false" schema="public" table="dref_drefoperationalupdate_users"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="6" id="1" name="created_at" nullable="false" remarks="" size="35" type="timestamptz" typeCode="93"/>
@@ -5478,6 +5841,29 @@
             <column ascending="true" name="risksecurity_id"/>
          </index>
       </table>
+      <table name="dref_drefoperationalupdate_source_information" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('dref_drefoperationalupdate_source_information_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="drefoperationalupdate_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
+            <parent column="id" foreignKey="dref_drefoperational_drefoperationalupdat_6f2a38d8_fk_dref_dref" implied="false" onDeleteCascade="false" schema="public" table="dref_drefoperationalupdate"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="sourceinformation_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
+            <parent column="id" foreignKey="dref_drefoperational_sourceinformation_id_eeb31d07_fk_dref_sour" implied="false" onDeleteCascade="false" schema="public" table="dref_sourceinformation"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="dref_drefoperationalupdate_source_information_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+         <index name="dref_drefoperationalupda_drefoperationalupdate_id_02545000_uniq" unique="true">
+            <column ascending="true" name="drefoperationalupdate_id"/>
+            <column ascending="true" name="sourceinformation_id"/>
+         </index>
+         <index name="dref_drefoperationalupdate_drefoperationalupdate_id_6f2a38d8" unique="false">
+            <column ascending="true" name="drefoperationalupdate_id"/>
+         </index>
+         <index name="dref_drefoperationalupdate_sourceinformation_id_eeb31d07" unique="false">
+            <column ascending="true" name="sourceinformation_id"/>
+         </index>
+      </table>
       <table name="dref_drefoperationalupdate_users" numRows="206" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('dref_drefoperationalupdate_users_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="drefoperationalupdate_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
@@ -5660,6 +6046,8 @@
       <table name="dref_sourceinformation" numRows="0" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('dref_sourceinformation_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4">
             <child column="sourceinformation_id" foreignKey="dref_dref_source_inf_sourceinformation_id_c428b39f_fk_dref_sour" implied="false" onDeleteCascade="false" schema="public" table="dref_dref_source_information"/>
+            <child column="sourceinformation_id" foreignKey="dref_dreffinalreport_sourceinformation_id_829f31bc_fk_dref_sour" implied="false" onDeleteCascade="false" schema="public" table="dref_dreffinalreport_source_information"/>
+            <child column="sourceinformation_id" foreignKey="dref_drefoperational_sourceinformation_id_eeb31d07_fk_dref_sour" implied="false" onDeleteCascade="false" schema="public" table="dref_drefoperationalupdate_source_information"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="client_id" nullable="true" remarks="" size="50" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="source_name" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
@@ -5921,7 +6309,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="flash_update_flashactionstaken" numRows="56" remarks="" schema="public" type="TABLE">
+      <table name="flash_update_flashactionstaken" numRows="60" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('flash_update_flashactionstaken_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4">
             <child column="flashactionstaken_id" foreignKey="flash_update_flashac_flashactionstaken_id_5622126e_fk_flash_upd" implied="false" onDeleteCascade="false" schema="public" table="flash_update_flashactionstaken_actions"/>
          </column>
@@ -5962,7 +6350,7 @@
             <column ascending="true" name="flashaction_id"/>
          </index>
       </table>
-      <table name="flash_update_flashcountrydistrict" numRows="14" remarks="" schema="public" type="TABLE">
+      <table name="flash_update_flashcountrydistrict" numRows="15" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('flash_update_flashcountrydistrict_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4">
             <child column="flashcountrydistrict_id" foreignKey="flash_update_flashco_flashcountrydistrict_68348aa2_fk_flash_upd" implied="false" onDeleteCascade="false" schema="public" table="flash_update_flashcountrydistrict_district"/>
          </column>
@@ -5988,7 +6376,7 @@
             <column ascending="true" name="flash_update_id"/>
          </index>
       </table>
-      <table name="flash_update_flashcountrydistrict_district" numRows="19" remarks="" schema="public" type="TABLE">
+      <table name="flash_update_flashcountrydistrict_district" numRows="22" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('flash_update_flashcountrydistrict_district_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="flashcountrydistrict_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
             <parent column="id" foreignKey="flash_update_flashco_flashcountrydistrict_68348aa2_fk_flash_upd" implied="false" onDeleteCascade="false" schema="public" table="flash_update_flashcountrydistrict"/>
@@ -6025,7 +6413,7 @@
             <column ascending="true" name="group_id"/>
          </index>
       </table>
-      <table name="flash_update_flashgraphicmap" numRows="12" remarks="" schema="public" type="TABLE">
+      <table name="flash_update_flashgraphicmap" numRows="17" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('flash_update_flashgraphicmap_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4">
             <child column="document_id" foreignKey="flash_update_flashre_document_id_12c72c3f_fk_flash_upd" implied="false" onDeleteCascade="false" schema="public" table="flash_update_flashreferences"/>
             <child column="flashgraphicmap_id" foreignKey="flash_update_flashup_flashgraphicmap_id_66da8cd1_fk_flash_upd" implied="false" onDeleteCascade="false" schema="public" table="flash_update_flashupdate_graphics"/>
@@ -6064,7 +6452,7 @@
             <column ascending="true" name="document_id"/>
          </index>
       </table>
-      <table name="flash_update_flashupdate" numRows="14" remarks="" schema="public" type="TABLE">
+      <table name="flash_update_flashupdate" numRows="15" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('flash_update_flashupdate_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4">
             <child column="flash_update_id" foreignKey="flash_update_flashac_flash_update_id_b59d0112_fk_flash_upd" implied="false" onDeleteCascade="false" schema="public" table="flash_update_flashactionstaken"/>
             <child column="flash_update_id" foreignKey="flash_update_flashco_flash_update_id_d3608af1_fk_flash_upd" implied="false" onDeleteCascade="false" schema="public" table="flash_update_flashcountrydistrict"/>
@@ -6121,7 +6509,7 @@
             <column ascending="true" name="modified_by_id"/>
          </index>
       </table>
-      <table name="flash_update_flashupdate_graphics" numRows="4" remarks="" schema="public" type="TABLE">
+      <table name="flash_update_flashupdate_graphics" numRows="5" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('flash_update_flashupdate_graphics_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="flashupdate_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
             <parent column="id" foreignKey="flash_update_flashup_flashupdate_id_2a3ed39e_fk_flash_upd" implied="false" onDeleteCascade="false" schema="public" table="flash_update_flashupdate"/>
@@ -6144,7 +6532,7 @@
             <column ascending="true" name="flashupdate_id"/>
          </index>
       </table>
-      <table name="flash_update_flashupdate_map" numRows="4" remarks="" schema="public" type="TABLE">
+      <table name="flash_update_flashupdate_map" numRows="5" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('flash_update_flashupdate_map_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="flashupdate_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
             <parent column="id" foreignKey="flash_update_flashup_flashupdate_id_1cec54ca_fk_flash_upd" implied="false" onDeleteCascade="false" schema="public" table="flash_update_flashupdate"/>
@@ -6362,6 +6750,28 @@
             <column ascending="true" name="key"/>
          </index>
       </table>
+      <table name="local_units_affiliation" numRows="5" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('local_units_affiliation_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="19" type="bigserial" typeCode="-5">
+            <child column="affiliation_id" foreignKey="local_units_healthda_affiliation_id_da5ef557_fk_local_uni" implied="false" onDeleteCascade="false" schema="public" table="local_units_healthdata"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="code" nullable="false" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="name" nullable="false" remarks="" size="100" type="varchar" typeCode="12"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="local_units_affiliation_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="local_units_bloodservice" numRows="5" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('local_units_bloodservice_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="19" type="bigserial" typeCode="-5">
+            <child column="bloodservice_id" foreignKey="local_units_healthda_bloodservice_id_0a1cd5d9_fk_local_uni" implied="false" onDeleteCascade="false" schema="public" table="local_units_healthdata_blood_services"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="code" nullable="false" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="name" nullable="false" remarks="" size="100" type="varchar" typeCode="12"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="local_units_bloodservice_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
       <table name="local_units_delegationoffice" numRows="71" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('local_units_delegationoffice_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="19" type="bigserial" typeCode="-5"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="name" nullable="false" remarks="" size="255" type="varchar" typeCode="12"/>
@@ -6379,16 +6789,16 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="assistant_email" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="is_ns_same_location" nullable="false" remarks="" size="1" type="bool" typeCode="-7"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="is_multiple_ifrc_offices" nullable="false" remarks="" size="1" type="bool" typeCode="-7"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="is_public" nullable="false" remarks="" size="1" type="bool" typeCode="-7"/>
-         <column autoUpdated="false" defaultValue="null" digits="6" id="17" name="created_at" nullable="false" remarks="" size="35" type="timestamptz" typeCode="93"/>
-         <column autoUpdated="false" defaultValue="null" digits="6" id="18" name="modified_at" nullable="false" remarks="" size="35" type="timestamptz" typeCode="93"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="date_of_data" nullable="true" remarks="" size="13" type="date" typeCode="91"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="country_id" nullable="true" remarks="" size="10" type="int4" typeCode="4">
+         <column autoUpdated="false" defaultValue="null" digits="6" id="16" name="created_at" nullable="false" remarks="" size="35" type="timestamptz" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="17" name="modified_at" nullable="false" remarks="" size="35" type="timestamptz" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="date_of_data" nullable="true" remarks="" size="13" type="date" typeCode="91"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="country_id" nullable="true" remarks="" size="10" type="int4" typeCode="4">
             <parent column="id" foreignKey="local_units_delegati_country_id_f6f9e51e_fk_api_count" implied="false" onDeleteCascade="false" schema="public" table="api_country"/>
          </column>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="dotype_id" nullable="true" remarks="" size="19" type="int8" typeCode="-5">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="dotype_id" nullable="true" remarks="" size="19" type="int8" typeCode="-5">
             <parent column="id" foreignKey="local_units_delegati_dotype_id_4511be23_fk_local_uni" implied="false" onDeleteCascade="false" schema="public" table="local_units_delegationofficetype"/>
          </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="visibility" nullable="false" remarks="" size="10" type="int4" typeCode="4"/>
          <primaryKey column="id" sequenceNumberInPK="1"/>
          <index name="local_units_delegationoffice_pkey" unique="true">
             <column ascending="true" name="id"/>
@@ -6414,6 +6824,213 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
+      <table name="local_units_facilitytype" numRows="9" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('local_units_facilitytype_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="19" type="bigserial" typeCode="-5">
+            <child column="health_facility_type_id" foreignKey="local_units_healthda_health_facility_type_cf3d7763_fk_local_uni" implied="false" onDeleteCascade="false" schema="public" table="local_units_healthdata"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="code" nullable="false" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="name" nullable="false" remarks="" size="100" type="varchar" typeCode="12"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="local_units_facilitytype_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="local_units_functionality" numRows="4" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('local_units_functionality_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="19" type="bigserial" typeCode="-5">
+            <child column="functionality_id" foreignKey="local_units_healthda_functionality_id_b1029a77_fk_local_uni" implied="false" onDeleteCascade="false" schema="public" table="local_units_healthdata"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="code" nullable="false" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="name" nullable="false" remarks="" size="100" type="varchar" typeCode="12"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="local_units_functionality_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="local_units_generalmedicalservice" numRows="5" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('local_units_generalmedicalservice_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="19" type="bigserial" typeCode="-5">
+            <child column="generalmedicalservice_id" foreignKey="local_units_healthda_generalmedicalservic_88cf54d3_fk_local_uni" implied="false" onDeleteCascade="false" schema="public" table="local_units_healthdata_general_medical_services"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="code" nullable="false" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="name" nullable="false" remarks="" size="100" type="varchar" typeCode="12"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="local_units_generalmedicalservice_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="local_units_healthdata" numRows="1753" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('local_units_healthdata_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="19" type="bigserial" typeCode="-5">
+            <child column="healthdata_id" foreignKey="local_units_healthda_healthdata_id_acf7ce10_fk_local_uni" implied="false" onDeleteCascade="false" schema="public" table="local_units_healthdata_blood_services"/>
+            <child column="healthdata_id" foreignKey="local_units_healthda_healthdata_id_282df0b3_fk_local_uni" implied="false" onDeleteCascade="false" schema="public" table="local_units_healthdata_general_medical_services"/>
+            <child column="healthdata_id" foreignKey="local_units_healthda_healthdata_id_81eac66d_fk_local_uni" implied="false" onDeleteCascade="false" schema="public" table="local_units_healthdata_professional_training_facilities"/>
+            <child column="healthdata_id" foreignKey="local_units_healthda_healthdata_id_a5318d17_fk_local_uni" implied="false" onDeleteCascade="false" schema="public" table="local_units_healthdata_specialized_medical_beyond_primary_level"/>
+            <child column="health_id" foreignKey="local_units_localuni_health_id_ad8076af_fk_local_uni" implied="false" onDeleteCascade="false" schema="public" table="local_units_localunit"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="other_affiliation" nullable="true" remarks="" size="300" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="focal_point_email" nullable="true" remarks="" size="90" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="focal_point_phone_number" nullable="true" remarks="" size="90" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="focal_point_position" nullable="true" remarks="" size="90" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="other_facility_type" nullable="true" remarks="" size="300" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="speciality" nullable="true" remarks="" size="200" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="is_teaching_hospital" nullable="false" remarks="" size="1" type="bool" typeCode="-7"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="is_in_patient_capacity" nullable="false" remarks="" size="1" type="bool" typeCode="-7"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="is_isolation_rooms_wards" nullable="false" remarks="" size="1" type="bool" typeCode="-7"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="maximum_capacity" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="number_of_isolation_rooms" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="is_warehousing" nullable="false" remarks="" size="1" type="bool" typeCode="-7"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="is_cold_chain" nullable="false" remarks="" size="1" type="bool" typeCode="-7"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="ambulance_type_a" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="ambulance_type_b" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="ambulance_type_c" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="other_services" nullable="true" remarks="" size="300" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="total_number_of_human_resource" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="general_practitioner" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="specialist" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="residents_doctor" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="nurse" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="dentist" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="nursing_aid" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="midwife" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="other_medical_heal" nullable="false" remarks="" size="1" type="bool" typeCode="-7"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="other_profiles" nullable="true" remarks="" size="200" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="feedback" nullable="true" remarks="" size="500" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="affiliation_id" nullable="true" remarks="" size="19" type="int8" typeCode="-5">
+            <parent column="id" foreignKey="local_units_healthda_affiliation_id_da5ef557_fk_local_uni" implied="false" onDeleteCascade="false" schema="public" table="local_units_affiliation"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="functionality_id" nullable="true" remarks="" size="19" type="int8" typeCode="-5">
+            <parent column="id" foreignKey="local_units_healthda_functionality_id_b1029a77_fk_local_uni" implied="false" onDeleteCascade="false" schema="public" table="local_units_functionality"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="health_facility_type_id" nullable="true" remarks="" size="19" type="int8" typeCode="-5">
+            <parent column="id" foreignKey="local_units_healthda_health_facility_type_cf3d7763_fk_local_uni" implied="false" onDeleteCascade="false" schema="public" table="local_units_facilitytype"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="hospital_type_id" nullable="true" remarks="" size="19" type="int8" typeCode="-5">
+            <parent column="id" foreignKey="local_units_healthda_hospital_type_id_cfa24340_fk_local_uni" implied="false" onDeleteCascade="false" schema="public" table="local_units_hospitaltype"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="primary_health_care_center_id" nullable="true" remarks="" size="19" type="int8" typeCode="-5">
+            <parent column="id" foreignKey="local_units_healthda_primary_health_care__f444b85e_fk_local_uni" implied="false" onDeleteCascade="false" schema="public" table="local_units_primaryhcc"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="local_units_healthdata_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+         <index name="local_units_healthdata_affiliation_id_da5ef557" unique="false">
+            <column ascending="true" name="affiliation_id"/>
+         </index>
+         <index name="local_units_healthdata_functionality_id_b1029a77" unique="false">
+            <column ascending="true" name="functionality_id"/>
+         </index>
+         <index name="local_units_healthdata_health_facility_type_id_cf3d7763" unique="false">
+            <column ascending="true" name="health_facility_type_id"/>
+         </index>
+         <index name="local_units_healthdata_hospital_type_id_cfa24340" unique="false">
+            <column ascending="true" name="hospital_type_id"/>
+         </index>
+         <index name="local_units_healthdata_primary_health_care_center_id_f444b85e" unique="false">
+            <column ascending="true" name="primary_health_care_center_id"/>
+         </index>
+      </table>
+      <table name="local_units_healthdata_blood_services" numRows="118" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('local_units_healthdata_blood_services_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="healthdata_id" nullable="false" remarks="" size="19" type="int8" typeCode="-5">
+            <parent column="id" foreignKey="local_units_healthda_healthdata_id_acf7ce10_fk_local_uni" implied="false" onDeleteCascade="false" schema="public" table="local_units_healthdata"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="bloodservice_id" nullable="false" remarks="" size="19" type="int8" typeCode="-5">
+            <parent column="id" foreignKey="local_units_healthda_bloodservice_id_0a1cd5d9_fk_local_uni" implied="false" onDeleteCascade="false" schema="public" table="local_units_bloodservice"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="local_units_healthdata_blood_services_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+         <index name="local_units_healthdata_b_healthdata_id_bloodservi_79ed5c0d_uniq" unique="true">
+            <column ascending="true" name="healthdata_id"/>
+            <column ascending="true" name="bloodservice_id"/>
+         </index>
+         <index name="local_units_healthdata_blood_services_bloodservice_id_0a1cd5d9" unique="false">
+            <column ascending="true" name="bloodservice_id"/>
+         </index>
+         <index name="local_units_healthdata_blood_services_healthdata_id_acf7ce10" unique="false">
+            <column ascending="true" name="healthdata_id"/>
+         </index>
+      </table>
+      <table name="local_units_healthdata_general_medical_services" numRows="730" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('local_units_healthdata_general_medical_services_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="healthdata_id" nullable="false" remarks="" size="19" type="int8" typeCode="-5">
+            <parent column="id" foreignKey="local_units_healthda_healthdata_id_282df0b3_fk_local_uni" implied="false" onDeleteCascade="false" schema="public" table="local_units_healthdata"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="generalmedicalservice_id" nullable="false" remarks="" size="19" type="int8" typeCode="-5">
+            <parent column="id" foreignKey="local_units_healthda_generalmedicalservic_88cf54d3_fk_local_uni" implied="false" onDeleteCascade="false" schema="public" table="local_units_generalmedicalservice"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="local_units_healthdata_general_medical_services_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+         <index name="local_units_healthdata_g_healthdata_id_generalmed_6870949a_uniq" unique="true">
+            <column ascending="true" name="healthdata_id"/>
+            <column ascending="true" name="generalmedicalservice_id"/>
+         </index>
+         <index name="local_units_healthdata_gen_generalmedicalservice_id_88cf54d3" unique="false">
+            <column ascending="true" name="generalmedicalservice_id"/>
+         </index>
+         <index name="local_units_healthdata_gen_healthdata_id_282df0b3" unique="false">
+            <column ascending="true" name="healthdata_id"/>
+         </index>
+      </table>
+      <table name="local_units_healthdata_professional_training_facilities" numRows="186" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('local_units_healthdata_professional_training_facilities_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="healthdata_id" nullable="false" remarks="" size="19" type="int8" typeCode="-5">
+            <parent column="id" foreignKey="local_units_healthda_healthdata_id_81eac66d_fk_local_uni" implied="false" onDeleteCascade="false" schema="public" table="local_units_healthdata"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="professionaltrainingfacility_id" nullable="false" remarks="" size="19" type="int8" typeCode="-5">
+            <parent column="id" foreignKey="local_units_healthda_professionaltraining_e965a55e_fk_local_uni" implied="false" onDeleteCascade="false" schema="public" table="local_units_professionaltrainingfacility"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="local_units_healthdata_professional_training_facilities_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+         <index name="local_units_healthdata_p_healthdata_id_profession_b9b0afec_uniq" unique="true">
+            <column ascending="true" name="healthdata_id"/>
+            <column ascending="true" name="professionaltrainingfacility_id"/>
+         </index>
+         <index name="local_units_healthdata_pro_healthdata_id_81eac66d" unique="false">
+            <column ascending="true" name="healthdata_id"/>
+         </index>
+         <index name="local_units_healthdata_pro_professionaltrnfacility_id_406f95e0" unique="false">
+            <column ascending="true" name="professionaltrainingfacility_id"/>
+         </index>
+      </table>
+      <table name="local_units_healthdata_specialized_medical_beyond_primary_level" numRows="811" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('local_units_healthdata_specialized_medical_beyond_primar_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="healthdata_id" nullable="false" remarks="" size="19" type="int8" typeCode="-5">
+            <parent column="id" foreignKey="local_units_healthda_healthdata_id_a5318d17_fk_local_uni" implied="false" onDeleteCascade="false" schema="public" table="local_units_healthdata"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="specializedmedicalservice_id" nullable="false" remarks="" size="19" type="int8" typeCode="-5">
+            <parent column="id" foreignKey="local_units_healthda_specializedmedicalse_05a28c3e_fk_local_uni" implied="false" onDeleteCascade="false" schema="public" table="local_units_specializedmedicalservice"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="local_units_healthdata_specialized_medical_beyond_primary__pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+         <index name="local_units_healthdata_s_healthdata_id_specialize_d1722318_uniq" unique="true">
+            <column ascending="true" name="healthdata_id"/>
+            <column ascending="true" name="specializedmedicalservice_id"/>
+         </index>
+         <index name="local_units_healthdata_spe_healthdata_id_a5318d17" unique="false">
+            <column ascending="true" name="healthdata_id"/>
+         </index>
+         <index name="local_units_healthdata_spe_specializedmedicalservice__05a28c3e" unique="false">
+            <column ascending="true" name="specializedmedicalservice_id"/>
+         </index>
+      </table>
+      <table name="local_units_hospitaltype" numRows="2" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('local_units_hospitaltype_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="19" type="bigserial" typeCode="-5">
+            <child column="hospital_type_id" foreignKey="local_units_healthda_hospital_type_id_cfa24340_fk_local_uni" implied="false" onDeleteCascade="false" schema="public" table="local_units_healthdata"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="code" nullable="false" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="name" nullable="false" remarks="" size="100" type="varchar" typeCode="12"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="local_units_hospitaltype_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
       <table name="local_units_localunit" numRows="1895" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('local_units_localunit_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="19" type="bigserial" typeCode="-5"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="local_branch_name" nullable="false" remarks="" size="255" type="varchar" typeCode="12"/>
@@ -6426,8 +7043,8 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="source_loc" nullable="true" remarks="" size="500" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="address_loc" nullable="true" remarks="" size="500" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="address_en" nullable="true" remarks="" size="500" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="city_loc" nullable="false" remarks="" size="255" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="city_en" nullable="false" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="city_loc" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="city_en" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="focal_person_loc" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="focal_person_en" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="postcode" nullable="true" remarks="" size="10" type="varchar" typeCode="12"/>
@@ -6445,14 +7062,20 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="level_id" nullable="true" remarks="" size="19" type="int8" typeCode="-5">
             <parent column="id" foreignKey="local_units_localuni_level_id_748ea2c3_fk_local_uni" implied="false" onDeleteCascade="false" schema="public" table="local_units_localunitlevel"/>
          </column>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="is_public" nullable="false" remarks="" size="1" type="bool" typeCode="-7"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="date_of_data" nullable="true" remarks="" size="13" type="date" typeCode="91"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="date_of_data" nullable="true" remarks="" size="13" type="date" typeCode="91"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="health_id" nullable="true" remarks="" size="19" type="int8" typeCode="-5">
+            <parent column="id" foreignKey="local_units_localuni_health_id_ad8076af_fk_local_uni" implied="false" onDeleteCascade="false" schema="public" table="local_units_healthdata"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="visibility" nullable="false" remarks="" size="10" type="int4" typeCode="4"/>
          <primaryKey column="id" sequenceNumberInPK="1"/>
          <index name="local_units_localunit_pkey" unique="true">
             <column ascending="true" name="id"/>
          </index>
          <index name="local_units_localunit_country_id_46e84ce1" unique="false">
             <column ascending="true" name="country_id"/>
+         </index>
+         <index name="local_units_localunit_health_id_ad8076af" unique="false">
+            <column ascending="true" name="health_id"/>
          </index>
          <index name="local_units_localunit_level_id_748ea2c3" unique="false">
             <column ascending="true" name="level_id"/>
@@ -6483,6 +7106,39 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="name" nullable="false" remarks="" size="100" type="varchar" typeCode="12"/>
          <primaryKey column="id" sequenceNumberInPK="1"/>
          <index name="local_units_localunittype_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="local_units_primaryhcc" numRows="3" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('local_units_primaryhcc_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="19" type="bigserial" typeCode="-5">
+            <child column="primary_health_care_center_id" foreignKey="local_units_healthda_primary_health_care__f444b85e_fk_local_uni" implied="false" onDeleteCascade="false" schema="public" table="local_units_healthdata"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="code" nullable="false" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="name" nullable="false" remarks="" size="100" type="varchar" typeCode="12"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="local_units_primaryhcc_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="local_units_professionaltrainingfacility" numRows="3" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('local_units_professionaltrnfacility_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="19" type="bigserial" typeCode="-5">
+            <child column="professionaltrainingfacility_id" foreignKey="local_units_healthda_professionaltraining_e965a55e_fk_local_uni" implied="false" onDeleteCascade="false" schema="public" table="local_units_healthdata_professional_training_facilities"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="code" nullable="false" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="name" nullable="false" remarks="" size="100" type="varchar" typeCode="12"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="local_units_professionaltrnfacility_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="local_units_specializedmedicalservice" numRows="21" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('local_units_specializedmedicalservice_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="19" type="bigserial" typeCode="-5">
+            <child column="specializedmedicalservice_id" foreignKey="local_units_healthda_specializedmedicalse_05a28c3e_fk_local_uni" implied="false" onDeleteCascade="false" schema="public" table="local_units_healthdata_specialized_medical_beyond_primary_level"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="code" nullable="false" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="name" nullable="false" remarks="" size="100" type="varchar" typeCode="12"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="local_units_specializedmedicalservice_pkey" unique="true">
             <column ascending="true" name="id"/>
          </index>
       </table>
@@ -6573,6 +7229,7 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="is_stood_down" nullable="false" remarks="" size="1" type="bool" typeCode="-7"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="translation_module_original_language" nullable="false" remarks="" size="2" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="translation_module_skip_auto_translation" nullable="false" remarks="" size="1" type="bool" typeCode="-7"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="status" nullable="false" remarks="" size="10" type="int4" typeCode="4"/>
          <primaryKey column="id" sequenceNumberInPK="1"/>
          <index name="notifications_surgealert_pkey" unique="true">
             <column ascending="true" name="id"/>
@@ -6673,6 +7330,7 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="supported_by_id" nullable="true" remarks="" size="10" type="int4" typeCode="4">
             <parent column="id" foreignKey="per_customperworkpla_supported_by_id_697b0cf3_fk_api_count" implied="false" onDeleteCascade="false" schema="public" table="api_country"/>
          </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="supported_by_organization_type" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
          <primaryKey column="id" sequenceNumberInPK="1"/>
          <index name="per_customperworkplancomponent_pkey" unique="true">
             <column ascending="true" name="id"/>
@@ -6748,12 +7406,13 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="per_formcomponent" numRows="56" remarks="" schema="public" type="TABLE">
+      <table name="per_formcomponent" numRows="51" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('per_formcomponent_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4">
             <child column="formcomponent_id" foreignKey="per_formcomponent_qu_formcomponent_id_2f3fb925_fk_per_formc" implied="false" onDeleteCascade="false" schema="public" table="per_formcomponent_question_responses"/>
             <child column="component_id" foreignKey="per_formcomponentres_component_id_5fda4f05_fk_per_formc" implied="false" onDeleteCascade="false" schema="public" table="per_formcomponentresponse"/>
             <child column="component_id" foreignKey="per_formprioritizati_component_id_9ed47a91_fk_per_formc" implied="false" onDeleteCascade="false" schema="public" table="per_formprioritizationcomponent"/>
             <child column="component_id" foreignKey="per_formquestion_component_id_67a7e356_fk_per_formcomponent_id" implied="false" onDeleteCascade="false" schema="public" table="per_formquestion"/>
+            <child column="component_id" foreignKey="per_formquestiongrou_component_id_2cb3d55f_fk_per_formc" implied="false" onDeleteCascade="false" schema="public" table="per_formquestiongroup"/>
             <child column="formcomponent_id" foreignKey="per_opslearning_per__formcomponent_id_4ba7b9db_fk_per_formc" implied="false" onDeleteCascade="false" schema="public" table="per_opslearning_per_component"/>
             <child column="formcomponent_id" foreignKey="per_opslearning_per__formcomponent_id_354b1858_fk_per_formc" implied="false" onDeleteCascade="false" schema="public" table="per_opslearning_per_component_validated"/>
             <child column="component_id" foreignKey="per_perworkplancompo_component_id_b6481828_fk_per_formc" implied="false" onDeleteCascade="false" schema="public" table="per_perworkplancomponent"/>
@@ -6776,6 +7435,8 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="translation_module_original_language" nullable="false" remarks="" size="2" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="translation_module_skip_auto_translation" nullable="false" remarks="" size="1" type="bool" typeCode="-7"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="status" nullable="true" remarks="" size="100" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="is_parent" nullable="true" remarks="" size="1" type="bool" typeCode="-7"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="has_question_group" nullable="true" remarks="" size="1" type="bool" typeCode="-7"/>
          <primaryKey column="id" sequenceNumberInPK="1"/>
          <index name="per_formcomponent_pkey" unique="true">
             <column ascending="true" name="id"/>
@@ -6879,7 +7540,7 @@
             <column ascending="true" name="formcomponentresponse_id"/>
          </index>
       </table>
-      <table name="per_formdata" numRows="40950" remarks="" schema="public" type="TABLE">
+      <table name="per_formdata" numRows="31950" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('per_formdata_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="notes" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="form_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
@@ -6967,7 +7628,7 @@
             <column ascending="true" name="component_id"/>
          </index>
       </table>
-      <table name="per_formquestion" numRows="455" remarks="" schema="public" type="TABLE">
+      <table name="per_formquestion" numRows="355" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('per_formquestion_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4">
             <child column="question_id" foreignKey="per_formcomponentque_question_id_179d658c_fk_per_formq" implied="false" onDeleteCascade="false" schema="public" table="per_formcomponentquestionandanswer"/>
             <child column="question_id" foreignKey="per_formdata_question_id_985224eb_fk_per_formquestion_id" implied="false" onDeleteCascade="false" schema="public" table="per_formdata"/>
@@ -6989,6 +7650,9 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="description_fr" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="translation_module_original_language" nullable="false" remarks="" size="2" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="translation_module_skip_auto_translation" nullable="false" remarks="" size="1" type="bool" typeCode="-7"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="question_group_id" nullable="true" remarks="" size="10" type="int4" typeCode="4">
+            <parent column="id" foreignKey="per_formquestion_question_group_id_656ef648_fk_per_formq" implied="false" onDeleteCascade="false" schema="public" table="per_formquestiongroup"/>
+         </column>
          <primaryKey column="id" sequenceNumberInPK="1"/>
          <index name="per_formquestion_pkey" unique="true">
             <column ascending="true" name="id"/>
@@ -6996,8 +7660,11 @@
          <index name="per_formquestion_component_id_67a7e356" unique="false">
             <column ascending="true" name="component_id"/>
          </index>
+         <index name="per_formquestion_question_group_id_656ef648" unique="false">
+            <column ascending="true" name="question_group_id"/>
+         </index>
       </table>
-      <table name="per_formquestion_answers" numRows="1665" remarks="" schema="public" type="TABLE">
+      <table name="per_formquestion_answers" numRows="1065" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('per_formquestion_answers_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="formquestion_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
             <parent column="id" foreignKey="per_formquestion_ans_formquestion_id_4258e7d0_fk_per_formq" implied="false" onDeleteCascade="false" schema="public" table="per_formquestion"/>
@@ -7018,6 +7685,33 @@
          <index name="per_formquestion_answers_formquestion_id_formansw_3bdc9539_uniq" unique="true">
             <column ascending="true" name="formquestion_id"/>
             <column ascending="true" name="formanswer_id"/>
+         </index>
+      </table>
+      <table name="per_formquestiongroup" numRows="5" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('per_formquestiongroup_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4">
+            <child column="question_group_id" foreignKey="per_formquestion_question_group_id_656ef648_fk_per_formq" implied="false" onDeleteCascade="false" schema="public" table="per_formquestion"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="title" nullable="false" remarks="" size="250" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="title_en" nullable="true" remarks="" size="250" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="title_es" nullable="true" remarks="" size="250" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="title_fr" nullable="true" remarks="" size="250" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="title_ar" nullable="true" remarks="" size="250" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="description_en" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="description_es" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="description_fr" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="description_ar" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="translation_module_original_language" nullable="false" remarks="" size="2" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="translation_module_skip_auto_translation" nullable="false" remarks="" size="1" type="bool" typeCode="-7"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="component_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
+            <parent column="id" foreignKey="per_formquestiongrou_component_id_2cb3d55f_fk_per_formc" implied="false" onDeleteCascade="false" schema="public" table="per_formcomponent"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="per_formquestiongroup_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+         <index name="per_formquestiongroup_component_id_2cb3d55f" unique="false">
+            <column ascending="true" name="component_id"/>
          </index>
       </table>
       <table name="per_nicedocument" numRows="0" remarks="" schema="public" type="TABLE">
@@ -7053,7 +7747,7 @@
             <column ascending="true" name="country_id"/>
          </index>
       </table>
-      <table name="per_opslearning" numRows="5" remarks="" schema="public" type="TABLE">
+      <table name="per_opslearning" numRows="16" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('per_opslearning_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4">
             <child column="opslearning_id" foreignKey="per_opslearning_orga_opslearning_id_59c00afe_fk_per_opsle" implied="false" onDeleteCascade="false" schema="public" table="per_opslearning_organization"/>
             <child column="opslearning_id" foreignKey="per_opslearning_orga_opslearning_id_e9b81989_fk_per_opsle" implied="false" onDeleteCascade="false" schema="public" table="per_opslearning_organization_validated"/>
@@ -7064,7 +7758,9 @@
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="learning" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="learning_validated" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="appeal_code" nullable="true" remarks="" size="20" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="appeal_code" nullable="true" remarks="" size="20" type="varchar" typeCode="12">
+            <parent column="code" foreignKey="per_opslearning_appeal_code_9a170029_fk_api_appeal_code" implied="false" onDeleteCascade="false" schema="public" table="api_appeal"/>
+         </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="type" nullable="false" remarks="" size="10" type="int4" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="type_validated" nullable="false" remarks="" size="10" type="int4" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="is_validated" nullable="false" remarks="" size="1" type="bool" typeCode="-7"/>
@@ -7075,8 +7771,14 @@
          <index name="per_opslearning_pkey" unique="true">
             <column ascending="true" name="id"/>
          </index>
+         <index name="per_opslearning_appeal_code_id_0bf6fc9d" unique="false">
+            <column ascending="true" name="appeal_code"/>
+         </index>
+         <index name="per_opslearning_appeal_code_id_0bf6fc9d_like" unique="false">
+            <column ascending="true" name="appeal_code"/>
+         </index>
       </table>
-      <table name="per_opslearning_organization" numRows="6" remarks="" schema="public" type="TABLE">
+      <table name="per_opslearning_organization" numRows="17" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('per_opslearning_organization2_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="opslearning_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
             <parent column="id" foreignKey="per_opslearning_orga_opslearning_id_59c00afe_fk_per_opsle" implied="false" onDeleteCascade="false" schema="public" table="per_opslearning"/>
@@ -7099,7 +7801,7 @@
             <column ascending="true" name="organizationtypes_id"/>
          </index>
       </table>
-      <table name="per_opslearning_organization_validated" numRows="6" remarks="" schema="public" type="TABLE">
+      <table name="per_opslearning_organization_validated" numRows="9" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('per_opslearning_organization2_validated_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="opslearning_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
             <parent column="id" foreignKey="per_opslearning_orga_opslearning_id_e9b81989_fk_per_opsle" implied="false" onDeleteCascade="false" schema="public" table="per_opslearning"/>
@@ -7122,7 +7824,7 @@
             <column ascending="true" name="opslearning_id"/>
          </index>
       </table>
-      <table name="per_opslearning_per_component" numRows="5" remarks="" schema="public" type="TABLE">
+      <table name="per_opslearning_per_component" numRows="6" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('per_opslearning_per_component_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="opslearning_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
             <parent column="id" foreignKey="per_opslearning_per__opslearning_id_f868250c_fk_per_opsle" implied="false" onDeleteCascade="false" schema="public" table="per_opslearning"/>
@@ -7145,7 +7847,7 @@
             <column ascending="true" name="opslearning_id"/>
          </index>
       </table>
-      <table name="per_opslearning_per_component_validated" numRows="5" remarks="" schema="public" type="TABLE">
+      <table name="per_opslearning_per_component_validated" numRows="6" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('per_opslearning_per_component_validated_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="opslearning_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
             <parent column="id" foreignKey="per_opslearning_per__opslearning_id_1ff7f10d_fk_per_opsle" implied="false" onDeleteCascade="false" schema="public" table="per_opslearning"/>
@@ -7168,7 +7870,7 @@
             <column ascending="true" name="opslearning_id"/>
          </index>
       </table>
-      <table name="per_opslearning_sector" numRows="8" remarks="" schema="public" type="TABLE">
+      <table name="per_opslearning_sector" numRows="18" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('per_opslearning_sector_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="opslearning_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
             <parent column="id" foreignKey="per_opslearning_sect_opslearning_id_d7e1f753_fk_per_opsle" implied="false" onDeleteCascade="false" schema="public" table="per_opslearning"/>
@@ -7191,7 +7893,7 @@
             <column ascending="true" name="sectortag_id"/>
          </index>
       </table>
-      <table name="per_opslearning_sector_validated" numRows="7" remarks="" schema="public" type="TABLE">
+      <table name="per_opslearning_sector_validated" numRows="9" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('per_opslearning_sector_validated_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="opslearning_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
             <parent column="id" foreignKey="per_opslearning_sect_opslearning_id_0817580e_fk_per_opsle" implied="false" onDeleteCascade="false" schema="public" table="per_opslearning"/>
@@ -7233,6 +7935,7 @@
             <child column="overview_id" foreignKey="per_formprioritization_overview_id_8a5fe87d_fk_per_overview_id" implied="false" onDeleteCascade="false" schema="public" table="per_formprioritization"/>
             <child column="overview_id" foreignKey="per_overview_orienta_overview_id_af01e071_fk_per_overv" implied="false" onDeleteCascade="false" schema="public" table="per_overview_orientation_documents"/>
             <child column="overview_id" foreignKey="per_perassessment_overview_id_0338cf8d_fk_per_overview_id" implied="false" onDeleteCascade="false" schema="public" table="per_perassessment"/>
+            <child column="per_id" foreignKey="per_perdocumentupload_per_id_ba448040_fk_per_overview_id" implied="false" onDeleteCascade="false" schema="public" table="per_perdocumentupload"/>
             <child column="overview_id" foreignKey="per_perworkplan_overview_id_ff1752fc_fk_per_overview_id" implied="false" onDeleteCascade="false" schema="public" table="per_perworkplan"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="facilitator_email" nullable="true" remarks="" size="90" type="varchar" typeCode="12"/>
@@ -7372,6 +8075,33 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
+      <table name="per_perdocumentupload" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('per_perdocumentupload_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="file" nullable="false" remarks="" size="100" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="2" name="created_at" nullable="false" remarks="" size="35" type="timestamptz" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="country_id" nullable="false" remarks="" size="10" type="int4" typeCode="4">
+            <parent column="id" foreignKey="per_perdocumentupload_country_id_202c225b_fk_api_country_id" implied="false" onDeleteCascade="false" schema="public" table="api_country"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="created_by_id" nullable="true" remarks="" size="10" type="int4" typeCode="4">
+            <parent column="id" foreignKey="per_perdocumentupload_created_by_id_42ac3303_fk_auth_user_id" implied="false" onDeleteCascade="false" schema="public" table="auth_user"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="per_id" nullable="true" remarks="" size="10" type="int4" typeCode="4">
+            <parent column="id" foreignKey="per_perdocumentupload_per_id_ba448040_fk_per_overview_id" implied="false" onDeleteCascade="false" schema="public" table="per_overview"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="per_perdocumentupload_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+         <index name="per_perdocumentupload_country_id_202c225b" unique="false">
+            <column ascending="true" name="country_id"/>
+         </index>
+         <index name="per_perdocumentupload_created_by_id_42ac3303" unique="false">
+            <column ascending="true" name="created_by_id"/>
+         </index>
+         <index name="per_perdocumentupload_per_id_ba448040" unique="false">
+            <column ascending="true" name="per_id"/>
+         </index>
+      </table>
       <table name="per_perfile" numRows="0" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('per_perfile_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4">
             <child column="perfile_id" foreignKey="per_overview_orienta_perfile_id_2f39f368_fk_per_perfi" implied="false" onDeleteCascade="false" schema="public" table="per_overview_orientation_documents"/>
@@ -7466,6 +8196,7 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="supported_by_id" nullable="true" remarks="" size="10" type="int4" typeCode="4">
             <parent column="id" foreignKey="per_perworkplancompo_supported_by_id_604b7b64_fk_api_count" implied="false" onDeleteCascade="false" schema="public" table="api_country"/>
          </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="supported_by_organization_type" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
          <primaryKey column="id" sequenceNumberInPK="1"/>
          <index name="per_perworkplancomponent_pkey" unique="true">
             <column ascending="true" name="id"/>
@@ -7602,7 +8333,7 @@
             <column ascending="true" name="user_id"/>
          </index>
       </table>
-      <table name="reversion_revision" numRows="617" remarks="" schema="public" type="TABLE">
+      <table name="reversion_revision" numRows="329079" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('reversion_revision_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4">
             <child column="revision_id" foreignKey="reversion_version_revision_id_af9f6a9d_fk_reversion_revision_id" implied="false" onDeleteCascade="false" schema="public" table="reversion_version"/>
          </column>
@@ -7622,7 +8353,7 @@
             <column ascending="true" name="user_id"/>
          </index>
       </table>
-      <table name="reversion_version" numRows="1822" remarks="" schema="public" type="TABLE">
+      <table name="reversion_version" numRows="337154" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('reversion_version_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="object_id" nullable="false" remarks="" size="191" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="format" nullable="false" remarks="" size="255" type="varchar" typeCode="12"/>
@@ -7726,6 +8457,18 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="subtype" nullable="true" remarks="" size="200" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="level_id" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="is_public" nullable="true" remarks="" size="1" type="bool" typeCode="-7"/>
+      </table>
+      <table name="tmpol" numRows="7" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="id" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="learning" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="learning_validated" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="appeal_code" nullable="true" remarks="" size="20" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="type" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="type_validated" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="is_validated" nullable="true" remarks="" size="1" type="bool" typeCode="-7"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="7" name="modified_at" nullable="true" remarks="" size="35" type="timestamptz" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="8" name="created_at" nullable="true" remarks="" size="35" type="timestamptz" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="appeal_document_id" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
       </table>
       <table name="us_gaz" numRows="1074" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('us_gaz_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>

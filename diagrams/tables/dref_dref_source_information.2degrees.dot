@@ -55,6 +55,8 @@ digraph "twoDegreesRelationshipsDiagram" {
   "dref_dreffinalreport":"elipses":w -> "dref_dreffile":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "dref_dreffinalreport":"elipses":w -> "auth_user":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "dref_dreffinalreport":"elipses":w -> "api_country":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
+  "dref_dreffinalreport_source_information":"elipses":w -> "dref_dreffinalreport":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
+  "dref_dreffinalreport_source_information":"elipses":w -> "dref_sourceinformation":"id":e [arrowhead=none dir=back arrowtail=crowodot];
   "dref_drefoperationalupdate":"elipses":w -> "dref_dreffile":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "dref_drefoperationalupdate":"elipses":w -> "dref_dreffile":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "dref_drefoperationalupdate":"elipses":w -> "api_country":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -65,12 +67,14 @@ digraph "twoDegreesRelationshipsDiagram" {
   "dref_drefoperationalupdate":"elipses":w -> "dref_dreffile":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "dref_drefoperationalupdate":"elipses":w -> "auth_user":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "dref_drefoperationalupdate":"elipses":w -> "api_country":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
+  "dref_drefoperationalupdate_source_information":"elipses":w -> "dref_drefoperationalupdate":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
+  "dref_drefoperationalupdate_source_information":"elipses":w -> "dref_sourceinformation":"id":e [arrowhead=none dir=back arrowtail=crowodot];
   "api_country" [
    label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT"><B>api_country</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">285 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">54 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">285 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">62 &gt;</TD></TR>
     </TABLE>>
     URL="api_country.html"
     target="_top"
@@ -81,7 +85,7 @@ digraph "twoDegreesRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT"><B>api_disastertype</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">  </TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">24 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">14 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">  </TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">24 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">15 &gt;</TD></TR>
     </TABLE>>
     URL="api_disastertype.html"
     target="_top"
@@ -103,7 +107,7 @@ digraph "twoDegreesRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT"><B>auth_user</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">  </TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">8 333 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">44 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">  </TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">8 333 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">45 &gt;</TD></TR>
     </TABLE>>
     URL="auth_user.html"
     target="_top"
@@ -240,22 +244,44 @@ digraph "twoDegreesRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT"><B>dref_dreffinalreport</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 10</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1 row</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">8 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 10</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1 row</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">9 &gt;</TD></TR>
     </TABLE>>
     URL="dref_dreffinalreport.html"
     target="_top"
     tooltip="dref_dreffinalreport"
+  ];
+  "dref_dreffinalreport_source_information" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT"><B>dref_dreffinalreport_source_information</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR>
+    </TABLE>>
+    URL="dref_dreffinalreport_source_information.html"
+    target="_top"
+    tooltip="dref_dreffinalreport_source_information"
   ];
   "dref_drefoperationalupdate" [
    label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT"><B>dref_drefoperationalupdate</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 10</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">24 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">8 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 10</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">24 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">9 &gt;</TD></TR>
     </TABLE>>
     URL="dref_drefoperationalupdate.html"
     target="_top"
     tooltip="dref_drefoperationalupdate"
+  ];
+  "dref_drefoperationalupdate_source_information" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT"><B>dref_drefoperationalupdate_source_information</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR>
+    </TABLE>>
+    URL="dref_drefoperationalupdate_source_information.html"
+    target="_top"
+    tooltip="dref_drefoperationalupdate_source_information"
   ];
   "dref_sourceinformation" [
    label=<
@@ -263,7 +289,7 @@ digraph "twoDegreesRelationshipsDiagram" {
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT"><B>dref_sourceinformation</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="158" HEIGHT="16">id</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">  </TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">  </TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">3 &gt;</TD></TR>
     </TABLE>>
     URL="dref_sourceinformation.html"
     target="_top"

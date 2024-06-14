@@ -1,12 +1,5 @@
-us_rules
-us_lex
-us_gaz
-tmpol
-tmplu
 tastypie_apiaccess
 registrations_domainwhitelist
-pool1
-pool0
 notifications_notificationguid
 lang_string
 django_session
@@ -21,8 +14,8 @@ api_emergencyoperationsdataset
 api_cronjob
 api_authlog
 api_appealfilter
-notifications_subscription
 local_units_localunit
+notifications_subscription
 django_celery_beat_periodictask
 deployments_heop
 api_appealhistory
@@ -134,6 +127,7 @@ api_countrykeyfigure
 api_countrycontact
 api_actionstaken_actions
 tastypie_apikey
+registrations_userexternaltoken
 registrations_recovery
 registrations_pending
 per_nsphase

@@ -155,6 +155,7 @@ per_nicedocument
 per_nsphase
 registrations_pending
 registrations_recovery
+registrations_userexternaltoken
 tastypie_apikey
 api_actionstaken_actions
 api_countrycontact
@@ -266,8 +267,8 @@ per_perdocumentupload
 api_appealhistory
 deployments_heop
 django_celery_beat_periodictask
-local_units_localunit
 notifications_subscription
+local_units_localunit
 api_appealfilter
 api_authlog
 api_cronjob
@@ -282,12 +283,5 @@ django_migrations
 django_session
 lang_string
 notifications_notificationguid
-pool0
-pool1
 registrations_domainwhitelist
 tastypie_apiaccess
-tmplu
-tmpol
-us_gaz
-us_lex
-us_rules

@@ -85,7 +85,7 @@
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body clearfix">
-                            <p><p>args: geom, number_of_clusters - Window function that returns a cluster id for each input geometry using the K-means algorithm.</p></p>
+                            <p><p>args: geom, number_of_clusters, max_radius - Window function that returns a cluster id for each input geometry using the K-means algorithm.</p></p>
                         </div>
                         <!-- /.box-body -->
                     </div>
@@ -119,6 +119,11 @@
                                 <tr>
                                     <td>k</td>
                                     <td>integer</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>max_radius</td>
+                                    <td>double precision</td>
                                     <td>IN</td>
                                 </tr>
                                 </tbody>

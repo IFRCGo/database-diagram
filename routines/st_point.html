@@ -85,7 +85,7 @@
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body clearfix">
-                            <p><p>args: x, y - Creates a Point with the given coordinate values. Alias for ST_MakePoint.</p></p>
+                            <p><p>args: x, y, srid=unknown - Creates a Point with X, Y and SRID values.</p></p>
                         </div>
                         <!-- /.box-body -->
                     </div>
@@ -119,6 +119,21 @@
                                 <tr>
                                     <td>$2</td>
                                     <td>double precision</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>$1</td>
+                                    <td>double precision</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>$2</td>
+                                    <td>double precision</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>srid</td>
+                                    <td>integer</td>
                                     <td>IN</td>
                                 </tr>
                                 </tbody>

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>guardian_userobjectpermission - GO Database</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>GO</b> Database</a>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>guardian_userobjectpermission</h1><p><span id="recordNumber">0</span> rows</p><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Columns</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table id="standard_table" class="table table-bordered table-striped dataTable" role="grid">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Column</th>
+                                    <th>Type</th>
+                                    <th>Size</th>
+                                    <th title='Are nulls allowed?'>Nulls</th>
+                                    <th title='Is column automatically updated?'>Auto</th>
+                                    <th title='Default value'>Default</th>
+                                    <th title='Columns in tables that reference this column'>Children</th>
+                                    <th title='Columns in tables that are referenced by this column'>Parents</th>
+                                    <th title='Comments' class="toggle"><span>Comments</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="id">id</span></td>
+                                    <td>serial</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title='Automatically updated by the database'>√</td>
+                                    <td>nextval(&#39;guardian_userobjectpermission_id_seq&#39;::regclass)</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i><span id="object_pk">object_pk</span></td>
+                                    <td>varchar</td>
+                                    <td>255</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="content_type_id">content_type_id</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="guardian_userobjectpermission.content_type_id references django_content_type.id via guardian_userobjectp_content_type_id_2e892405_fk_django_co"><a href='django_content_type.html'>django_content_type</a><span class='relatedKey'>.id</span></td>
+                                                <td class="constraint detail">guardian_userobjectp_content_type_id_2e892405_fk_django_co<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="permission_id">permission_id</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="guardian_userobjectpermission.permission_id references auth_permission.id via guardian_userobjectp_permission_id_71807bfc_fk_auth_perm"><a href='auth_permission.html'>auth_permission</a><span class='relatedKey'>.id</span></td>
+                                                <td class="constraint detail">guardian_userobjectp_permission_id_71807bfc_fk_auth_perm<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="user_id">user_id</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="guardian_userobjectpermission.user_id references auth_user.id via guardian_userobjectpermission_user_id_d5c1e964_fk_auth_user_id"><a href='auth_user.html'>auth_user</a><span class='relatedKey'>.id</span></td>
+                                                <td class="constraint detail">guardian_userobjectpermission_user_id_d5c1e964_fk_auth_user_id<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-sitemap"></i>
+                            <h3 id="Indexes" class="box-title">Indexes</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table id="indexes_table" class="table table-bordered table-striped dataTable" role="grid">
+                                <thead>
+                                <tr>
+                                    <th>Constraint Name</th>
+                                    <th>Type</th>
+                                    <th>Sort</th>
+                                    <th>Column(s)</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey'></i> guardian_userobjectpermission_pkey</td>
+                                    <td>Primary key</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>id</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>guardian_us_content_179ed2_idx</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span>/<span title='Ascending'>Asc</span></td>
+                                    <td>content_type_id + object_pk</td>
+                                </tr>
+                                <tr>
+                                    <td class='uniqueKey' title='Unique Key'><i class='icon ion-key iconkey'></i> guardian_userobjectpermi_user_id_permission_id_ob_b0b3d2fc_uniq</td>
+                                    <td>Must be unique</td>
+                                    <td><span title='Ascending'>Asc</span>/<span title='Ascending'>Asc</span>/<span title='Ascending'>Asc</span></td>
+                                    <td>user_id + permission_id + object_pk</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>guardian_userobjectpermission_content_type_id_2e892405</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>content_type_id</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>guardian_userobjectpermission_permission_id_71807bfc</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>permission_id</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>guardian_userobjectpermission_user_id_d5c1e964</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>user_id</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /.box-body -->
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-code-fork"></i>
+                            <h3 id="Relationships" class="box-title">Relationships</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div class="nav-tabs-custom"><!-- Tabs within a box -->
+                                <h5>Close relationships within degrees of separation</h5>
+                                <ul class="nav nav-tabs pull-left ui-sortable-handle">
+                                    <li class="active"><a href="#oneDegreeImg-chart" data-toggle="tab" aria-expanded="true">One</a></li>
+                                    <li class=""><a href="#twodegreesDegreeImg-chart" data-toggle="tab" aria-expanded="true">Two degrees</a></li>
+                                </ul>
+                                <div class="tab-content no-padding">
+                                    <div class="chart tab-pane active" id="oneDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
+<area shape="rect" id="node1" href="auth_permission.html" target="_top" title="auth_permission" alt="" coords="277,96,475,272">
+<area shape="rect" id="node2" href="django_content_type.html" target="_top" title="django_content_type" alt="" coords="5,73,233,225">
+<area shape="rect" id="node3" href="guardian_userobjectpermission.html" target="_top" title="guardian_userobjectpermission" alt="" coords="519,5,915,221">
+<area shape="rect" id="node4" href="auth_user.html" target="_top" title="auth_user" alt="" coords="294,289,458,436">
+</map>
+                                        <a name='diagram'><img id="oneDegreeImg" src="../diagrams/tables/guardian_userobjectpermission.1degree.png" usemap="#oneDegreeRelationshipsDiagram" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="twodegreesDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="twoDegreesRelationshipsDiagram" name="twoDegreesRelationshipsDiagram">
+<area shape="rect" id="node1" href="api_eventseveritylevelhistory.html" target="_top" title="api_eventseveritylevelhistory" alt="" coords="314,1193,598,1281">
+<area shape="rect" id="node2" href="auth_user.html" target="_top" title="auth_user" alt="" coords="37,2403,201,2549">
+<area shape="rect" id="node3" href="api_export.html" target="_top" title="api_export" alt="" coords="379,1299,533,1387">
+<area shape="rect" id="node4" href="api_fieldreport.html" target="_top" title="api_fieldreport" alt="" coords="365,1721,547,1809">
+<area shape="rect" id="node5" href="api_profile.html" target="_top" title="api_profile" alt="" coords="379,1932,533,2020">
+<area shape="rect" id="node6" href="api_usercountry.html" target="_top" title="api_usercountry" alt="" coords="359,2037,553,2125">
+<area shape="rect" id="node7" href="api_userregion.html" target="_top" title="api_userregion" alt="" coords="363,2143,549,2231">
+<area shape="rect" id="node8" href="auth_group_permissions.html" target="_top" title="auth_group_permissions" alt="" coords="749,111,1005,199">
+<area shape="rect" id="node9" href="auth_permission.html" target="_top" title="auth_permission" alt="" coords="357,255,555,431">
+<area shape="rect" id="node10" href="django_content_type.html" target="_top" title="django_content_type" alt="" coords="5,284,233,436">
+<area shape="rect" id="node11" href="auth_user_groups.html" target="_top" title="auth_user_groups" alt="" coords="351,2248,561,2336">
+<area shape="rect" id="node12" href="auth_user_user_permissions.html" target="_top" title="auth_user_user_permissions" alt="" coords="735,449,1019,537">
+<area shape="rect" id="node13" href="authtoken_token.html" target="_top" title="authtoken_token" alt="" coords="357,2968,555,3056">
+<area shape="rect" id="node14" href="country_plan_countryplan.html" target="_top" title="country_plan_countryplan" alt="" coords="323,3073,589,3161">
+<area shape="rect" id="node15" href="country_plan_dataimport.html" target="_top" title="country_plan_dataimport" alt="" coords="327,3179,585,3267">
+<area shape="rect" id="node16" href="deployments_emergencyproject.html" target="_top" title="deployments_emergencyproject" alt="" coords="303,3284,609,3372">
+<area shape="rect" id="node17" href="deployments_project.html" target="_top" title="deployments_project" alt="" coords="342,3389,570,3477">
+<area shape="rect" id="node18" href="deployments_projectimport.html" target="_top" title="deployments_projectimport" alt="" coords="319,3495,593,3583">
+<area shape="rect" id="node19" href="django_admin_log.html" target="_top" title="django_admin_log" alt="" coords="351,484,561,572">
+<area shape="rect" id="node20" href="dref_dref.html" target="_top" title="dref_dref" alt="" coords="795,1732,959,1820">
+<area shape="rect" id="node21" href="dref_dreffile.html" target="_top" title="dref_dreffile" alt="" coords="372,1564,540,1652">
+<area shape="rect" id="node22" href="dref_dref_users.html" target="_top" title="dref_dref_users" alt="" coords="1187,2328,1379,2416">
+<area shape="rect" id="node23" href="dref_dreffinalreport.html" target="_top" title="dref_dreffinalreport" alt="" coords="1175,1540,1392,1628">
+<area shape="rect" id="node24" href="dref_dreffinalreport_users.html" target="_top" title="dref_dreffinalreport_users" alt="" coords="1519,1472,1784,1560">
+<area shape="rect" id="node25" href="dref_drefoperationalupdate.html" target="_top" title="dref_drefoperationalupdate" alt="" coords="1147,1645,1419,1733">
+<area shape="rect" id="node26" href="dref_drefoperationalupdate_users.html" target="_top" title="dref_drefoperationalupdate_users" alt="" coords="1492,1577,1811,1665">
+<area shape="rect" id="node27" href="eap_eap.html" target="_top" title="eap_eap" alt="" coords="387,3600,525,3688">
+<area shape="rect" id="node28" href="flash_update_flashgraphicmap.html" target="_top" title="flash_update_flashgraphicmap" alt="" coords="308,3705,604,3793">
+<area shape="rect" id="node29" href="flash_update_flashupdate.html" target="_top" title="flash_update_flashupdate" alt="" coords="325,3811,587,3899">
+<area shape="rect" id="node30" href="guardian_groupobjectpermission.html" target="_top" title="guardian_groupobjectpermission" alt="" coords="720,5,1033,93">
+<area shape="rect" id="node31" href="guardian_userobjectpermission.html" target="_top" title="guardian_userobjectpermission" alt="" coords="679,216,1075,432">
+<area shape="rect" id="node32" href="local_units_externallymanagedlocalunit.html" target="_top" title="local_units_externallymanagedlocalunit" alt="" coords="277,3916,635,4004">
+<area shape="rect" id="node33" href="local_units_healthdata.html" target="_top" title="local_units_healthdata" alt="" coords="337,4021,575,4109">
+<area shape="rect" id="node34" href="local_units_localunit.html" target="_top" title="local_units_localunit" alt="" coords="764,4179,989,4267">
+<area shape="rect" id="node35" href="local_units_localunitbulkupload.html" target="_top" title="local_units_localunitbulkupload" alt="" coords="305,4127,607,4215">
+<area shape="rect" id="node36" href="local_units_localunitchangerequest.html" target="_top" title="local_units_localunitchangerequest" alt="" coords="1119,4255,1448,4343">
+<area shape="rect" id="node37" href="notifications_subscription.html" target="_top" title="notifications_subscription" alt="" coords="324,4336,588,4424">
+<area shape="rect" id="node38" href="oauth2_provider_accesstoken.html" target="_top" title="oauth2_provider_accesstoken" alt="" coords="1138,907,1429,995">
+<area shape="rect" id="node39" href="oauth2_provider_application.html" target="_top" title="oauth2_provider_application" alt="" coords="315,803,597,891">
+<area shape="rect" id="node40" href="oauth2_provider_idtoken.html" target="_top" title="oauth2_provider_idtoken" alt="" coords="749,660,1005,748">
+<area shape="rect" id="node41" href="oauth2_provider_refreshtoken.html" target="_top" title="oauth2_provider_refreshtoken" alt="" coords="730,907,1023,995">
+<area shape="rect" id="node42" href="oauth2_provider_grant.html" target="_top" title="oauth2_provider_grant" alt="" coords="756,801,997,889">
+<area shape="rect" id="node43" href="per_form.html" target="_top" title="per_form" alt="" coords="803,1048,951,1136">
+<area shape="rect" id="node44" href="per_overview.html" target="_top" title="per_overview" alt="" coords="369,1052,543,1140">
+<area shape="rect" id="node45" href="per_perassessment.html" target="_top" title="per_perassessment" alt="" coords="768,1153,985,1241">
+<area shape="rect" id="node46" href="per_perdocumentupload.html" target="_top" title="per_perdocumentupload" alt="" coords="750,1296,1003,1384">
+<area shape="rect" id="node47" href="per_perfile.html" target="_top" title="per_perfile" alt="" coords="378,1827,534,1915">
+<area shape="rect" id="node48" href="per_workplan.html" target="_top" title="per_workplan" alt="" coords="368,2405,544,2493">
+<area shape="rect" id="node49" href="registrations_pending.html" target="_top" title="registrations_pending" alt="" coords="339,2511,573,2599">
+<area shape="rect" id="node50" href="registrations_recovery.html" target="_top" title="registrations_recovery" alt="" coords="337,2616,575,2704">
+<area shape="rect" id="node51" href="registrations_userexternaltoken.html" target="_top" title="registrations_userexternaltoken" alt="" coords="304,2721,608,2809">
+<area shape="rect" id="node52" href="reversion_revision.html" target="_top" title="reversion_revision" alt="" coords="351,661,561,749">
+<area shape="rect" id="node53" href="reversion_version.html" target="_top" title="reversion_version" alt="" coords="773,555,980,643">
+<area shape="rect" id="node54" href="tastypie_apikey.html" target="_top" title="tastypie_apikey" alt="" coords="361,2827,551,2915">
+</map>
+                                        <a name='diagram'><img id="twodegreesDegreeImg" src="../diagrams/tables/guardian_userobjectpermission.2degrees.png" usemap="#twoDegreesRelationshipsDiagram" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.box-body -->
+                    </div>
+                </section>
+                <script>
+                    var config = {
+                        pagination: true
+                    }
+                </script>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.1.0</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="table.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>dref_dreffinalreport_users - GO Database</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>GO</b> Database</a>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>dref_dreffinalreport_users</h1><p><span id="recordNumber">1174</span> rows</p><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Columns</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table id="standard_table" class="table table-bordered table-striped dataTable" role="grid">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Column</th>
+                                    <th>Type</th>
+                                    <th>Size</th>
+                                    <th title='Are nulls allowed?'>Nulls</th>
+                                    <th title='Is column automatically updated?'>Auto</th>
+                                    <th title='Default value'>Default</th>
+                                    <th title='Columns in tables that reference this column'>Children</th>
+                                    <th title='Columns in tables that are referenced by this column'>Parents</th>
+                                    <th title='Comments' class="toggle"><span>Comments</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="id">id</span></td>
+                                    <td>serial</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title='Automatically updated by the database'>√</td>
+                                    <td>nextval(&#39;dref_dreffinalreport_users_id_seq&#39;::regclass)</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="dreffinalreport_id">dreffinalreport_id</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="dref_dreffinalreport_users.dreffinalreport_id references dref_dreffinalreport.id via dref_dreffinalreport_dreffinalreport_id_6f882fc9_fk_dref_dref"><a href='dref_dreffinalreport.html'>dref_dreffinalreport</a><span class='relatedKey'>.id</span></td>
+                                                <td class="constraint detail">dref_dreffinalreport_dreffinalreport_id_6f882fc9_fk_dref_dref<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="user_id">user_id</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="dref_dreffinalreport_users.user_id references auth_user.id via dref_dreffinalreport_users_user_id_9a2b211d_fk_auth_user_id"><a href='auth_user.html'>auth_user</a><span class='relatedKey'>.id</span></td>
+                                                <td class="constraint detail">dref_dreffinalreport_users_user_id_9a2b211d_fk_auth_user_id<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-sitemap"></i>
+                            <h3 id="Indexes" class="box-title">Indexes</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table id="indexes_table" class="table table-bordered table-striped dataTable" role="grid">
+                                <thead>
+                                <tr>
+                                    <th>Constraint Name</th>
+                                    <th>Type</th>
+                                    <th>Sort</th>
+                                    <th>Column(s)</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey'></i> dref_dreffinalreport_users_pkey</td>
+                                    <td>Primary key</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>id</td>
+                                </tr>
+                                <tr>
+                                    <td class='uniqueKey' title='Unique Key'><i class='icon ion-key iconkey'></i> dref_dreffinalreport_use_dreffinalreport_id_user__d72783fb_uniq</td>
+                                    <td>Must be unique</td>
+                                    <td><span title='Ascending'>Asc</span>/<span title='Ascending'>Asc</span></td>
+                                    <td>dreffinalreport_id + user_id</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>dref_dreffinalreport_users_dreffinalreport_id_6f882fc9</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>dreffinalreport_id</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>dref_dreffinalreport_users_user_id_9a2b211d</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>user_id</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /.box-body -->
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-code-fork"></i>
+                            <h3 id="Relationships" class="box-title">Relationships</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div class="nav-tabs-custom"><!-- Tabs within a box -->
+                                <h5>Close relationships within degrees of separation</h5>
+                                <ul class="nav nav-tabs pull-left ui-sortable-handle">
+                                    <li class="active"><a href="#oneDegreeImg-chart" data-toggle="tab" aria-expanded="true">One</a></li>
+                                    <li class=""><a href="#twodegreesDegreeImg-chart" data-toggle="tab" aria-expanded="true">Two degrees</a></li>
+                                </ul>
+                                <div class="tab-content no-padding">
+                                    <div class="chart tab-pane active" id="oneDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
+<area shape="rect" id="node1" href="dref_dreffinalreport.html" target="_top" title="dref_dreffinalreport" alt="" coords="213,5,663,416">
+<area shape="rect" id="node2" href="auth_user.html" target="_top" title="auth_user" alt="" coords="5,152,169,299">
+<area shape="rect" id="node3" href="dref_dreffinalreport_users.html" target="_top" title="dref_dreffinalreport_users" alt="" coords="707,153,1037,311">
+</map>
+                                        <a name='diagram'><img id="oneDegreeImg" src="../diagrams/tables/dref_dreffinalreport_users.1degree.png" usemap="#oneDegreeRelationshipsDiagram" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="twodegreesDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="twoDegreesRelationshipsDiagram" name="twoDegreesRelationshipsDiagram">
+<area shape="rect" id="node1" href="api_eventseveritylevelhistory.html" target="_top" title="api_eventseveritylevelhistory" alt="" coords="282,2023,566,2111">
+<area shape="rect" id="node2" href="auth_user.html" target="_top" title="auth_user" alt="" coords="21,2125,185,2272">
+<area shape="rect" id="node3" href="api_export.html" target="_top" title="api_export" alt="" coords="347,2128,501,2216">
+<area shape="rect" id="node4" href="api_fieldreport.html" target="_top" title="api_fieldreport" alt="" coords="333,353,515,441">
+<area shape="rect" id="node5" href="api_disastertype.html" target="_top" title="api_disastertype" alt="" coords="5,301,201,389">
+<area shape="rect" id="node6" href="api_profile.html" target="_top" title="api_profile" alt="" coords="347,827,501,915">
+<area shape="rect" id="node7" href="api_country.html" target="_top" title="api_country" alt="" coords="21,511,185,599">
+<area shape="rect" id="node8" href="api_usercountry.html" target="_top" title="api_usercountry" alt="" coords="327,1037,521,1125">
+<area shape="rect" id="node9" href="api_userregion.html" target="_top" title="api_userregion" alt="" coords="331,2233,517,2321">
+<area shape="rect" id="node10" href="auth_user_groups.html" target="_top" title="auth_user_groups" alt="" coords="319,2339,529,2427">
+<area shape="rect" id="node11" href="auth_user_user_permissions.html" target="_top" title="auth_user_user_permissions" alt="" coords="282,2444,566,2532">
+<area shape="rect" id="node12" href="authtoken_token.html" target="_top" title="authtoken_token" alt="" coords="325,2549,523,2637">
+<area shape="rect" id="node13" href="country_plan_countryplan.html" target="_top" title="country_plan_countryplan" alt="" coords="291,1564,557,1652">
+<area shape="rect" id="node14" href="country_plan_dataimport.html" target="_top" title="country_plan_dataimport" alt="" coords="295,2655,553,2743">
+<area shape="rect" id="node15" href="deployments_emergencyproject.html" target="_top" title="deployments_emergencyproject" alt="" coords="271,1353,577,1441">
+<area shape="rect" id="node16" href="deployments_project.html" target="_top" title="deployments_project" alt="" coords="310,511,538,599">
+<area shape="rect" id="node17" href="deployments_projectimport.html" target="_top" title="deployments_projectimport" alt="" coords="287,2760,561,2848">
+<area shape="rect" id="node18" href="django_admin_log.html" target="_top" title="django_admin_log" alt="" coords="319,2865,529,2953">
+<area shape="rect" id="node19" href="dref_dref.html" target="_top" title="dref_dref" alt="" coords="711,2883,875,2971">
+<area shape="rect" id="node20" href="dref_dreffile.html" target="_top" title="dref_dreffile" alt="" coords="340,3059,508,3147">
+<area shape="rect" id="node21" href="dref_dref_users.html" target="_top" title="dref_dref_users" alt="" coords="1113,2316,1305,2404">
+<area shape="rect" id="node22" href="dref_dreffinalreport.html" target="_top" title="dref_dreffinalreport" alt="" coords="984,2727,1433,3137">
+<area shape="rect" id="node23" href="dref_dreffinalreport_district.html" target="_top" title="dref_dreffinalreport_district" alt="" coords="1539,2835,1814,2923">
+<area shape="rect" id="node24" href="dref_dreffinalreport_images.html" target="_top" title="dref_dreffinalreport_images" alt="" coords="1539,3151,1815,3239">
+<area shape="rect" id="node25" href="dref_dreffinalreport_national_society_actions.html" target="_top" title="dref_dreffinalreport_national_society_actions" alt="" coords="1477,2940,1876,3028">
+<area shape="rect" id="node26" href="dref_dreffinalreport_needs_identified.html" target="_top" title="dref_dreffinalreport_needs_identified" alt="" coords="1506,3045,1847,3133">
+<area shape="rect" id="node27" href="dref_dreffinalreport_photos.html" target="_top" title="dref_dreffinalreport_photos" alt="" coords="1539,3257,1814,3345">
+<area shape="rect" id="node28" href="dref_dreffinalreport_planned_interventions.html" target="_top" title="dref_dreffinalreport_planned_interventions" alt="" coords="1486,2413,1867,2501">
+<area shape="rect" id="node29" href="dref_dreffinalreport_proposed_action.html" target="_top" title="dref_dreffinalreport_proposed_action" alt="" coords="1505,2519,1849,2607">
+<area shape="rect" id="node30" href="dref_dreffinalreport_risk_security.html" target="_top" title="dref_dreffinalreport_risk_security" alt="" coords="1519,2624,1835,2712">
+<area shape="rect" id="node31" href="dref_dreffinalreport_source_information.html" target="_top" title="dref_dreffinalreport_source_information" alt="" coords="1495,2729,1858,2817">
+<area shape="rect" id="node32" href="dref_dreffinalreport_users.html" target="_top" title="dref_dreffinalreport_users" alt="" coords="1511,3564,1842,3721">
+<area shape="rect" id="node33" href="dref_drefoperationalupdate.html" target="_top" title="dref_drefoperationalupdate" alt="" coords="1073,3155,1345,3243">
+<area shape="rect" id="node34" href="dref_drefoperationalupdate_users.html" target="_top" title="dref_drefoperationalupdate_users" alt="" coords="1517,4141,1836,4229">
+<area shape="rect" id="node35" href="eap_eap.html" target="_top" title="eap_eap" alt="" coords="355,616,493,704">
+<area shape="rect" id="node36" href="flash_update_flashgraphicmap.html" target="_top" title="flash_update_flashgraphicmap" alt="" coords="276,3940,572,4028">
+<area shape="rect" id="node37" href="flash_update_flashupdate.html" target="_top" title="flash_update_flashupdate" alt="" coords="293,721,555,809">
+<area shape="rect" id="node38" href="guardian_userobjectpermission.html" target="_top" title="guardian_userobjectpermission" alt="" coords="273,4045,575,4133">
+<area shape="rect" id="node39" href="local_units_externallymanagedlocalunit.html" target="_top" title="local_units_externallymanagedlocalunit" alt="" coords="245,1459,603,1547">
+<area shape="rect" id="node40" href="local_units_healthdata.html" target="_top" title="local_units_healthdata" alt="" coords="305,1757,543,1845">
+<area shape="rect" id="node41" href="local_units_localunit.html" target="_top" title="local_units_localunit" alt="" coords="681,1676,906,1764">
+<area shape="rect" id="node42" href="local_units_localunitbulkupload.html" target="_top" title="local_units_localunitbulkupload" alt="" coords="273,1143,575,1231">
+<area shape="rect" id="node43" href="local_units_localunitchangerequest.html" target="_top" title="local_units_localunitchangerequest" alt="" coords="1044,1869,1373,1957">
+<area shape="rect" id="node44" href="notifications_subscription.html" target="_top" title="notifications_subscription" alt="" coords="292,248,556,336">
+<area shape="rect" id="node45" href="oauth2_provider_accesstoken.html" target="_top" title="oauth2_provider_accesstoken" alt="" coords="1063,4165,1354,4253">
+<area shape="rect" id="node46" href="oauth2_provider_application.html" target="_top" title="oauth2_provider_application" alt="" coords="283,4203,565,4291">
+<area shape="rect" id="node47" href="oauth2_provider_idtoken.html" target="_top" title="oauth2_provider_idtoken" alt="" coords="665,4097,921,4185">
+<area shape="rect" id="node48" href="oauth2_provider_refreshtoken.html" target="_top" title="oauth2_provider_refreshtoken" alt="" coords="647,4239,940,4327">
+<area shape="rect" id="node49" href="oauth2_provider_grant.html" target="_top" title="oauth2_provider_grant" alt="" coords="673,3992,914,4080">
+<area shape="rect" id="node50" href="per_form.html" target="_top" title="per_form" alt="" coords="719,1787,867,1875">
+<area shape="rect" id="node51" href="per_overview.html" target="_top" title="per_overview" alt="" coords="337,1248,511,1336">
+<area shape="rect" id="node52" href="per_perassessment.html" target="_top" title="per_perassessment" alt="" coords="685,2400,902,2488">
+<area shape="rect" id="node53" href="per_perdocumentupload.html" target="_top" title="per_perdocumentupload" alt="" coords="667,1248,920,1336">
+<area shape="rect" id="node54" href="per_perfile.html" target="_top" title="per_perfile" alt="" coords="346,3308,502,3396">
+<area shape="rect" id="node55" href="per_workplan.html" target="_top" title="per_workplan" alt="" coords="336,932,512,1020">
+<area shape="rect" id="node56" href="registrations_pending.html" target="_top" title="registrations_pending" alt="" coords="307,3413,541,3501">
+<area shape="rect" id="node57" href="registrations_recovery.html" target="_top" title="registrations_recovery" alt="" coords="305,3519,543,3607">
+<area shape="rect" id="node58" href="registrations_userexternaltoken.html" target="_top" title="registrations_userexternaltoken" alt="" coords="272,3624,576,3712">
+<area shape="rect" id="node59" href="reversion_revision.html" target="_top" title="reversion_revision" alt="" coords="319,3729,529,3817">
+<area shape="rect" id="node60" href="tastypie_apikey.html" target="_top" title="tastypie_apikey" alt="" coords="329,3835,519,3923">
+</map>
+                                        <a name='diagram'><img id="twodegreesDegreeImg" src="../diagrams/tables/dref_dreffinalreport_users.2degrees.png" usemap="#twoDegreesRelationshipsDiagram" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.box-body -->
+                    </div>
+                </section>
+                <script>
+                    var config = {
+                        pagination: true
+                    }
+                </script>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.1.0</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="table.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>

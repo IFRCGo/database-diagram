@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>api_fieldreport_countries - GO Database</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>GO</b> Database</a>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>api_fieldreport_countries</h1><p><span id="recordNumber">16598</span> rows</p><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Columns</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table id="standard_table" class="table table-bordered table-striped dataTable" role="grid">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Column</th>
+                                    <th>Type</th>
+                                    <th>Size</th>
+                                    <th title='Are nulls allowed?'>Nulls</th>
+                                    <th title='Is column automatically updated?'>Auto</th>
+                                    <th title='Default value'>Default</th>
+                                    <th title='Columns in tables that reference this column'>Children</th>
+                                    <th title='Columns in tables that are referenced by this column'>Parents</th>
+                                    <th title='Comments' class="toggle"><span>Comments</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="id">id</span></td>
+                                    <td>serial</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title='Automatically updated by the database'>√</td>
+                                    <td>nextval(&#39;api_fieldreport_countries_id_seq&#39;::regclass)</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="fieldreport_id">fieldreport_id</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="api_fieldreport_countries.fieldreport_id references api_fieldreport.id via api_fieldreport_coun_fieldreport_id_18b58939_fk_api_field"><a href='api_fieldreport.html'>api_fieldreport</a><span class='relatedKey'>.id</span></td>
+                                                <td class="constraint detail">api_fieldreport_coun_fieldreport_id_18b58939_fk_api_field<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="country_id">country_id</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="api_fieldreport_countries.country_id references api_country.id via api_fieldreport_countries_country_id_fbaec807_fk_api_country_id"><a href='api_country.html'>api_country</a><span class='relatedKey'>.id</span></td>
+                                                <td class="constraint detail">api_fieldreport_countries_country_id_fbaec807_fk_api_country_id<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-sitemap"></i>
+                            <h3 id="Indexes" class="box-title">Indexes</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table id="indexes_table" class="table table-bordered table-striped dataTable" role="grid">
+                                <thead>
+                                <tr>
+                                    <th>Constraint Name</th>
+                                    <th>Type</th>
+                                    <th>Sort</th>
+                                    <th>Column(s)</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey'></i> api_fieldreport_countries_pkey</td>
+                                    <td>Primary key</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>id</td>
+                                </tr>
+                                <tr>
+                                    <td class='uniqueKey' title='Unique Key'><i class='icon ion-key iconkey'></i> api_fieldreport_countrie_fieldreport_id_country_i_3824ab61_uniq</td>
+                                    <td>Must be unique</td>
+                                    <td><span title='Ascending'>Asc</span>/<span title='Ascending'>Asc</span></td>
+                                    <td>fieldreport_id + country_id</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>api_fieldreport_countries_country_id_fbaec807</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>country_id</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>api_fieldreport_countries_fieldreport_id_18b58939</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>fieldreport_id</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /.box-body -->
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-code-fork"></i>
+                            <h3 id="Relationships" class="box-title">Relationships</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div class="nav-tabs-custom"><!-- Tabs within a box -->
+                                <h5>Close relationships within degrees of separation</h5>
+                                <ul class="nav nav-tabs pull-left ui-sortable-handle">
+                                    <li class="active"><a href="#oneDegreeImg-chart" data-toggle="tab" aria-expanded="true">One</a></li>
+                                    <li class=""><a href="#twodegreesDegreeImg-chart" data-toggle="tab" aria-expanded="true">Two degrees</a></li>
+                                </ul>
+                                <div class="tab-content no-padding">
+                                    <div class="chart tab-pane active" id="oneDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
+<area shape="rect" id="node1" href="api_fieldreport_countries.html" target="_top" title="api_fieldreport_countries" alt="" coords="433,71,753,228">
+<area shape="rect" id="node2" href="api_country.html" target="_top" title="api_country" alt="" coords="5,228,389,521">
+<area shape="rect" id="node3" href="api_fieldreport.html" target="_top" title="api_fieldreport" alt="" coords="5,5,389,211">
+</map>
+                                        <a name='diagram'><img id="oneDegreeImg" src="../diagrams/tables/api_fieldreport_countries.1degree.png" usemap="#oneDegreeRelationshipsDiagram" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="twodegreesDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="twoDegreesRelationshipsDiagram" name="twoDegreesRelationshipsDiagram">
+<area shape="rect" id="node1" href="api_actionstaken.html" target="_top" title="api_actionstaken" alt="" coords="1181,5350,1379,5438">
+<area shape="rect" id="node2" href="api_fieldreport.html" target="_top" title="api_fieldreport" alt="" coords="673,5443,1057,5649">
+<area shape="rect" id="node5" href="api_disastertype.html" target="_top" title="api_disastertype" alt="" coords="5,4689,201,4777">
+<area shape="rect" id="node6" href="api_event.html" target="_top" title="api_event" alt="" coords="353,4089,521,4177">
+<area shape="rect" id="node26" href="auth_user.html" target="_top" title="auth_user" alt="" coords="355,5222,519,5310">
+<area shape="rect" id="node3" href="api_appeal.html" target="_top" title="api_appeal" alt="" coords="785,2981,945,3069">
+<area shape="rect" id="node4" href="api_country.html" target="_top" title="api_country" alt="" coords="245,2662,629,2955">
+<area shape="rect" id="node7" href="api_region.html" target="_top" title="api_region" alt="" coords="26,2981,181,3069">
+<area shape="rect" id="node8" href="api_appealdocument.html" target="_top" title="api_appealdocument" alt="" coords="1167,2759,1393,2847">
+<area shape="rect" id="node9" href="api_appealhistory.html" target="_top" title="api_appealhistory" alt="" coords="1177,2425,1383,2513">
+<area shape="rect" id="node10" href="api_countrycapacitystrengthening.html" target="_top" title="api_countrycapacitystrengthening" alt="" coords="705,1942,1025,2030">
+<area shape="rect" id="node11" href="api_countrycontact.html" target="_top" title="api_countrycontact" alt="" coords="757,2047,973,2135">
+<area shape="rect" id="node12" href="api_countrydirectory.html" target="_top" title="api_countrydirectory" alt="" coords="752,2153,979,2241">
+<area shape="rect" id="node13" href="api_countrygeoms.html" target="_top" title="api_countrygeoms" alt="" coords="760,2559,971,2647">
+<area shape="rect" id="node14" href="api_countryicrcpresence.html" target="_top" title="api_countryicrcpresence" alt="" coords="739,2665,992,2753">
+<area shape="rect" id="node15" href="api_countrykeydocument.html" target="_top" title="api_countrykeydocument" alt="" coords="737,2770,994,2858">
+<area shape="rect" id="node16" href="api_countrykeyfigure.html" target="_top" title="api_countrykeyfigure" alt="" coords="751,2875,980,2963">
+<area shape="rect" id="node17" href="api_countrylink.html" target="_top" title="api_countrylink" alt="" coords="771,257,960,345">
+<area shape="rect" id="node18" href="api_countryoffieldreporttoreview.html" target="_top" title="api_countryoffieldreporttoreview" alt="" coords="711,362,1020,450">
+<area shape="rect" id="node19" href="api_countryorganizationalcapacity.html" target="_top" title="api_countryorganizationalcapacity" alt="" coords="705,467,1026,555">
+<area shape="rect" id="node20" href="api_countrysnippet.html" target="_top" title="api_countrysnippet" alt="" coords="757,573,973,661">
+<area shape="rect" id="node21" href="api_countrysupportingpartner.html" target="_top" title="api_countrysupportingpartner" alt="" coords="719,678,1011,766">
+<area shape="rect" id="node22" href="api_district.html" target="_top" title="api_district" alt="" coords="781,3331,949,3419">
+<area shape="rect" id="node23" href="api_erpguid.html" target="_top" title="api_erpguid" alt="" coords="1198,5455,1362,5543">
+<area shape="rect" id="node24" href="api_event_countries.html" target="_top" title="api_event_countries" alt="" coords="755,3807,976,3895">
+<area shape="rect" id="node25" href="api_event_countries_for_preview.html" target="_top" title="api_event_countries_for_preview" alt="" coords="709,4018,1021,4106">
+<area shape="rect" id="node27" href="api_fieldreport_countries.html" target="_top" title="api_fieldreport_countries" alt="" coords="1120,4859,1440,5017">
+<area shape="rect" id="node28" href="api_fieldreport_districts.html" target="_top" title="api_fieldreport_districts" alt="" coords="1156,4597,1404,4685">
+<area shape="rect" id="node29" href="api_fieldreport_external_partners.html" target="_top" title="api_fieldreport_external_partners" alt="" coords="1123,5561,1437,5649">
+<area shape="rect" id="node30" href="api_fieldreport_regions.html" target="_top" title="api_fieldreport_regions" alt="" coords="1158,3781,1402,3869">
+<area shape="rect" id="node31" href="api_fieldreport_supported_activities.html" target="_top" title="api_fieldreport_supported_activities" alt="" coords="1113,5034,1447,5122">
+<area shape="rect" id="node32" href="api_fieldreportcontact.html" target="_top" title="api_fieldreportcontact" alt="" coords="1163,5139,1397,5227">
+<area shape="rect" id="node33" href="api_gdacsevent_countries.html" target="_top" title="api_gdacsevent_countries" alt="" coords="733,783,997,871">
+<area shape="rect" id="node34" href="api_geccode.html" target="_top" title="api_geccode" alt="" coords="781,889,950,977">
+<area shape="rect" id="node35" href="api_nsdinitiatives.html" target="_top" title="api_nsdinitiatives" alt="" coords="764,994,967,1082">
+<area shape="rect" id="node36" href="api_profile.html" target="_top" title="api_profile" alt="" coords="788,4301,943,4389">
+<area shape="rect" id="node37" href="api_source.html" target="_top" title="api_source" alt="" coords="1201,5245,1359,5333">
+<area shape="rect" id="node38" href="api_usercountry.html" target="_top" title="api_usercountry" alt="" coords="768,4123,963,4211">
+<area shape="rect" id="node39" href="country_plan_countryplan.html" target="_top" title="country_plan_countryplan" alt="" coords="733,5146,998,5234">
+<area shape="rect" id="node40" href="country_plan_membershipcoordination.html" target="_top" title="country_plan_membershipcoordination" alt="" coords="1101,3190,1459,3278">
+<area shape="rect" id="node41" href="databank_countryoverview.html" target="_top" title="databank_countryoverview" alt="" coords="731,1099,1000,1187">
+<area shape="rect" id="node42" href="deployments_emergencyproject.html" target="_top" title="deployments_emergencyproject" alt="" coords="1503,3753,1808,3841">
+<area shape="rect" id="node43" href="deployments_eru.html" target="_top" title="deployments_eru" alt="" coords="1179,2981,1381,3069">
+<area shape="rect" id="node44" href="deployments_eruowner.html" target="_top" title="deployments_eruowner" alt="" coords="743,2418,988,2506">
+<area shape="rect" id="node45" href="deployments_fact.html" target="_top" title="deployments_fact" alt="" coords="763,3702,968,3790">
+<area shape="rect" id="node46" href="deployments_heop.html" target="_top" title="deployments_heop" alt="" coords="759,3913,972,4001">
+<area shape="rect" id="node47" href="deployments_partnersocietydeployment.html" target="_top" title="deployments_partnersocietydeployment" alt="" coords="685,1205,1046,1293">
+<area shape="rect" id="node48" href="deployments_personnel.html" target="_top" title="deployments_personnel" alt="" coords="1531,145,1780,233">
+<area shape="rect" id="node49" href="deployments_personneldeployment.html" target="_top" title="deployments_personneldeployment" alt="" coords="1115,185,1445,273">
+<area shape="rect" id="node50" href="notifications_surgealert.html" target="_top" title="notifications_surgealert" alt="" coords="742,3226,989,3314">
+<area shape="rect" id="node51" href="deployments_project.html" target="_top" title="deployments_project" alt="" coords="751,4794,979,4882">
+<area shape="rect" id="node52" href="deployments_rdrt.html" target="_top" title="deployments_rdrt" alt="" coords="763,3597,968,3685">
+<area shape="rect" id="node53" href="dref_dref.html" target="_top" title="dref_dref" alt="" coords="1198,5718,1362,5806">
+<area shape="rect" id="node54" href="dref_dreffinalreport.html" target="_top" title="dref_dreffinalreport" alt="" coords="1547,5786,1764,5874">
+<area shape="rect" id="node55" href="dref_drefoperationalupdate.html" target="_top" title="dref_drefoperationalupdate" alt="" coords="1519,5637,1791,5725">
+<area shape="rect" id="node56" href="eap_eap.html" target="_top" title="eap_eap" alt="" coords="1211,4343,1349,4431">
+<area shape="rect" id="node57" href="flash_update_flashcountrydistrict.html" target="_top" title="flash_update_flashcountrydistrict" alt="" coords="707,1310,1023,1398">
+<area shape="rect" id="node58" href="local_units_delegationoffice.html" target="_top" title="local_units_delegationoffice" alt="" coords="727,1415,1004,1503">
+<area shape="rect" id="node59" href="local_units_externallymanagedlocalunit.html" target="_top" title="local_units_externallymanagedlocalunit" alt="" coords="687,5041,1044,5129">
+<area shape="rect" id="node60" href="local_units_localunit.html" target="_top" title="local_units_localunit" alt="" coords="1167,4702,1393,4790">
+<area shape="rect" id="node61" href="local_units_localunitbulkupload.html" target="_top" title="local_units_localunitbulkupload" alt="" coords="714,4935,1017,5023">
+<area shape="rect" id="node62" href="notifications_subscription.html" target="_top" title="notifications_subscription" alt="" coords="733,4689,997,4777">
+<area shape="rect" id="node63" href="per_customperworkplancomponent.html" target="_top" title="per_customperworkplancomponent" alt="" coords="701,1521,1030,1609">
+<area shape="rect" id="node64" href="per_nicedocument.html" target="_top" title="per_nicedocument" alt="" coords="760,1626,971,1714">
+<area shape="rect" id="node65" href="per_nsphase.html" target="_top" title="per_nsphase" alt="" coords="780,1731,951,1819">
+<area shape="rect" id="node66" href="per_overview.html" target="_top" title="per_overview" alt="" coords="779,4442,952,4530">
+<area shape="rect" id="node67" href="per_perdocumentupload.html" target="_top" title="per_perdocumentupload" alt="" coords="1153,4449,1407,4537">
+<area shape="rect" id="node68" href="per_perworkplancomponent.html" target="_top" title="per_perworkplancomponent" alt="" coords="727,1837,1004,1925">
+<area shape="rect" id="node69" href="per_workplan.html" target="_top" title="per_workplan" alt="" coords="777,4547,953,4635">
+</map>
+                                        <a name='diagram'><img id="twodegreesDegreeImg" src="../diagrams/tables/api_fieldreport_countries.2degrees.png" usemap="#twoDegreesRelationshipsDiagram" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.box-body -->
+                    </div>
+                </section>
+                <script>
+                    var config = {
+                        pagination: true
+                    }
+                </script>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.1.0</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="table.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>

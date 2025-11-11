@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>api_region - GO Database</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>GO</b> Database</a>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>api_region</h1><p><span id="recordNumber">5</span> rows</p><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Columns</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table id="standard_table" class="table table-bordered table-striped dataTable" role="grid">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Column</th>
+                                    <th>Type</th>
+                                    <th>Size</th>
+                                    <th title='Are nulls allowed?'>Nulls</th>
+                                    <th title='Is column automatically updated?'>Auto</th>
+                                    <th title='Default value'>Default</th>
+                                    <th title='Columns in tables that reference this column'>Children</th>
+                                    <th title='Columns in tables that are referenced by this column'>Parents</th>
+                                    <th title='Comments' class="toggle"><span>Comments</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="id">id</span></td>
+                                    <td>serial</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title='Automatically updated by the database'>√</td>
+                                    <td>nextval(&#39;api_region_id_seq&#39;::regclass)</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="api_appeal.region_id references api_region.id via api_appeal_region_id_2119ea34_fk_api_region_id"><a href='api_appeal.html'>api_appeal</a><span class='relatedKey'>.region_id</span></td>
+                                                <td class="constraint detail">api_appeal_region_id_2119ea34_fk_api_region_id<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="api_appealhistory.region_id references api_region.id via api_appealhistory_region_id_021d21f5_fk_api_region_id"><a href='api_appealhistory.html'>api_appealhistory</a><span class='relatedKey'>.region_id</span></td>
+                                                <td class="constraint detail">api_appealhistory_region_id_021d21f5_fk_api_region_id<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="api_country.region_id references api_region.id via api_country_region_id_f142f638_fk_api_region_id"><a href='api_country.html'>api_country</a><span class='relatedKey'>.region_id</span></td>
+                                                <td class="constraint detail">api_country_region_id_f142f638_fk_api_region_id<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="api_event_regions.region_id references api_region.id via api_event_regions_region_id_fb335986_fk_api_region_id"><a href='api_event_regions.html'>api_event_regions</a><span class='relatedKey'>.region_id</span></td>
+                                                <td class="constraint detail">api_event_regions_region_id_fb335986_fk_api_region_id<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="api_fieldreport_regions.region_id references api_region.id via api_fieldreport_regions_region_id_6f3346e7_fk_api_region_id"><a href='api_fieldreport_regions.html'>api_fieldreport_regions</a><span class='relatedKey'>.region_id</span></td>
+                                                <td class="constraint detail">api_fieldreport_regions_region_id_6f3346e7_fk_api_region_id<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="api_regioncontact.region_id references api_region.id via api_regioncontact_region_id_2e2bc127_fk_api_region_id"><a href='api_regioncontact.html'>api_regioncontact</a><span class='relatedKey'>.region_id</span></td>
+                                                <td class="constraint detail">api_regioncontact_region_id_2e2bc127_fk_api_region_id<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="api_regionemergencysnippet.region_id references api_region.id via api_regionemergencysnippet_region_id_5f1a27aa_fk_api_region_id"><a href='api_regionemergencysnippet.html'>api_regionemergencysnippet</a><span class='relatedKey'>.region_id</span></td>
+                                                <td class="constraint detail">api_regionemergencysnippet_region_id_5f1a27aa_fk_api_region_id<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="api_regionkeyfigure.region_id references api_region.id via api_regionkeyfigure_region_id_7ba79953_fk_api_region_id"><a href='api_regionkeyfigure.html'>api_regionkeyfigure</a><span class='relatedKey'>.region_id</span></td>
+                                                <td class="constraint detail">api_regionkeyfigure_region_id_7ba79953_fk_api_region_id<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="api_regionlink.region_id references api_region.id via api_regionlink_region_id_5a6caf22_fk_api_region_id"><a href='api_regionlink.html'>api_regionlink</a><span class='relatedKey'>.region_id</span></td>
+                                                <td class="constraint detail">api_regionlink_region_id_5a6caf22_fk_api_region_id<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="api_regionpreparednesssnippet.region_id references api_region.id via api_regionpreparedne_region_id_c7e22b4b_fk_api_regio"><a href='api_regionpreparednesssnippet.html'>api_regionpreparednesssnippet</a><span class='relatedKey'>.region_id</span></td>
+                                                <td class="constraint detail">api_regionpreparedne_region_id_c7e22b4b_fk_api_regio<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="api_regionprofilesnippet.region_id references api_region.id via api_regionprofilesnippet_region_id_70fd1608_fk_api_region_id"><a href='api_regionprofilesnippet.html'>api_regionprofilesnippet</a><span class='relatedKey'>.region_id</span></td>
+                                                <td class="constraint detail">api_regionprofilesnippet_region_id_70fd1608_fk_api_region_id<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="api_regionsnippet.region_id references api_region.id via api_regionsnippet_region_id_ad718d86_fk_api_region_id"><a href='api_regionsnippet.html'>api_regionsnippet</a><span class='relatedKey'>.region_id</span></td>
+                                                <td class="constraint detail">api_regionsnippet_region_id_ad718d86_fk_api_region_id<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="api_userregion.region_id references api_region.id via api_userregion_region_id_7c16b98f_fk_api_region_id"><a href='api_userregion.html'>api_userregion</a><span class='relatedKey'>.region_id</span></td>
+                                                <td class="constraint detail">api_userregion_region_id_7c16b98f_fk_api_region_id<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="deployments_fact.region_id references api_region.id via deployments_fact_region_id_cdd84270_fk_api_region_id"><a href='deployments_fact.html'>deployments_fact</a><span class='relatedKey'>.region_id</span></td>
+                                                <td class="constraint detail">deployments_fact_region_id_cdd84270_fk_api_region_id<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="deployments_heop.region_id references api_region.id via deployments_heop_region_id_bd316224_fk_api_region_id"><a href='deployments_heop.html'>deployments_heop</a><span class='relatedKey'>.region_id</span></td>
+                                                <td class="constraint detail">deployments_heop_region_id_bd316224_fk_api_region_id<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="deployments_personneldeployment.region_deployed_to_id references api_region.id via deployments_personne_region_deployed_to_i_e7cf7745_fk_api_regio"><a href='deployments_personneldeployment.html'>deployments_personneldeployment</a><span class='relatedKey'>.region_deployed_to_id</span></td>
+                                                <td class="constraint detail">deployments_personne_region_deployed_to_i_e7cf7745_fk_api_regio<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="deployments_rdrt.region_id references api_region.id via deployments_rdrt_region_id_a71f2b58_fk_api_region_id"><a href='deployments_rdrt.html'>deployments_rdrt</a><span class='relatedKey'>.region_id</span></td>
+                                                <td class="constraint detail">deployments_rdrt_region_id_a71f2b58_fk_api_region_id<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="notifications_subscription.region_id references api_region.id via notifications_subscription_region_id_9f35d6f7_fk_api_region_id"><a href='notifications_subscription.html'>notifications_subscription</a><span class='relatedKey'>.region_id</span></td>
+                                                <td class="constraint detail">notifications_subscription_region_id_9f35d6f7_fk_api_region_id<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="name">name</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i><span id="bbox">bbox</span></td>
+                                    <td>geometry</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="label">label</span></td>
+                                    <td>varchar</td>
+                                    <td>250</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="label_ar">label_ar</span></td>
+                                    <td>varchar</td>
+                                    <td>250</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="label_en">label_en</span></td>
+                                    <td>varchar</td>
+                                    <td>250</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="label_es">label_es</span></td>
+                                    <td>varchar</td>
+                                    <td>250</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="label_fr">label_fr</span></td>
+                                    <td>varchar</td>
+                                    <td>250</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="additional_tab_name">additional_tab_name</span></td>
+                                    <td>varchar</td>
+                                    <td>100</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="additional_tab_name_ar">additional_tab_name_ar</span></td>
+                                    <td>varchar</td>
+                                    <td>100</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="additional_tab_name_en">additional_tab_name_en</span></td>
+                                    <td>varchar</td>
+                                    <td>100</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="additional_tab_name_es">additional_tab_name_es</span></td>
+                                    <td>varchar</td>
+                                    <td>100</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="additional_tab_name_fr">additional_tab_name_fr</span></td>
+                                    <td>varchar</td>
+                                    <td>100</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="translation_module_original_language">translation_module_original_language</span></td>
+                                    <td>varchar</td>
+                                    <td>2</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="translation_module_skip_auto_translation">translation_module_skip_auto_translation</span></td>
+                                    <td>bool</td>
+                                    <td>1</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-sitemap"></i>
+                            <h3 id="Indexes" class="box-title">Indexes</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table id="indexes_table" class="table table-bordered table-striped dataTable" role="grid">
+                                <thead>
+                                <tr>
+                                    <th>Constraint Name</th>
+                                    <th>Type</th>
+                                    <th>Sort</th>
+                                    <th>Column(s)</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey'></i> api_region_pkey</td>
+                                    <td>Primary key</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>id</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>api_region_bbox_id</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>bbox</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /.box-body -->
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-code-fork"></i>
+                            <h3 id="Relationships" class="box-title">Relationships</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div class="nav-tabs-custom"><!-- Tabs within a box -->
+                                <h5>Close relationships within degrees of separation</h5>
+                                <ul class="nav nav-tabs pull-left ui-sortable-handle">
+                                    <li class="active"><a href="#oneDegreeImg-chart" data-toggle="tab" aria-expanded="true">One</a></li>
+                                    <li class=""><a href="#twodegreesDegreeImg-chart" data-toggle="tab" aria-expanded="true">Two degrees</a></li>
+                                </ul>
+                                <div class="tab-content no-padding">
+                                    <div class="chart tab-pane active" id="oneDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
+<area shape="rect" id="node1" href="api_appeal.html" target="_top" title="api_appeal" alt="" coords="1024,1288,1408,1552">
+<area shape="rect" id="node2" href="api_country.html" target="_top" title="api_country" alt="" coords="596,1751,980,2044">
+<area shape="rect" id="node3" href="api_region.html" target="_top" title="api_region" alt="" coords="5,1035,552,1544">
+<area shape="rect" id="node4" href="api_appealhistory.html" target="_top" title="api_appealhistory" alt="" coords="1540,1259,1748,1493">
+<area shape="rect" id="node5" href="api_event_regions.html" target="_top" title="api_event_regions" alt="" coords="683,143,893,295">
+<area shape="rect" id="node6" href="api_fieldreport_regions.html" target="_top" title="api_fieldreport_regions" alt="" coords="666,312,910,464">
+<area shape="rect" id="node7" href="api_regioncontact.html" target="_top" title="api_regioncontact" alt="" coords="682,481,894,604">
+<area shape="rect" id="node8" href="api_regionemergencysnippet.html" target="_top" title="api_regionemergencysnippet" alt="" coords="596,621,980,768">
+<area shape="rect" id="node9" href="api_regionkeyfigure.html" target="_top" title="api_regionkeyfigure" alt="" coords="673,785,903,908">
+<area shape="rect" id="node10" href="api_regionlink.html" target="_top" title="api_regionlink" alt="" coords="697,925,879,1072">
+<area shape="rect" id="node11" href="api_regionpreparednesssnippet.html" target="_top" title="api_regionpreparednesssnippet" alt="" coords="596,1089,980,1236">
+<area shape="rect" id="node12" href="api_regionprofilesnippet.html" target="_top" title="api_regionprofilesnippet" alt="" coords="596,1253,980,1400">
+<area shape="rect" id="node13" href="api_regionsnippet.html" target="_top" title="api_regionsnippet" alt="" coords="596,1417,980,1564">
+<area shape="rect" id="node14" href="api_userregion.html" target="_top" title="api_userregion" alt="" coords="695,1581,881,1733">
+<area shape="rect" id="node15" href="deployments_fact.html" target="_top" title="deployments_fact" alt="" coords="1113,529,1319,764">
+<area shape="rect" id="node16" href="deployments_heop.html" target="_top" title="deployments_heop" alt="" coords="1109,1641,1323,1876">
+<area shape="rect" id="node17" href="deployments_personneldeployment.html" target="_top" title="deployments_personneldeployment" alt="" coords="1452,1536,1836,1771">
+<area shape="rect" id="node18" href="deployments_rdrt.html" target="_top" title="deployments_rdrt" alt="" coords="1113,1893,1319,2128">
+<area shape="rect" id="node19" href="notifications_subscription.html" target="_top" title="notifications_subscription" alt="" coords="1084,2145,1348,2409">
+</map>
+                                        <a name='diagram'><img id="oneDegreeImg" src="../diagrams/tables/api_region.1degree.png" usemap="#oneDegreeRelationshipsDiagram" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="twodegreesDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="twoDegreesRelationshipsDiagram" name="twoDegreesRelationshipsDiagram">
+<area shape="rect" id="node1" href="api_appeal.html" target="_top" title="api_appeal" alt="" coords="1024,767,1408,1031">
+<area shape="rect" id="node2" href="api_country.html" target="_top" title="api_country" alt="" coords="596,3898,980,4191">
+<area shape="rect" id="node3" href="api_disastertype.html" target="_top" title="api_disastertype" alt="" coords="181,1273,377,1361">
+<area shape="rect" id="node4" href="api_event.html" target="_top" title="api_event" alt="" coords="704,1273,872,1361">
+<area shape="rect" id="node5" href="api_region.html" target="_top" title="api_region" alt="" coords="5,2227,552,2737">
+<area shape="rect" id="node6" href="api_appealdocument.html" target="_top" title="api_appealdocument" alt="" coords="1531,2654,1757,2742">
+<area shape="rect" id="node7" href="api_appealhistory.html" target="_top" title="api_appealhistory" alt="" coords="1540,477,1748,711">
+<area shape="rect" id="node8" href="api_countrycapacitystrengthening.html" target="_top" title="api_countrycapacitystrengthening" alt="" coords="1056,3585,1376,3673">
+<area shape="rect" id="node9" href="api_countrycontact.html" target="_top" title="api_countrycontact" alt="" coords="1108,7165,1324,7253">
+<area shape="rect" id="node10" href="api_admincontact.html" target="_top" title="api_admincontact" alt="" coords="685,7070,891,7158">
+<area shape="rect" id="node11" href="api_countrydirectory.html" target="_top" title="api_countrydirectory" alt="" coords="1103,3690,1329,3778">
+<area shape="rect" id="node12" href="api_countrygeoms.html" target="_top" title="api_countrygeoms" alt="" coords="1111,4183,1321,4271">
+<area shape="rect" id="node13" href="api_countryicrcpresence.html" target="_top" title="api_countryicrcpresence" alt="" coords="1089,4289,1343,4377">
+<area shape="rect" id="node14" href="api_countrykeydocument.html" target="_top" title="api_countrykeydocument" alt="" coords="1087,4394,1345,4482">
+<area shape="rect" id="node15" href="api_countrykeyfigure.html" target="_top" title="api_countrykeyfigure" alt="" coords="1101,6133,1331,6221">
+<area shape="rect" id="node16" href="api_adminkeyfigure.html" target="_top" title="api_adminkeyfigure" alt="" coords="679,6374,897,6462">
+<area shape="rect" id="node17" href="api_countrylink.html" target="_top" title="api_countrylink" alt="" coords="1121,6755,1311,6843">
+<area shape="rect" id="node18" href="api_adminlink.html" target="_top" title="api_adminlink" alt="" coords="699,6798,877,6886">
+<area shape="rect" id="node19" href="api_countryoffieldreporttoreview.html" target="_top" title="api_countryoffieldreporttoreview" alt="" coords="1061,4499,1371,4587">
+<area shape="rect" id="node20" href="api_countryorganizationalcapacity.html" target="_top" title="api_countryorganizationalcapacity" alt="" coords="1055,3374,1377,3462">
+<area shape="rect" id="node21" href="api_countrysnippet.html" target="_top" title="api_countrysnippet" alt="" coords="1108,3795,1324,3883">
+<area shape="rect" id="node22" href="api_countrysupportingpartner.html" target="_top" title="api_countrysupportingpartner" alt="" coords="1070,4657,1362,4745">
+<area shape="rect" id="node23" href="api_district.html" target="_top" title="api_district" alt="" coords="1132,4078,1300,4166">
+<area shape="rect" id="node24" href="api_event_countries.html" target="_top" title="api_event_countries" alt="" coords="1105,1647,1327,1735">
+<area shape="rect" id="node25" href="api_event_countries_for_preview.html" target="_top" title="api_event_countries_for_preview" alt="" coords="1060,1789,1372,1877">
+<area shape="rect" id="node26" href="api_event_regions.html" target="_top" title="api_event_regions" alt="" coords="1111,1337,1321,1489">
+<area shape="rect" id="node27" href="api_fieldreport.html" target="_top" title="api_fieldreport" alt="" coords="1125,1894,1307,1982">
+<area shape="rect" id="node28" href="auth_user.html" target="_top" title="auth_user" alt="" coords="706,6209,870,6297">
+<area shape="rect" id="node29" href="api_fieldreport_countries.html" target="_top" title="api_fieldreport_countries" alt="" coords="1515,3074,1773,3162">
+<area shape="rect" id="node30" href="api_fieldreport_regions.html" target="_top" title="api_fieldreport_regions" alt="" coords="1522,1882,1766,2034">
+<area shape="rect" id="node31" href="api_gdacsevent_countries.html" target="_top" title="api_gdacsevent_countries" alt="" coords="1084,4762,1348,4850">
+<area shape="rect" id="node32" href="api_geccode.html" target="_top" title="api_geccode" alt="" coords="1131,4867,1301,4955">
+<area shape="rect" id="node33" href="api_nsdinitiatives.html" target="_top" title="api_nsdinitiatives" alt="" coords="1115,4973,1317,5061">
+<area shape="rect" id="node34" href="api_profile.html" target="_top" title="api_profile" alt="" coords="1139,5711,1293,5799">
+<area shape="rect" id="node35" href="api_regioncontact.html" target="_top" title="api_regioncontact" alt="" coords="1110,7270,1322,7393">
+<area shape="rect" id="node36" href="api_regionemergencysnippet.html" target="_top" title="api_regionemergencysnippet" alt="" coords="596,2283,980,2430">
+<area shape="rect" id="node37" href="api_regionkeyfigure.html" target="_top" title="api_regionkeyfigure" alt="" coords="1101,6861,1331,6983">
+<area shape="rect" id="node38" href="api_regionlink.html" target="_top" title="api_regionlink" alt="" coords="1125,7001,1307,7147">
+<area shape="rect" id="node39" href="api_regionpreparednesssnippet.html" target="_top" title="api_regionpreparednesssnippet" alt="" coords="596,7175,980,7322">
+<area shape="rect" id="node40" href="api_regionprofilesnippet.html" target="_top" title="api_regionprofilesnippet" alt="" coords="596,1919,980,2066">
+<area shape="rect" id="node41" href="api_regionsnippet.html" target="_top" title="api_regionsnippet" alt="" coords="596,2119,980,2266">
+<area shape="rect" id="node42" href="api_usercountry.html" target="_top" title="api_usercountry" alt="" coords="1119,5501,1313,5589">
+<area shape="rect" id="node43" href="api_userregion.html" target="_top" title="api_userregion" alt="" coords="1123,6586,1309,6738">
+<area shape="rect" id="node44" href="country_plan_countryplan.html" target="_top" title="country_plan_countryplan" alt="" coords="1083,6027,1349,6115">
+<area shape="rect" id="node45" href="country_plan_membershipcoordination.html" target="_top" title="country_plan_membershipcoordination" alt="" coords="1465,5289,1823,5377">
+<area shape="rect" id="node46" href="databank_countryoverview.html" target="_top" title="databank_countryoverview" alt="" coords="1081,5078,1351,5166">
+<area shape="rect" id="node47" href="deployments_emergencyproject.html" target="_top" title="deployments_emergencyproject" alt="" coords="1880,2573,2185,2661">
+<area shape="rect" id="node48" href="deployments_eru.html" target="_top" title="deployments_eru" alt="" coords="1543,2461,1745,2549">
+<area shape="rect" id="node49" href="deployments_eruowner.html" target="_top" title="deployments_eruowner" alt="" coords="1093,2461,1339,2549">
+<area shape="rect" id="node50" href="deployments_fact.html" target="_top" title="deployments_fact" alt="" coords="1113,1085,1319,1319">
+<area shape="rect" id="node51" href="deployments_factperson.html" target="_top" title="deployments_factperson" alt="" coords="1517,1394,1771,1482">
+<area shape="rect" id="node52" href="deployments_heop.html" target="_top" title="deployments_heop" alt="" coords="1109,155,1323,390">
+<area shape="rect" id="node53" href="deployments_partnersocietydeployment.html" target="_top" title="deployments_partnersocietydeployment" alt="" coords="1035,2654,1397,2742">
+<area shape="rect" id="node54" href="deployments_personnel.html" target="_top" title="deployments_personnel" alt="" coords="1908,2106,2157,2194">
+<area shape="rect" id="node55" href="deployments_personneldeployment.html" target="_top" title="deployments_personneldeployment" alt="" coords="1452,1142,1836,1377">
+<area shape="rect" id="node56" href="notifications_surgealert.html" target="_top" title="notifications_surgealert" alt="" coords="1093,1542,1339,1630">
+<area shape="rect" id="node57" href="deployments_project.html" target="_top" title="deployments_project" alt="" coords="1102,3233,1330,3321">
+<area shape="rect" id="node58" href="deployments_rdrt.html" target="_top" title="deployments_rdrt" alt="" coords="1113,407,1319,642">
+<area shape="rect" id="node59" href="deployments_rdrtperson.html" target="_top" title="deployments_rdrtperson" alt="" coords="1517,371,1771,459">
+<area shape="rect" id="node60" href="dref_dref.html" target="_top" title="dref_dref" alt="" coords="1562,4394,1726,4482">
+<area shape="rect" id="node61" href="dref_dreffinalreport.html" target="_top" title="dref_dreffinalreport" alt="" coords="1924,4575,2141,4663">
+<area shape="rect" id="node62" href="dref_drefoperationalupdate.html" target="_top" title="dref_drefoperationalupdate" alt="" coords="1897,5206,2169,5294">
+<area shape="rect" id="node63" href="eap_eap.html" target="_top" title="eap_eap" alt="" coords="1575,4499,1713,4587">
+<area shape="rect" id="node64" href="flash_update_flashcountrydistrict.html" target="_top" title="flash_update_flashcountrydistrict" alt="" coords="1058,2811,1374,2899">
+<area shape="rect" id="node65" href="local_units_delegationoffice.html" target="_top" title="local_units_delegationoffice" alt="" coords="1077,2917,1355,3005">
+<area shape="rect" id="node66" href="local_units_externallymanagedlocalunit.html" target="_top" title="local_units_externallymanagedlocalunit" alt="" coords="1037,5922,1395,6010">
+<area shape="rect" id="node67" href="local_units_localunit.html" target="_top" title="local_units_localunit" alt="" coords="1531,6071,1757,6159">
+<area shape="rect" id="node68" href="local_units_localunitbulkupload.html" target="_top" title="local_units_localunitbulkupload" alt="" coords="1065,5817,1367,5905">
+<area shape="rect" id="node69" href="notifications_subscription.html" target="_top" title="notifications_subscription" alt="" coords="1084,2107,1348,2371">
+<area shape="rect" id="node70" href="per_customperworkplancomponent.html" target="_top" title="per_customperworkplancomponent" alt="" coords="1051,3022,1381,3110">
+<area shape="rect" id="node71" href="per_nicedocument.html" target="_top" title="per_nicedocument" alt="" coords="1111,3127,1321,3215">
+<area shape="rect" id="node72" href="per_nsphase.html" target="_top" title="per_nsphase" alt="" coords="1131,3479,1301,3567">
+<area shape="rect" id="node73" href="per_opslearning.html" target="_top" title="per_opslearning" alt="" coords="1547,799,1741,887">
+<area shape="rect" id="node74" href="per_overview.html" target="_top" title="per_overview" alt="" coords="1129,5395,1303,5483">
+<area shape="rect" id="node75" href="per_perdocumentupload.html" target="_top" title="per_perdocumentupload" alt="" coords="1517,5395,1771,5483">
+<area shape="rect" id="node76" href="per_perworkplancomponent.html" target="_top" title="per_perworkplancomponent" alt="" coords="1077,3901,1355,3989">
+<area shape="rect" id="node77" href="per_workplan.html" target="_top" title="per_workplan" alt="" coords="1128,5606,1304,5694">
+</map>
+                                        <a name='diagram'><img id="twodegreesDegreeImg" src="../diagrams/tables/api_region.2degrees.png" usemap="#twoDegreesRelationshipsDiagram" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.box-body -->
+                    </div>
+                </section>
+                <script>
+                    var config = {
+                        pagination: true
+                    }
+                </script>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.1.0</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="table.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>

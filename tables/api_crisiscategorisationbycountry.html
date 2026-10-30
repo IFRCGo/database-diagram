@@ -1,0 +1,1938 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>api_crisiscategorisationbycountry - test.public</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>test</b></a><span class="navbar-brand" style="padding-left: 0">.public</span>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>api_crisiscategorisationbycountry</h1><p><span id="recordNumber">7</span> rows</p><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Columns</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table
+                                    id="standard_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Column</th>
+                                    <th>Type</th>
+                                    <th>Size</th>
+                                    <th title='Are nulls allowed?'>Nulls</th>
+                                    <th title='Is column automatically updated?'>Auto</th>
+                                    <th title='Default value'>Default</th>
+                                    <th title='Columns in tables that reference this column'>Children</th>
+                                    <th title='Columns in tables that are referenced by this column'>Parents</th>
+                                    <th title='Comments' class="toggle"><span>Comments</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="id">id</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title='Automatically updated by the database'>√</td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="crisis_categorisation">crisis_categorisation</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="crisis_score">crisis_score</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="pre_crisis_vulnerability">pre_crisis_vulnerability</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="pre_crisis_vulnerability_hazard_exposure">pre_crisis_vulnerability_hazard_exposure</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="pre_crisis_vulnerability_hazard_exposure_comment">pre_crisis_vulnerability_hazard_exposure_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="pre_crisis_vulnerability_hazard_exposure_intermediate">pre_crisis_vulnerability_hazard_exposure_intermediate</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="pre_crisis_vulnerability_hazard_exposure_intermediate_comment">pre_crisis_vulnerability_hazard_exposure_intermediate_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="pre_crisis_vulnerability_vulnerability">pre_crisis_vulnerability_vulnerability</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="pre_crisis_vulnerability_vulnerability_comment">pre_crisis_vulnerability_vulnerability_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="pre_crisis_vulnerability_vulnerability_intermediate">pre_crisis_vulnerability_vulnerability_intermediate</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="pre_crisis_vulnerability_vulnerability_intermediate_comment">pre_crisis_vulnerability_vulnerability_intermediate_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="pre_crisis_vulnerability_coping_mechanism">pre_crisis_vulnerability_coping_mechanism</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="pre_crisis_vulnerability_coping_mechanism_comment">pre_crisis_vulnerability_coping_mechanism_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="pre_crisis_vulnerability_coping_mechanism_intermediate">pre_crisis_vulnerability_coping_mechanism_intermediate</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="pre_crisis_vulnerability_coping_mechanism_intermediate_comment">pre_crisis_vulnerability_coping_mechanism_intermediate_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="crisis_complexity">crisis_complexity</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="crisis_complexity_humanitarian_access_score">crisis_complexity_humanitarian_access_score</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="crisis_complexity_humanitarian_access_score_comment">crisis_complexity_humanitarian_access_score_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="crisis_complexity_humanitarian_access_acaps">crisis_complexity_humanitarian_access_acaps</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="crisis_complexity_humanitarian_access_acaps_comment">crisis_complexity_humanitarian_access_acaps_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="crisis_complexity_government_response">crisis_complexity_government_response</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="crisis_complexity_government_response_comment">crisis_complexity_government_response_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="crisis_complexity_media_attention">crisis_complexity_media_attention</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="crisis_complexity_media_attention_comment">crisis_complexity_media_attention_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="crisis_complexity_ifrc_security_phase">crisis_complexity_ifrc_security_phase</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="crisis_complexity_ifrc_security_phase_comment">crisis_complexity_ifrc_security_phase_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="scope_and_scale">scope_and_scale</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="scope_and_scale_number_of_affected_population_score">scope_and_scale_number_of_affected_population_score</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="scope_and_scale_number_of_affected_population_score_comment">scope_and_scale_number_of_affected_population_score_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="scope_and_scale_number_of_affected_population">scope_and_scale_number_of_affected_population</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="scope_and_scale_number_of_affected_population_comment">scope_and_scale_number_of_affected_population_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="scope_and_scale_percentage_affected_population_score">scope_and_scale_percentage_affected_population_score</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="scope_and_scale_percentage_affected_population_score_comment">scope_and_scale_percentage_affected_population_score_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="scope_and_scale_total_population_of_the_affected_area">scope_and_scale_total_population_of_the_affected_area</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="scope_and_scale_total_population_of_the_affected_area_comment">scope_and_scale_total_population_of_the_affected_area_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="scope_and_scale_percentage_affected_population">scope_and_scale_percentage_affected_population</span></td>
+                                    <td>numeric</td>
+                                    <td>3,2</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="scope_and_scale_percentage_affected_population_comment">scope_and_scale_percentage_affected_population_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="scope_and_scale_impact_index_score">scope_and_scale_impact_index_score</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="scope_and_scale_impact_index_score_comment">scope_and_scale_impact_index_score_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="scope_and_scale_impact_index_inform">scope_and_scale_impact_index_inform</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="scope_and_scale_impact_index_inform_comment">scope_and_scale_impact_index_inform_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="humanitarian_conditions">humanitarian_conditions</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="humanitarian_conditions_casualties_score">humanitarian_conditions_casualties_score</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="humanitarian_conditions_casualties_score_comment">humanitarian_conditions_casualties_score_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="humanitarian_conditions_casualties_injrd_deaths_missing">humanitarian_conditions_casualties_injrd_deaths_missing</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="humanitarian_conditions_casualties_injrd_deaths_missing_comment">humanitarian_conditions_casualties_injrd_deaths_missing_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="humanitarian_conditions_severity_score">humanitarian_conditions_severity_score</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="humanitarian_conditions_severity_score_comment">humanitarian_conditions_severity_score_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="humanitarian_conditions_severity">humanitarian_conditions_severity</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="humanitarian_conditions_severity_comment">humanitarian_conditions_severity_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="humanitarian_conditions_people_in_need_score">humanitarian_conditions_people_in_need_score</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="humanitarian_conditions_people_in_need_score_comment">humanitarian_conditions_people_in_need_score_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="humanitarian_conditions_people_in_need">humanitarian_conditions_people_in_need</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="humanitarian_conditions_people_in_need_comment">humanitarian_conditions_people_in_need_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="capacity_and_response">capacity_and_response</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="capacity_and_response_ifrc_capacity_score">capacity_and_response_ifrc_capacity_score</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="capacity_and_response_ifrc_capacity_score_comment">capacity_and_response_ifrc_capacity_score_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="capacity_and_response_ifrc_international_staff">capacity_and_response_ifrc_international_staff</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="capacity_and_response_ifrc_international_staff_comment">capacity_and_response_ifrc_international_staff_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="capacity_and_response_ifrc_national_staff">capacity_and_response_ifrc_national_staff</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="capacity_and_response_ifrc_national_staff_comment">capacity_and_response_ifrc_national_staff_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="capacity_and_response_ifrc_total_staff">capacity_and_response_ifrc_total_staff</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="capacity_and_response_ifrc_total_staff_comment">capacity_and_response_ifrc_total_staff_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="capacity_and_response_regional_office">capacity_and_response_regional_office</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="capacity_and_response_regional_office_comment">capacity_and_response_regional_office_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="capacity_and_response_ops_capacity_score">capacity_and_response_ops_capacity_score</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="capacity_and_response_ops_capacity_score_comment">capacity_and_response_ops_capacity_score_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="capacity_and_response_ops_capacity_ranking">capacity_and_response_ops_capacity_ranking</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="capacity_and_response_ops_capacity_ranking_comment">capacity_and_response_ops_capacity_ranking_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="capacity_and_response_ns_staff_score">capacity_and_response_ns_staff_score</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="capacity_and_response_ns_staff_score_comment">capacity_and_response_ns_staff_score_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="capacity_and_response_number_of_ns_staff">capacity_and_response_number_of_ns_staff</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="capacity_and_response_number_of_ns_staff_comment">capacity_and_response_number_of_ns_staff_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="capacity_and_response_ratio_staff_to_volunteer_score">capacity_and_response_ratio_staff_to_volunteer_score</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="capacity_and_response_ratio_staff_to_volunteer_score_comment">capacity_and_response_ratio_staff_to_volunteer_score_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="capacity_and_response_ratio_staff_volunteer">capacity_and_response_ratio_staff_volunteer</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="capacity_and_response_ratio_staff_volunteer_comment">capacity_and_response_ratio_staff_volunteer_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="capacity_and_response_number_of_ns_volunteer">capacity_and_response_number_of_ns_volunteer</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="capacity_and_response_number_of_ns_volunteer_comment">capacity_and_response_number_of_ns_volunteer_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="capacity_and_response_number_of_dref_score">capacity_and_response_number_of_dref_score</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="capacity_and_response_number_of_dref_score_comment">capacity_and_response_number_of_dref_score_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="capacity_and_response_number_of_dref_ea_last_3_years">capacity_and_response_number_of_dref_ea_last_3_years</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="capacity_and_response_number_of_dref_ea_last_3_years_comment">capacity_and_response_number_of_dref_ea_last_3_years_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="capacity_and_response_presence_support_pns_in_country">capacity_and_response_presence_support_pns_in_country</span></td>
+                                    <td>numeric</td>
+                                    <td>3,1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="capacity_and_response_presence_support_pns_in_country_comment">capacity_and_response_presence_support_pns_in_country_comment</span></td>
+                                    <td>varchar</td>
+                                    <td>999</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="commentary">commentary</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="status">status</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="created_at">created_at</span></td>
+                                    <td>timestamptz</td>
+                                    <td>35,6</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="updated_at">updated_at</span></td>
+                                    <td>timestamptz</td>
+                                    <td>35,6</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="country_id">country_id</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="api_crisiscategorisationbycountry.country_id references api_country.id via api_crisiscategorisa_country_id_dbd45d07_fk_api_count"><a href='api_country.html'>api_country</a><span class='relatedKey'>.id</span></td>
+                                                <td class="constraint detail">api_crisiscategorisa_country_id_dbd45d07_fk_api_count</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="event_id">event_id</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="api_crisiscategorisationbycountry.event_id references api_event.id via api_crisiscategorisa_event_id_a114529c_fk_api_event"><a href='api_event.html'>api_event</a><span class='relatedKey'>.id</span></td>
+                                                <td class="constraint detail">api_crisiscategorisa_event_id_a114529c_fk_api_event</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="general_document_id">general_document_id</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="api_crisiscategorisationbycountry.general_document_id references api_generaldocument.id via api_crisiscategorisa_general_document_id_52390d2c_fk_api_gener"><a href='api_generaldocument.html'>api_generaldocument</a><span class='relatedKey'>.id</span></td>
+                                                <td class="constraint detail">api_crisiscategorisa_general_document_id_52390d2c_fk_api_gener</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-sitemap"></i>
+                            <h3 id="Indexes" class="box-title">Indexes</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table
+                                    id="indexes_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
+                                <thead>
+                                <tr>
+                                    <th>Constraint Name</th>
+                                    <th>Type</th>
+                                    <th>Sort</th>
+                                    <th>Column(s)</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey'></i> api_crisiscategorisationbycountry_pkey</td>
+                                    <td>Primary key</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>id</td>
+                                </tr>
+                                <tr>
+                                    <td class='uniqueKey' title='Unique Key'><i class='icon ion-key iconkey'></i> api_crisiscategorisation_event_id_country_id_57302187_uniq</td>
+                                    <td>Must be unique</td>
+                                    <td><span title='Ascending'>Asc</span>/<span title='Ascending'>Asc</span></td>
+                                    <td>event_id + country_id</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>api_crisiscategorisationbycountry_country_id_dbd45d07</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>country_id</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>api_crisiscategorisationbycountry_event_id_a114529c</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>event_id</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>api_crisiscategorisationbycountry_general_document_id_52390d2c</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>general_document_id</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /.box-body -->
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-code-fork"></i>
+                            <h3 id="Relationships" class="box-title">Relationships</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div class="nav-tabs-custom"><!-- Tabs within a box -->
+                                <h5>Close relationships within degrees of separation</h5>
+                                <ul class="nav nav-tabs pull-left ui-sortable-handle">
+                                    <li class="active"><a href="#oneDegreeImg-chart" data-toggle="tab" aria-expanded="true">One</a></li>
+                                    <li class=""><a href="#twodegreesDegreeImg-chart" data-toggle="tab" aria-expanded="true">Two degrees</a></li>
+                                </ul>
+                                <div class="tab-content no-padding">
+                                    <div class="chart tab-pane active" id="oneDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
+<area shape="rect" id="node1" href="api_crisiscategorisationbycountry.html" target="_top" title="api_crisiscategorisationbycountry" alt="" coords="461,5,1338,2802">
+<area shape="rect" id="node2" href="api_country.html" target="_top" title="api_country" alt="" coords="5,2367,417,2658">
+<area shape="rect" id="node3" href="api_event.html" target="_top" title="api_event" alt="" coords="5,2676,417,2880">
+<area shape="rect" id="node4" href="api_generaldocument.html" target="_top" title="api_generaldocument" alt="" coords="5,2898,417,3013">
+</map>
+                                        <a name='diagram'><img id="oneDegreeImg" src="../diagrams/tables/api_crisiscategorisationbycountry.1degree.png" usemap="#oneDegreeRelationshipsDiagram" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="twodegreesDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="twoDegreesRelationshipsDiagram" name="twoDegreesRelationshipsDiagram">
+<area shape="rect" id="node1" href="alert_system_loaditem_related_go_events.html" target="_top" title="alert_system_loaditem_related_go_events" alt="" coords="943,8336,1374,8422">
+<area shape="rect" id="node2" href="api_event.html" target="_top" title="api_event" alt="" coords="264,8123,676,8326">
+<area shape="rect" id="node5" href="api_disastertype.html" target="_top" title="api_disastertype" alt="" coords="5,6857,220,6943">
+<area shape="rect" id="node3" href="api_appeal.html" target="_top" title="api_appeal" alt="" coords="1076,4239,1242,4325">
+<area shape="rect" id="node4" href="api_country.html" target="_top" title="api_country" alt="" coords="264,2877,676,3169">
+<area shape="rect" id="node6" href="api_region.html" target="_top" title="api_region" alt="" coords="31,4545,194,4631">
+<area shape="rect" id="node7" href="api_appealdocument.html" target="_top" title="api_appealdocument" alt="" coords="1721,4237,1975,4323">
+<area shape="rect" id="node8" href="api_appealhistory.html" target="_top" title="api_appealhistory" alt="" coords="1734,4351,1961,4437">
+<area shape="rect" id="node9" href="api_countrycapacitystrengthening.html" target="_top" title="api_countrycapacitystrengthening" alt="" coords="972,3212,1345,3298">
+<area shape="rect" id="node10" href="api_countrycontact.html" target="_top" title="api_countrycontact" alt="" coords="1038,3316,1279,3402">
+<area shape="rect" id="node11" href="api_countrydirectory.html" target="_top" title="api_countrydirectory" alt="" coords="1032,3420,1286,3506">
+<area shape="rect" id="node12" href="api_countrygeoms.html" target="_top" title="api_countrygeoms" alt="" coords="1042,3524,1275,3610">
+<area shape="rect" id="node13" href="api_countryicrcpresence.html" target="_top" title="api_countryicrcpresence" alt="" coords="1016,3628,1301,3714">
+<area shape="rect" id="node14" href="api_countrykeydocument.html" target="_top" title="api_countrykeydocument" alt="" coords="1012,3732,1306,3818">
+<area shape="rect" id="node15" href="api_countrykeyfigure.html" target="_top" title="api_countrykeyfigure" alt="" coords="1030,3836,1288,3922">
+<area shape="rect" id="node16" href="api_countrylink.html" target="_top" title="api_countrylink" alt="" coords="1055,3940,1262,4026">
+<area shape="rect" id="node17" href="api_countryoffieldreporttoreview.html" target="_top" title="api_countryoffieldreporttoreview" alt="" coords="978,213,1340,299">
+<area shape="rect" id="node18" href="api_countryorganizationalcapacity.html" target="_top" title="api_countryorganizationalcapacity" alt="" coords="972,317,1346,403">
+<area shape="rect" id="node19" href="api_countrysnippet.html" target="_top" title="api_countrysnippet" alt="" coords="1039,421,1278,507">
+<area shape="rect" id="node20" href="api_countrysupportingpartner.html" target="_top" title="api_countrysupportingpartner" alt="" coords="990,525,1327,611">
+<area shape="rect" id="node21" href="api_crisiscategorisationbycountry.html" target="_top" title="api_crisiscategorisationbycountry" alt="" coords="720,5001,1597,7797">
+<area shape="rect" id="node22" href="api_generaldocument.html" target="_top" title="api_generaldocument" alt="" coords="264,6992,676,7107">
+<area shape="rect" id="node23" href="api_district.html" target="_top" title="api_district" alt="" coords="1074,2933,1243,3019">
+<area shape="rect" id="node24" href="api_event_countries.html" target="_top" title="api_event_countries" alt="" coords="1036,4897,1282,4983">
+<area shape="rect" id="node25" href="api_event_countries_for_preview.html" target="_top" title="api_event_countries_for_preview" alt="" coords="982,7815,1336,7901">
+<area shape="rect" id="node26" href="api_event_districts.html" target="_top" title="api_event_districts" alt="" coords="1731,3019,1965,3105">
+<area shape="rect" id="node27" href="api_event_regions.html" target="_top" title="api_event_regions" alt="" coords="1044,9307,1273,9393">
+<area shape="rect" id="node28" href="api_eventcontact.html" target="_top" title="api_eventcontact" alt="" coords="1048,8579,1270,8665">
+<area shape="rect" id="node29" href="api_eventfeatureddocument.html" target="_top" title="api_eventfeatureddocument" alt="" coords="998,8683,1319,8769">
+<area shape="rect" id="node30" href="api_eventlink.html" target="_top" title="api_eventlink" alt="" coords="1064,8787,1253,8873">
+<area shape="rect" id="node31" href="api_eventseveritylevelhistory.html" target="_top" title="api_eventseveritylevelhistory" alt="" coords="994,8891,1323,8977">
+<area shape="rect" id="node32" href="api_fieldreport.html" target="_top" title="api_fieldreport" alt="" coords="1058,7919,1259,8005">
+<area shape="rect" id="node33" href="api_fieldreport_countries.html" target="_top" title="api_fieldreport_countries" alt="" coords="1703,4132,1993,4218">
+<area shape="rect" id="node34" href="api_gdacsevent_countries.html" target="_top" title="api_gdacsevent_countries" alt="" coords="1011,768,1306,854">
+<area shape="rect" id="node35" href="api_geccode.html" target="_top" title="api_geccode" alt="" coords="1070,872,1248,958">
+<area shape="rect" id="node36" href="api_keyfigure.html" target="_top" title="api_keyfigure" alt="" coords="1064,8995,1254,9081">
+<area shape="rect" id="node37" href="api_nsdinitiatives.html" target="_top" title="api_nsdinitiatives" alt="" coords="1046,976,1271,1062">
+<area shape="rect" id="node38" href="api_profile.html" target="_top" title="api_profile" alt="" coords="1076,1080,1241,1166">
+<area shape="rect" id="node39" href="api_situationreport.html" target="_top" title="api_situationreport" alt="" coords="1038,9099,1279,9185">
+<area shape="rect" id="node40" href="api_snippet.html" target="_top" title="api_snippet" alt="" coords="1072,8232,1245,8318">
+<area shape="rect" id="node41" href="api_usercountry.html" target="_top" title="api_usercountry" alt="" coords="1052,1184,1265,1270">
+<area shape="rect" id="node42" href="country_plan_countryplan.html" target="_top" title="country_plan_countryplan" alt="" coords="1009,109,1308,195">
+<area shape="rect" id="node43" href="country_plan_membershipcoordination.html" target="_top" title="country_plan_membershipcoordination" alt="" coords="1641,472,2055,558">
+<area shape="rect" id="node44" href="databank_countryoverview.html" target="_top" title="databank_countryoverview" alt="" coords="1004,1323,1314,1409">
+<area shape="rect" id="node45" href="deployments_emergencyproject.html" target="_top" title="deployments_emergencyproject" alt="" coords="2099,2381,2450,2467">
+<area shape="rect" id="node46" href="deployments_eru.html" target="_top" title="deployments_eru" alt="" coords="1736,3123,1959,3209">
+<area shape="rect" id="node47" href="deployments_eruowner.html" target="_top" title="deployments_eruowner" alt="" coords="1020,3037,1298,3123">
+<area shape="rect" id="node48" href="deployments_fact.html" target="_top" title="deployments_fact" alt="" coords="1045,9203,1272,9289">
+<area shape="rect" id="node49" href="deployments_heop.html" target="_top" title="deployments_heop" alt="" coords="1040,4689,1277,4775">
+<area shape="rect" id="node50" href="deployments_partnersocietydeployment.html" target="_top" title="deployments_partnersocietydeployment" alt="" coords="946,1427,1371,1513">
+<area shape="rect" id="node51" href="deployments_personnel.html" target="_top" title="deployments_personnel" alt="" coords="2134,6064,2414,6150">
+<area shape="rect" id="node52" href="deployments_personneldeployment.html" target="_top" title="deployments_personneldeployment" alt="" coords="1656,8000,2040,8086">
+<area shape="rect" id="node53" href="notifications_surgealert.html" target="_top" title="notifications_surgealert" alt="" coords="1018,8093,1299,8179">
+<area shape="rect" id="node54" href="deployments_project.html" target="_top" title="deployments_project" alt="" coords="1031,4793,1286,4879">
+<area shape="rect" id="node55" href="deployments_rdrt.html" target="_top" title="deployments_rdrt" alt="" coords="1045,4481,1272,4567">
+<area shape="rect" id="node56" href="dref_dref.html" target="_top" title="dref_dref" alt="" coords="1074,8475,1243,8561">
+<area shape="rect" id="node57" href="dref_dreffinalreport.html" target="_top" title="dref_dreffinalreport" alt="" coords="1725,8104,1971,8190">
+<area shape="rect" id="node58" href="dref_drefoperationalupdate.html" target="_top" title="dref_drefoperationalupdate" alt="" coords="1691,8397,2005,8483">
+<area shape="rect" id="node59" href="eap_eap.html" target="_top" title="eap_eap" alt="" coords="1776,2915,1919,3001">
+<area shape="rect" id="node60" href="eap_eapregistration.html" target="_top" title="eap_eapregistration" alt="" coords="1035,5,1282,91">
+<area shape="rect" id="node61" href="eap_eapregistration_partners.html" target="_top" title="eap_eapregistration_partners" alt="" coords="1683,127,2013,213">
+<area shape="rect" id="node62" href="eap_fulleap_partners.html" target="_top" title="eap_fulleap_partners" alt="" coords="1032,1720,1286,1806">
+<area shape="rect" id="node63" href="eap_simplifiedeap_partners.html" target="_top" title="eap_simplifiedeap_partners" alt="" coords="1003,1824,1314,1910">
+<area shape="rect" id="node64" href="flash_update_flashcountrydistrict.html" target="_top" title="flash_update_flashcountrydistrict" alt="" coords="977,1928,1340,2014">
+<area shape="rect" id="node65" href="local_units_delegationoffice.html" target="_top" title="local_units_delegationoffice" alt="" coords="1002,2032,1316,2118">
+<area shape="rect" id="node66" href="local_units_externallymanagedlocalunit.html" target="_top" title="local_units_externallymanagedlocalunit" alt="" coords="950,2136,1368,2222">
+<area shape="rect" id="node67" href="local_units_localunit.html" target="_top" title="local_units_localunit" alt="" coords="1724,957,1972,1043">
+<area shape="rect" id="node68" href="local_units_localunitbulkupload.html" target="_top" title="local_units_localunitbulkupload" alt="" coords="985,664,1332,750">
+<area shape="rect" id="node69" href="notifications_alertsubscription_c34d2f97.html" target="_top" title="notifications_alertsubscription_countries" alt="" coords="944,2275,1373,2361">
+<area shape="rect" id="node70" href="notifications_subscription.html" target="_top" title="notifications_subscription" alt="" coords="1010,4585,1308,4671">
+<area shape="rect" id="node71" href="per_customperworkplancomponent.html" target="_top" title="per_customperworkplancomponent" alt="" coords="966,2379,1351,2465">
+<area shape="rect" id="node72" href="per_nicedocument.html" target="_top" title="per_nicedocument" alt="" coords="1042,2483,1276,2569">
+<area shape="rect" id="node73" href="per_nsphase.html" target="_top" title="per_nsphase" alt="" coords="1068,2587,1249,2673">
+<area shape="rect" id="node74" href="per_overview.html" target="_top" title="per_overview" alt="" coords="1064,1565,1253,1651">
+<area shape="rect" id="node75" href="per_perdocumentupload.html" target="_top" title="per_perdocumentupload" alt="" coords="1705,1529,1991,1615">
+<area shape="rect" id="node76" href="per_perworkplancomponent.html" target="_top" title="per_perworkplancomponent" alt="" coords="999,2725,1318,2811">
+<area shape="rect" id="node77" href="per_workplan.html" target="_top" title="per_workplan" alt="" coords="1063,2829,1254,2915">
+</map>
+                                        <a name='diagram'><img id="twodegreesDegreeImg" src="../diagrams/tables/api_crisiscategorisationbycountry.2degrees.png" usemap="#twoDegreesRelationshipsDiagram" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.box-body -->
+                    </div>
+                </section>
+                <script>
+                    var config = {
+                        pagination: true
+                    }
+                </script>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 7.0.2</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="table.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>

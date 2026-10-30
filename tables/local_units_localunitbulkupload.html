@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>local_units_localunitbulkupload - test.public</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>test</b></a><span class="navbar-brand" style="padding-left: 0">.public</span>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>local_units_localunitbulkupload</h1><p><span id="recordNumber">130</span> rows</p><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Columns</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table
+                                    id="standard_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Column</th>
+                                    <th>Type</th>
+                                    <th>Size</th>
+                                    <th title='Are nulls allowed?'>Nulls</th>
+                                    <th title='Is column automatically updated?'>Auto</th>
+                                    <th title='Default value'>Default</th>
+                                    <th title='Columns in tables that reference this column'>Children</th>
+                                    <th title='Columns in tables that are referenced by this column'>Parents</th>
+                                    <th title='Comments' class="toggle"><span>Comments</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="id">id</span></td>
+                                    <td>int8</td>
+                                    <td>19</td>
+                                    <td title=''></td>
+                                    <td title='Automatically updated by the database'>√</td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="local_units_localunit.bulk_upload_id references local_units_localunitbulkupload.id via local_units_localuni_bulk_upload_id_011b6166_fk_local_uni"><a href='local_units_localunit.html'>local_units_localunit</a><span class='relatedKey'>.bulk_upload_id</span></td>
+                                                <td class="constraint detail">local_units_localuni_bulk_upload_id_011b6166_fk_local_uni</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="success_count">success_count</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="failed_count">failed_count</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="file_size">file_size</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="status">status</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="triggered_at">triggered_at</span></td>
+                                    <td>timestamptz</td>
+                                    <td>35,6</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="file">file</span></td>
+                                    <td>varchar</td>
+                                    <td>100</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="error_file">error_file</span></td>
+                                    <td>varchar</td>
+                                    <td>100</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="error_message">error_message</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="country_id">country_id</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="local_units_localunitbulkupload.country_id references api_country.id via local_units_localuni_country_id_6fc7e7fc_fk_api_count"><a href='api_country.html'>api_country</a><span class='relatedKey'>.id</span></td>
+                                                <td class="constraint detail">local_units_localuni_country_id_6fc7e7fc_fk_api_count</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="local_unit_type_id">local_unit_type_id</span></td>
+                                    <td>int8</td>
+                                    <td>19</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="local_units_localunitbulkupload.local_unit_type_id references local_units_localunittype.id via local_units_localuni_local_unit_type_id_93a24b5a_fk_local_uni"><a href='local_units_localunittype.html'>local_units_localunittype</a><span class='relatedKey'>.id</span></td>
+                                                <td class="constraint detail">local_units_localuni_local_unit_type_id_93a24b5a_fk_local_uni</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="triggered_by_id">triggered_by_id</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="local_units_localunitbulkupload.triggered_by_id references auth_user.id via local_units_localuni_triggered_by_id_fa26d894_fk_auth_user"><a href='auth_user.html'>auth_user</a><span class='relatedKey'>.id</span></td>
+                                                <td class="constraint detail">local_units_localuni_triggered_by_id_fa26d894_fk_auth_user</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-sitemap"></i>
+                            <h3 id="Indexes" class="box-title">Indexes</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table
+                                    id="indexes_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
+                                <thead>
+                                <tr>
+                                    <th>Constraint Name</th>
+                                    <th>Type</th>
+                                    <th>Sort</th>
+                                    <th>Column(s)</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey'></i> local_units_localunitbulkupload_pkey</td>
+                                    <td>Primary key</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>id</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>local_units_localunitbulkupload_country_id_6fc7e7fc</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>country_id</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>local_units_localunitbulkupload_local_unit_type_id_93a24b5a</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>local_unit_type_id</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>local_units_localunitbulkupload_triggered_by_id_fa26d894</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>triggered_by_id</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /.box-body -->
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-sitemap"></i>
+                            <h3 class="box-title">Check Constraints</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table
+                                    id="check_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Constraint Name</th>
+                                    <th>Constraint</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>local_units_localunitbulkupload_success_count_check</td>
+                                    <td>((success_count &gt;&#61; 0))</td>
+                                </tr>
+                                <tr>
+                                    <td>local_units_localunitbulkupload_file_size_check</td>
+                                    <td>((file_size &gt;&#61; 0))</td>
+                                </tr>
+                                <tr>
+                                    <td>local_units_localunitbulkupload_failed_count_check</td>
+                                    <td>((failed_count &gt;&#61; 0))</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-code-fork"></i>
+                            <h3 id="Relationships" class="box-title">Relationships</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div class="nav-tabs-custom"><!-- Tabs within a box -->
+                                <h5>Close relationships within degrees of separation</h5>
+                                <ul class="nav nav-tabs pull-left ui-sortable-handle">
+                                    <li class="active"><a href="#oneDegreeImg-chart" data-toggle="tab" aria-expanded="true">One</a></li>
+                                    <li class=""><a href="#twodegreesDegreeImg-chart" data-toggle="tab" aria-expanded="true">Two degrees</a></li>
+                                </ul>
+                                <div class="tab-content no-padding">
+                                    <div class="chart tab-pane active" id="oneDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
+<area shape="rect" id="node1" href="local_units_localunit.html" target="_top" title="local_units_localunit" alt="" coords="1057,5,1357,355">
+<area shape="rect" id="node2" href="local_units_localunitbulkupload.html" target="_top" title="local_units_localunitbulkupload" alt="" coords="461,170,1013,590">
+<area shape="rect" id="node3" href="api_country.html" target="_top" title="api_country" alt="" coords="5,75,417,366">
+<area shape="rect" id="node4" href="auth_user.html" target="_top" title="auth_user" alt="" coords="132,568,291,713">
+<area shape="rect" id="node5" href="local_units_localunittype.html" target="_top" title="local_units_localunittype" alt="" coords="68,401,355,517">
+</map>
+                                        <a name='diagram'><img id="oneDegreeImg" src="../diagrams/tables/local_units_localunitbulkupload.1degree.png" usemap="#oneDegreeRelationshipsDiagram" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="twodegreesDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="twoDegreesRelationshipsDiagram" name="twoDegreesRelationshipsDiagram">
+<area shape="rect" id="node1" href="alert_system_alertemaillog.html" target="_top" title="alert_system_alertemaillog" alt="" coords="1199,8357,1506,8443">
+<area shape="rect" id="node2" href="notifications_alertsubscription.html" target="_top" title="notifications_alertsubscription" alt="" coords="650,7021,988,7107">
+<area shape="rect" id="node3" href="alert_system_alertemailthread.html" target="_top" title="alert_system_alertemailthread" alt="" coords="650,8357,988,8443">
+<area shape="rect" id="node4" href="auth_user.html" target="_top" title="auth_user" alt="" coords="276,6797,435,6883">
+<area shape="rect" id="node5" href="api_appeal.html" target="_top" title="api_appeal" alt="" coords="736,197,902,283">
+<area shape="rect" id="node6" href="api_country.html" target="_top" title="api_country" alt="" coords="268,2411,443,2497">
+<area shape="rect" id="node7" href="api_region.html" target="_top" title="api_region" alt="" coords="5,3881,168,3967">
+<area shape="rect" id="node8" href="api_appealdocument.html" target="_top" title="api_appealdocument" alt="" coords="1226,405,1480,491">
+<area shape="rect" id="node9" href="api_appealhistory.html" target="_top" title="api_appealhistory" alt="" coords="1239,23,1466,109">
+<area shape="rect" id="node10" href="api_countrycapacitystrengthening.html" target="_top" title="api_countrycapacitystrengthening" alt="" coords="633,1628,1005,1714">
+<area shape="rect" id="node11" href="api_countrycontact.html" target="_top" title="api_countrycontact" alt="" coords="699,1732,939,1818">
+<area shape="rect" id="node12" href="api_countrydirectory.html" target="_top" title="api_countrydirectory" alt="" coords="692,1836,946,1922">
+<area shape="rect" id="node13" href="api_countrygeoms.html" target="_top" title="api_countrygeoms" alt="" coords="703,1940,935,2026">
+<area shape="rect" id="node14" href="api_countryicrcpresence.html" target="_top" title="api_countryicrcpresence" alt="" coords="677,2044,961,2130">
+<area shape="rect" id="node15" href="api_countrykeydocument.html" target="_top" title="api_countrykeydocument" alt="" coords="672,2148,966,2234">
+<area shape="rect" id="node16" href="api_countrykeyfigure.html" target="_top" title="api_countrykeyfigure" alt="" coords="690,2252,948,2338">
+<area shape="rect" id="node17" href="api_countrylink.html" target="_top" title="api_countrylink" alt="" coords="716,2356,922,2442">
+<area shape="rect" id="node18" href="api_countryoffieldreporttoreview.html" target="_top" title="api_countryoffieldreporttoreview" alt="" coords="638,2460,1000,2546">
+<area shape="rect" id="node19" href="api_countryorganizationalcapacity.html" target="_top" title="api_countryorganizationalcapacity" alt="" coords="632,2564,1006,2650">
+<area shape="rect" id="node20" href="api_countrysnippet.html" target="_top" title="api_countrysnippet" alt="" coords="700,2668,938,2754">
+<area shape="rect" id="node21" href="api_countrysupportingpartner.html" target="_top" title="api_countrysupportingpartner" alt="" coords="651,2772,987,2858">
+<area shape="rect" id="node22" href="api_crisiscategorisationbycountry.html" target="_top" title="api_crisiscategorisationbycountry" alt="" coords="636,2876,1002,2962">
+<area shape="rect" id="node23" href="api_district.html" target="_top" title="api_district" alt="" coords="735,3691,903,3777">
+<area shape="rect" id="node24" href="api_event_countries.html" target="_top" title="api_event_countries" alt="" coords="696,2980,942,3066">
+<area shape="rect" id="node25" href="api_event_countries_for_preview.html" target="_top" title="api_event_countries_for_preview" alt="" coords="642,3084,996,3170">
+<area shape="rect" id="node26" href="api_eventseveritylevelhistory.html" target="_top" title="api_eventseveritylevelhistory" alt="" coords="655,7837,983,7923">
+<area shape="rect" id="node27" href="api_export.html" target="_top" title="api_export" alt="" coords="737,7941,901,8027">
+<area shape="rect" id="node28" href="api_fieldreport.html" target="_top" title="api_fieldreport" alt="" coords="719,5603,919,5689">
+<area shape="rect" id="node29" href="api_fieldreport_countries.html" target="_top" title="api_fieldreport_countries" alt="" coords="1208,2805,1498,2891">
+<area shape="rect" id="node30" href="api_gdacsevent_countries.html" target="_top" title="api_gdacsevent_countries" alt="" coords="672,3188,966,3274">
+<area shape="rect" id="node31" href="api_geccode.html" target="_top" title="api_geccode" alt="" coords="730,3292,908,3378">
+<area shape="rect" id="node32" href="api_nsdinitiatives.html" target="_top" title="api_nsdinitiatives" alt="" coords="707,3396,931,3482">
+<area shape="rect" id="node33" href="api_profile.html" target="_top" title="api_profile" alt="" coords="737,4193,901,4279">
+<area shape="rect" id="node34" href="api_usercountry.html" target="_top" title="api_usercountry" alt="" coords="713,5083,925,5169">
+<area shape="rect" id="node35" href="api_userregion.html" target="_top" title="api_userregion" alt="" coords="718,5499,920,5585">
+<area shape="rect" id="node36" href="auth_user_groups.html" target="_top" title="auth_user_groups" alt="" coords="706,7733,932,7819">
+<area shape="rect" id="node37" href="auth_user_user_permissions.html" target="_top" title="auth_user_user_permissions" alt="" coords="661,8149,977,8235">
+<area shape="rect" id="node38" href="authtoken_token.html" target="_top" title="authtoken_token" alt="" coords="708,8253,930,8339">
+<area shape="rect" id="node39" href="country_plan_countryplan.html" target="_top" title="country_plan_countryplan" alt="" coords="670,5187,968,5273">
+<area shape="rect" id="node40" href="country_plan_dataimport.html" target="_top" title="country_plan_dataimport" alt="" coords="673,8893,965,8979">
+<area shape="rect" id="node41" href="country_plan_membershipcoordination.html" target="_top" title="country_plan_membershipcoordination" alt="" coords="1146,1521,1560,1607">
+<area shape="rect" id="node42" href="databank_countryoverview.html" target="_top" title="databank_countryoverview" alt="" coords="664,301,974,387">
+<area shape="rect" id="node43" href="deployments_emergencyproject.html" target="_top" title="deployments_emergencyproject" alt="" coords="1625,751,1976,837">
+<area shape="rect" id="node44" href="deployments_eru.html" target="_top" title="deployments_eru" alt="" coords="1241,751,1464,837">
+<area shape="rect" id="node45" href="deployments_eruowner.html" target="_top" title="deployments_eruowner" alt="" coords="680,756,958,842">
+<area shape="rect" id="node46" href="deployments_fact.html" target="_top" title="deployments_fact" alt="" coords="706,3881,932,3967">
+<area shape="rect" id="node47" href="deployments_heop.html" target="_top" title="deployments_heop" alt="" coords="701,3985,937,4071">
+<area shape="rect" id="node48" href="deployments_partnersocietydeployment.html" target="_top" title="deployments_partnersocietydeployment" alt="" coords="607,405,1031,491">
+<area shape="rect" id="node49" href="deployments_personnel.html" target="_top" title="deployments_personnel" alt="" coords="1660,516,1941,602">
+<area shape="rect" id="node50" href="deployments_personneldeployment.html" target="_top" title="deployments_personneldeployment" alt="" coords="1161,267,1545,353">
+<area shape="rect" id="node51" href="notifications_surgealert.html" target="_top" title="notifications_surgealert" alt="" coords="1213,596,1493,682">
+<area shape="rect" id="node52" href="deployments_project.html" target="_top" title="deployments_project" alt="" coords="692,4297,946,4383">
+<area shape="rect" id="node53" href="deployments_projectimport.html" target="_top" title="deployments_projectimport" alt="" coords="662,8997,976,9083">
+<area shape="rect" id="node54" href="deployments_rdrt.html" target="_top" title="deployments_rdrt" alt="" coords="706,4089,932,4175">
+<area shape="rect" id="node55" href="django_admin_log.html" target="_top" title="django_admin_log" alt="" coords="704,6124,934,6210">
+<area shape="rect" id="node56" href="dref_dref.html" target="_top" title="dref_dref" alt="" coords="1268,8464,1437,8550">
+<area shape="rect" id="node57" href="dref_dreffile.html" target="_top" title="dref_dreffile" alt="" coords="730,8548,908,8634">
+<area shape="rect" id="node58" href="dref_dref_users.html" target="_top" title="dref_dref_users" alt="" coords="1698,8023,1903,8109">
+<area shape="rect" id="node59" href="dref_dreffinalreport.html" target="_top" title="dref_dreffinalreport" alt="" coords="1678,8691,1923,8777">
+<area shape="rect" id="node60" href="dref_dreffinalreport_users.html" target="_top" title="dref_dreffinalreport_users" alt="" coords="2068,8913,2368,8999">
+<area shape="rect" id="node61" href="dref_drefoperationalupdate.html" target="_top" title="dref_drefoperationalupdate" alt="" coords="1644,8555,1957,8641">
+<area shape="rect" id="node62" href="dref_drefoperationalupdate_users.html" target="_top" title="dref_drefoperationalupdate_users" alt="" coords="2034,7763,2402,7849">
+<area shape="rect" id="node63" href="eap_eap.html" target="_top" title="eap_eap" alt="" coords="1281,5595,1424,5681">
+<area shape="rect" id="node64" href="eap_eapfile.html" target="_top" title="eap_eapfile" alt="" coords="734,6867,904,6953">
+<area shape="rect" id="node65" href="eap_eapregistration.html" target="_top" title="eap_eapregistration" alt="" coords="1677,6852,1924,6938">
+<area shape="rect" id="node66" href="eap_fulleap.html" target="_top" title="eap_fulleap" alt="" coords="1267,6800,1439,6886">
+<area shape="rect" id="node67" href="eap_simplifiedeap.html" target="_top" title="eap_simplifiedeap" alt="" coords="1238,6904,1468,6990">
+<area shape="rect" id="node68" href="eap_eapregistration_partners.html" target="_top" title="eap_eapregistration_partners" alt="" coords="2053,3471,2383,3557">
+<area shape="rect" id="node69" href="eap_eapregistration_users.html" target="_top" title="eap_eapregistration_users" alt="" coords="2067,7941,2369,8027">
+<area shape="rect" id="node70" href="eap_fulleap_partners.html" target="_top" title="eap_fulleap_partners" alt="" coords="1674,6012,1927,6098">
+<area shape="rect" id="node71" href="eap_simplifiedeap_partners.html" target="_top" title="eap_simplifiedeap_partners" alt="" coords="1645,6171,1956,6257">
+<area shape="rect" id="node72" href="flash_update_flashcountrydistrict.html" target="_top" title="flash_update_flashcountrydistrict" alt="" coords="1171,4420,1534,4506">
+<area shape="rect" id="node73" href="flash_update_flashupdate.html" target="_top" title="flash_update_flashupdate" alt="" coords="672,5707,966,5793">
+<area shape="rect" id="node74" href="flash_update_flashgraphicmap.html" target="_top" title="flash_update_flashgraphicmap" alt="" coords="650,6228,988,6314">
+<area shape="rect" id="node75" href="guardian_userobjectpermission.html" target="_top" title="guardian_userobjectpermission" alt="" coords="646,6383,992,6469">
+<area shape="rect" id="node76" href="local_units_delegationoffice.html" target="_top" title="local_units_delegationoffice" alt="" coords="662,967,976,1053">
+<area shape="rect" id="node77" href="local_units_externallymanagedlocalunit.html" target="_top" title="local_units_externallymanagedlocalunit" alt="" coords="610,5395,1028,5481">
+<area shape="rect" id="node78" href="local_units_localunittype.html" target="_top" title="local_units_localunittype" alt="" coords="212,4909,499,4995">
+<area shape="rect" id="node79" href="local_units_healthdata.html" target="_top" title="local_units_healthdata" alt="" coords="685,6537,953,6623">
+<area shape="rect" id="node80" href="local_units_localunit.html" target="_top" title="local_units_localunit" alt="" coords="1229,6108,1477,6194">
+<area shape="rect" id="node81" href="local_units_localunitbulkupload.html" target="_top" title="local_units_localunitbulkupload" alt="" coords="543,4505,1095,4925">
+<area shape="rect" id="node82" href="local_units_localunitlevel.html" target="_top" title="local_units_localunitlevel" alt="" coords="674,5985,964,6071">
+<area shape="rect" id="node83" href="local_units_localunitchangerequest.html" target="_top" title="local_units_localunitchangerequest" alt="" coords="1611,6303,1990,6389">
+<area shape="rect" id="node84" href="notifications_alertsubscription_c34d2f97.html" target="_top" title="notifications_alertsubscription_countries" alt="" coords="1139,6383,1567,6469">
+<area shape="rect" id="node85" href="notifications_subscription.html" target="_top" title="notifications_subscription" alt="" coords="670,4401,968,4487">
+<area shape="rect" id="node86" href="oauth2_provider_accesstoken.html" target="_top" title="oauth2_provider_accesstoken" alt="" coords="1636,7488,1965,7574">
+<area shape="rect" id="node87" href="oauth2_provider_application.html" target="_top" title="oauth2_provider_application" alt="" coords="659,7491,979,7577">
+<area shape="rect" id="node88" href="oauth2_provider_idtoken.html" target="_top" title="oauth2_provider_idtoken" alt="" coords="1208,7421,1498,7507">
+<area shape="rect" id="node89" href="oauth2_provider_refreshtoken.html" target="_top" title="oauth2_provider_refreshtoken" alt="" coords="1185,7560,1521,7646">
+<area shape="rect" id="node90" href="oauth2_provider_grant.html" target="_top" title="oauth2_provider_grant" alt="" coords="1217,7263,1488,7349">
+<area shape="rect" id="node91" href="per_customperworkplancomponent.html" target="_top" title="per_customperworkplancomponent" alt="" coords="627,1105,1011,1191">
+<area shape="rect" id="node92" href="per_form.html" target="_top" title="per_form" alt="" coords="1277,6487,1428,6573">
+<area shape="rect" id="node93" href="per_overview.html" target="_top" title="per_overview" alt="" coords="725,5291,913,5377">
+<area shape="rect" id="node94" href="per_nicedocument.html" target="_top" title="per_nicedocument" alt="" coords="702,1209,936,1295">
+<area shape="rect" id="node95" href="per_nsphase.html" target="_top" title="per_nsphase" alt="" coords="729,1313,909,1399">
+<area shape="rect" id="node96" href="per_perassessment.html" target="_top" title="per_perassessment" alt="" coords="1233,6641,1472,6727">
+<area shape="rect" id="node97" href="per_perdocumentupload.html" target="_top" title="per_perdocumentupload" alt="" coords="1210,5291,1496,5377">
+<area shape="rect" id="node98" href="per_perfile.html" target="_top" title="per_perfile" alt="" coords="736,6728,902,6814">
+<area shape="rect" id="node99" href="per_perworkplancomponent.html" target="_top" title="per_perworkplancomponent" alt="" coords="660,1417,978,1503">
+<area shape="rect" id="node100" href="per_workplan.html" target="_top" title="per_workplan" alt="" coords="724,4979,914,5065">
+<area shape="rect" id="node101" href="registrations_pending.html" target="_top" title="registrations_pending" alt="" coords="687,8045,951,8131">
+<area shape="rect" id="node102" href="registrations_recovery.html" target="_top" title="registrations_recovery" alt="" coords="685,8703,953,8789">
+<area shape="rect" id="node103" href="registrations_userexternaltoken.html" target="_top" title="registrations_userexternaltoken" alt="" coords="642,7248,996,7334">
+<area shape="rect" id="node104" href="reversion_revision.html" target="_top" title="reversion_revision" alt="" coords="704,7352,934,7438">
+<area shape="rect" id="node105" href="tastypie_apikey.html" target="_top" title="tastypie_apikey" alt="" coords="715,7595,923,7681">
+</map>
+                                        <a name='diagram'><img id="twodegreesDegreeImg" src="../diagrams/tables/local_units_localunitbulkupload.2degrees.png" usemap="#twoDegreesRelationshipsDiagram" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.box-body -->
+                    </div>
+                </section>
+                <script>
+                    var config = {
+                        pagination: true
+                    }
+                </script>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 7.0.2</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="table.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>
